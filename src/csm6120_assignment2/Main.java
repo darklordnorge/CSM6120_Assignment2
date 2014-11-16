@@ -4,8 +4,8 @@
  * and open the template in the editor.
  */
 package csm6120_assignment2;
-
 import java.io.File;
+import search_Algortihms.BFS;
 
 /**
  *
@@ -24,7 +24,5 @@ public class Main {
         FileManager r = new FileManager();
         r.reader(startState, file);
         startState.printArray();
-    }
-    
-    
+    } 
 }
