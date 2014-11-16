@@ -5,17 +5,26 @@
  */
 package csm6120_assignment2;
 
+import java.io.File;
+
 /**
  *
  * @author stefan
  */
 public class Main {
 
+    private static State startState = new State();
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        String path = args[0];
+        File file = new File(path);
+        FileManager r = new FileManager();
+        r.reader(startState, file);
+        startState.printArray();
     }
+    
     
 }
