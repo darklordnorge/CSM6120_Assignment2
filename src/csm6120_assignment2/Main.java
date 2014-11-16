@@ -9,7 +9,7 @@ package csm6120_assignment2;
  *
  * @author stefan
  */
-public class CSM6120_Assignment2 {
+public class Main {
 
     /**
      * @param args the command line arguments
