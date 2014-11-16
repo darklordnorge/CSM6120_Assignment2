@@ -4,7 +4,8 @@ package csm6120_assignment2;
 import java.util.ArrayList;
 
 /**
- *
+ * This class has methods and variables to hold an input state.
+ * This will be used to hold the start and goal state object.
  * @author stefan
  */
 public class State {
@@ -22,6 +23,9 @@ public class State {
         state.add(toAdd);
     }
     
+    /**
+     * Print the arraylist 
+     */
     public void printArray(){
        for(int i = 0; i < state.size(); i++){
            System.out.println(state.get(i));

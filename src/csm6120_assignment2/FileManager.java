@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package csm6120_assignment2;
 
 import java.io.BufferedReader;
@@ -13,7 +9,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- *
+ * This class holds methods to manipulate the input files.
+ * 
  * @author stefan
  */
 public class FileManager {
@@ -21,6 +18,13 @@ public class FileManager {
     public FileManager(){
         
     }
+    /**
+     * Read a given file path and calls the findInteger() method. 
+     * This is used to read the input files and read them line for line.
+     * 
+     * @param s - The State object to save too
+     * @param path - The path of the input file
+     */
     public void reader(State s, File path){
         try{
            BufferedReader bReader = new BufferedReader
@@ -37,6 +41,11 @@ public class FileManager {
         }
     }
     
+    /**
+     * Changes the input line from being Strings to single Integers.
+     * @param s - The String to analyse and change
+     * @param state - The State object to save too
+     */
     public void findInteger(String s, State state){
         String[] parts = s.split(",");
         for (int i = 0; i < parts.length; i++){
