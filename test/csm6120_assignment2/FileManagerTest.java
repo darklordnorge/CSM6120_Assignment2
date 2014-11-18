@@ -41,16 +41,16 @@ public class FileManagerTest {
     /**
      * Test of reader method, of class FileManager.
      */
-    @Test
-    public void testReader() {
-        System.out.println("reader");
-        State s = null;
-        File path = null;
-        FileManager instance = new FileManager();
-        instance.reader(s, path);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+//    @Test
+//    public void testReader() {
+//        System.out.println("reader");
+//        State s = new State();
+//        File path = null;
+//        FileManager instance = new FileManager();
+//        instance.reader(s, path);
+//        // TODO review the generated test code and remove the default call to fail.
+//    //    fail("The test case is a prototype.");
+//    }
 
     /**
      * Test of findInteger method, of class FileManager.
@@ -58,12 +58,12 @@ public class FileManagerTest {
     @Test
     public void testFindInteger() {
         System.out.println("findInteger");
-        String s = "";
-        State state = null;
+        String s = "1, 2 ";
+        State state = new State();
         FileManager instance = new FileManager();
         instance.findInteger(s, state);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+     //   fail("The test case is a prototype.");
     }
     
 }

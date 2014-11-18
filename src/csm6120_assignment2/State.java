@@ -36,4 +36,8 @@ public class State {
        }
     }
     
+    public int return_index(int i){
+        return this.state.indexOf(i);
+    }
+    
 }
