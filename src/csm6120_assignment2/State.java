@@ -16,11 +16,11 @@ public class State {
      * creates an empty arraylist in which the state data will be saved
      */
     public State(){
-        state = new ArrayList<Integer>();
+        this.state = new ArrayList();
     }
     
     public void addState(int toAdd){
-        state.add(toAdd);
+        this.state.add(toAdd);
     }
     
     /**
