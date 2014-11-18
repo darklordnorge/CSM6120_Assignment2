@@ -5,6 +5,7 @@
  */
 package csm6120_assignment2;
 import java.io.File;
+import search_Algortihms.Graph;
 
 /**
  *
@@ -21,7 +22,9 @@ public class Main {
         String path = args[0];
         File file = new File(path);
         FileManager r = new FileManager();
+        Graph g = new Graph();
         r.reader(startState, file);
-        startState.printArray();
+     //   startState.printArray();
+        g.nextStep(startState);
     } 
 }
