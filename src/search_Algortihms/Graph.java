@@ -63,4 +63,13 @@ public class Graph {
             s.changeTiles(5, emptyTile);
         }
     }
+    
+    /**
+     * This method generates the next level of the graph
+     * 
+     * @param s The state to base the generation on
+     */
+    public void nextLevel(State s){
+        
+    }
 }

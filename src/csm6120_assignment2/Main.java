@@ -24,7 +24,9 @@ public class Main {
         FileManager r = new FileManager();
         Graph g = new Graph();
         r.reader(startState, file);
-     //   startState.printArray();
+        startState.printArray();
+        System.out.println("Now switch:");
         g.nextStep(startState);
+        startState.printArray();
     } 
 }
