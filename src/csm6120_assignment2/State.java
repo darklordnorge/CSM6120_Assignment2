@@ -36,7 +36,13 @@ public class State {
        }
     }
     
-    public int return_index(int i){
+    /**
+     * Method to return the index of a specific item in the arraylist
+     * 
+     * @param i The item to search for
+     * @return  The position of the item in the arraylist 
+     */
+    public int returnIndex(int i){
         return this.state.indexOf(i);
     }
     
