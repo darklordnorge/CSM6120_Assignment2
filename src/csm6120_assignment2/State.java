@@ -19,6 +19,10 @@ public class State {
         this.state = new ArrayList();
     }
     
+    /**
+     * Method to add an integer to the arraylist 
+     * @param toAdd The integer to add 
+     */
     public void addState(int toAdd){
         this.state.add(toAdd);
     }
