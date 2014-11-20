@@ -13,17 +13,35 @@ public class TreeNode {
     private LinkedList firstChild;
     private LinkedList nextSibling;
     
+    /**
+     * Constructor of the TreeNode class.
+     * Creates a deep copy of the state which is passed as parameter
+     * Initialises the linkedLists. 
+     * @param s The State the node referes too
+     */
     public TreeNode(State s){
-        this.state = s; //shallow copy
+        this.state = new State(s);
         this.firstChild = new LinkedList();
         this.nextSibling = new LinkedList();  
     }
     
-    public void addChild(State s){
-        this.firstChild.add(s);
+    /**
+     * Method to add a child to the linkedList
+     * @param child 
+     */
+    public void addChild(TreeNode child){
+        this.firstChild.add(child);
     }
     
-    public void addSibling(State s){
-        this.nextSibling.add(s);
+    /**
+     * Method to add a sibling 
+     * @param sibling 
+     */
+    public void addSibling(TreeNode sibling){
+        this.nextSibling.addLast(sibling);
+    }
+    
+    public State returnState(){
+        return this.state;
     }
 }

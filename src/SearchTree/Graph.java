@@ -33,9 +33,9 @@ public class Graph {
      * 
      * @param s The state on which the next step will be based 
      */
-    public void nextStep(State s){
+    public void nextStep(TreeNode s){
         int emptyTile; //index of the empty tile
-        emptyTile = s.returnIndex(0);
+        emptyTile = s.returnState().returnIndex(0);
        
         if(emptyTile == 0){
             this.corner(emptyTile, s);
@@ -80,35 +80,50 @@ public class Graph {
      * @param tile  The index of the empty tile(0)
      * @param s     The state to base algorithm on
      */
-    public void corner(int tile, State s){
-        State tempState = new State(s);
+    public void corner(int tile, TreeNode s){
+        State tempState1 = new State(s.returnState());
+        State tempState2 = new State(s.returnState());
+        TreeNode firstChild, secondChild;
         if(tile == 0){
-            s.changeTiles(1, 0);
-            pos_state.add(s);
+            tempState1.changeTiles(1, 0);
+            firstChild = new TreeNode(tempState1);
             
-            tempState.changeTiles(3, 0);
-            pos_state.add(tempState);
+            tempState2.changeTiles(3, 0);
+            secondChild = new TreeNode(tempState2);
+            
+            s.addChild(firstChild);
+            firstChild.addSibling(secondChild);
+            
         }
         else if(tile == 2){
-            s.changeTiles(1, 2);
-            pos_state.add(s);
+            tempState1.changeTiles(1, 2);
+            firstChild = new TreeNode(tempState1);
             
-            tempState.changeTiles(5, 2);
-            pos_state.add(tempState);
+            tempState2.changeTiles(5, 2);
+            secondChild = new TreeNode(tempState2);
+            
+            s.addChild(firstChild);
+            firstChild.addSibling(secondChild);
         }
         else if(tile == 6){
-            s.changeTiles(3, 6);
-            pos_state.add(s);
+            tempState1.changeTiles(3, 6);
+            firstChild = new TreeNode(tempState1);
             
-            tempState.changeTiles(7, 6);
-            pos_state.add(tempState);
+            tempState2.changeTiles(7, 6);
+            secondChild = new TreeNode(tempState2);
+            
+            s.addChild(firstChild);
+            firstChild.addSibling(secondChild);
         }
         else if(tile == 8){
-            s.changeTiles(5, 8);
-            pos_state.add(s);
+             tempState1.changeTiles(5, 8);
+            firstChild = new TreeNode(tempState1);
             
-            tempState.changeTiles(7, 8);
-            pos_state.add(tempState);
+            tempState2.changeTiles(7, 8);
+            secondChild = new TreeNode(tempState2);
+            
+            s.addChild(firstChild);
+            firstChild.addSibling(secondChild);
         }
     }
     
@@ -126,49 +141,68 @@ public class Graph {
      * @param tile  The index of the empty tile(0)
      * @param s     The state to base algorithm on 
      */
-    public void midSection(int tile, State s){
-        State tempState1 = new State(s);
-        State tempState2 = new State(s);
+    public void midSection(int tile, TreeNode s){
+        State tempState1 = new State(s.returnState());
+        State tempState2 = new State(s.returnState());
+        State tempState3 = new State(s.returnState());
+        TreeNode child1, child2, child3;
         
         if(tile == 1){
-            s.changeTiles(0, tile);
-            pos_state.add(s);
+            tempState1.changeTiles(0, tile);
+            child1 = new TreeNode(tempState1);
             
-            tempState1.changeTiles(2, tile);
-            pos_state.add(tempState1);
+            tempState2.changeTiles(2, tile);
+            child2 = new TreeNode(tempState2);
             
-            tempState2.changeTiles(4, tile);
-            pos_state.add(tempState2);
+            tempState3.changeTiles(4, tile);
+            child3 = new TreeNode(tempState3);
+            
+            s.addChild(child1);
+            child1.addSibling(child2);
+            child2.addSibling(child3);
+            
         }
         else if(tile == 3){
-            s.changeTiles(0, tile);
-            pos_state.add(s);
+           tempState1.changeTiles(0, tile);
+            child1 = new TreeNode(tempState1);
             
-            tempState1.changeTiles(4, tile);
-            pos_state.add(tempState1);
+            tempState2.changeTiles(4, tile);
+            child2 = new TreeNode(tempState2);
             
-            tempState2.changeTiles(6, tile);
-            pos_state.add(tempState2);
+            tempState3.changeTiles(6, tile);
+            child3 = new TreeNode(tempState3);
+            
+            s.addChild(child1);
+            child1.addSibling(child2);
+            child2.addSibling(child3);
         }
         else if(tile == 5){
-            s.changeTiles(2, tile);
-            pos_state.add(s);
+            tempState1.changeTiles(2, tile);
+            child1 = new TreeNode(tempState1);
             
-            tempState1.changeTiles(4, tile);
-            pos_state.add(tempState1);
+            tempState2.changeTiles(4, tile);
+            child2 = new TreeNode(tempState2);
             
-            tempState2.changeTiles(8, tile);
-            pos_state.add(tempState2);
+            tempState3.changeTiles(8, tile);
+            child3 = new TreeNode(tempState3);
+            
+            s.addChild(child1);
+            child1.addSibling(child2);
+            child2.addSibling(child3);
         }
         else if(tile == 7){
-            s.changeTiles(4, tile);
-            pos_state.add(s);
+            tempState1.changeTiles(4, tile);
+            child1 = new TreeNode(tempState1);
             
-            tempState1.changeTiles(6, tile);
-            pos_state.add(tempState1);
+            tempState2.changeTiles(6, tile);
+            child2 = new TreeNode(tempState2);
             
-            tempState2.changeTiles(8, tile);
-            pos_state.add(tempState2);
+            tempState3.changeTiles(8, tile);
+            child3 = new TreeNode(tempState3);
+            
+            s.addChild(child1);
+            child1.addSibling(child2);
+            child2.addSibling(child3);
         }
     }
     
@@ -185,19 +219,28 @@ public class Graph {
      * @param tile  The index of the empty tile
      * @param s     The state to base algorithm on
      */
-    public void center(int tile, State s){
-        State tempState1 = new State(s);
-        State tempState2 = new State(s);
-        State tempState3 = new State(s);
+    public void center(int tile, TreeNode s){
+        State tempState1 = new State(s.returnState());
+        State tempState2 = new State(s.returnState());
+        State tempState3 = new State(s.returnState());
+        State tempState4 = new State(s.returnState());
+        TreeNode child1, child2, child3, child4;
         
-        s.changeTiles(1, tile);
-        tempState1.changeTiles(3, tile);
-        tempState2.changeTiles(5, tile);
-        tempState3.changeTiles(7, tile);
-        pos_state.add(s);
-        pos_state.add(tempState1);
-        pos_state.add(tempState2);
-        pos_state.add(tempState3);
+        tempState1.changeTiles(1, tile);
+        child1 = new TreeNode(tempState1);
         
+        tempState2.changeTiles(3, tile);
+        child2 = new TreeNode(tempState2);
+        
+        tempState3.changeTiles(5, tile);
+        child3 = new TreeNode(tempState3);
+        
+        tempState4.changeTiles(7, tile);
+        child4 = new TreeNode(tempState4);
+       
+        s.addChild(child1);
+        child1.addSibling(child2);
+        child2.addSibling(child3);
+        child3.addSibling(child4);
     }
 }
