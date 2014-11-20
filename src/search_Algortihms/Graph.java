@@ -69,14 +69,16 @@ public class Graph {
      * when the empty tile is at a corner.
      * Saves all changes to a arrayList of possible states
      * 
+     * 0 1 2
+     * 3 4 5
+     * 6 7 8
+     * 
      * @param tile The index of the empty tile(0)
      * @param s The state to base the process on
      */
     public void corner(int tile, State s){
-        int tempIndex;
         State tempState = new State(s);
         if(tile == 0){
-            tempIndex = tile;
             s.changeTiles(1, 0);
             pos_state.add(s);
             
@@ -84,7 +86,6 @@ public class Graph {
             pos_state.add(tempState);
         }
         else if(tile == 2){
-            tempIndex = tile;
             s.changeTiles(1, 2);
             pos_state.add(s);
             
@@ -92,7 +93,6 @@ public class Graph {
             pos_state.add(tempState);
         }
         else if(tile == 6){
-            tempIndex = tile;
             s.changeTiles(3, 6);
             pos_state.add(s);
             
@@ -100,12 +100,23 @@ public class Graph {
             pos_state.add(tempState);
         }
         else if(tile == 8){
-            tempIndex = tile;
             s.changeTiles(5, 8);
             pos_state.add(s);
             
             tempState.changeTiles(7, 8);
             pos_state.add(tempState);
         }
+    }
+    
+    /**
+     * 0 1 2
+     * 3 4 5
+     * 6 7 8
+     * 
+     * @param i
+     * @param s 
+     */
+    public void midSection(int i, State s){
+        
     }
 }
