@@ -75,8 +75,8 @@ public class Graph {
      * 3 4 5
      * 6 7 8
      * 
-     * @param tile The index of the empty tile(0)
-     * @param s The state to base the process on
+     * @param tile  The index of the empty tile(0)
+     * @param s     The state to base algorithm on
      */
     public void corner(int tile, State s){
         State tempState = new State(s);
@@ -121,8 +121,8 @@ public class Graph {
      * 3 4 5
      * 6 7 8
      * 
-     * @param tile
-     * @param s 
+     * @param tile  The index of the empty tile(0)
+     * @param s     The state to base algorithm on 
      */
     public void midSection(int tile, State s){
         State tempState1 = new State(s);
@@ -168,5 +168,34 @@ public class Graph {
             tempState2.changeTiles(8, tile);
             pos_state.add(tempState2);
         }
+    }
+    
+    /**
+     * This method generates the next level of the graph if the 
+     * empty tile(0) is in the center of the puzzle.
+     * (Tile 4 in the representation below
+     * Saves all possible states to an arrayList.
+     * 
+     * 0 1 2
+     * 3 4 5
+     * 6 7 8
+     * 
+     * @param tile  The index of the empty tile
+     * @param s     The state to base algorithm on
+     */
+    public void center(int tile, State s){
+        State tempState1 = new State(s);
+        State tempState2 = new State(s);
+        State tempState3 = new State(s);
+        
+        s.changeTiles(1, tile);
+        tempState1.changeTiles(3, tile);
+        tempState2.changeTiles(5, tile);
+        tempState3.changeTiles(7, tile);
+        pos_state.add(s);
+        pos_state.add(tempState1);
+        pos_state.add(tempState2);
+        pos_state.add(tempState3);
+        
     }
 }
