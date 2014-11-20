@@ -67,7 +67,9 @@ public class Graph {
     /**
      * This method is used to generate the next level of the graph
      * when the empty tile is at a corner.
-     * Saves all changes to a arrayList of possible states
+     * Saves all changes to a arrayList of possible states.
+     * The tiles where this method is used corresponds with the fields 
+     * 0, 2, 6 ,and 8 as shown below
      * 
      * 0 1 2
      * 3 4 5
@@ -109,14 +111,62 @@ public class Graph {
     }
     
     /**
+     * This method to generate the next level of the graph
+     * when the empty tile(0) is on the midsection of the sides. 
+     * Saves all possible states to an arrayList.
+     * The tiles where this method will be used correspond to the fields
+     * 1, 3, 5, and 7 as shown below
+     * 
      * 0 1 2
      * 3 4 5
      * 6 7 8
      * 
-     * @param i
+     * @param tile
      * @param s 
      */
-    public void midSection(int i, State s){
+    public void midSection(int tile, State s){
+        State tempState1 = new State(s);
+        State tempState2 = new State(s);
         
+        if(tile == 1){
+            s.changeTiles(0, tile);
+            pos_state.add(s);
+            
+            tempState1.changeTiles(2, tile);
+            pos_state.add(tempState1);
+            
+            tempState2.changeTiles(4, tile);
+            pos_state.add(tempState2);
+        }
+        else if(tile == 3){
+            s.changeTiles(0, tile);
+            pos_state.add(s);
+            
+            tempState1.changeTiles(4, tile);
+            pos_state.add(tempState1);
+            
+            tempState2.changeTiles(6, tile);
+            pos_state.add(tempState2);
+        }
+        else if(tile == 5){
+            s.changeTiles(2, tile);
+            pos_state.add(s);
+            
+            tempState1.changeTiles(4, tile);
+            pos_state.add(tempState1);
+            
+            tempState2.changeTiles(8, tile);
+            pos_state.add(tempState2);
+        }
+        else if(tile == 7){
+            s.changeTiles(4, tile);
+            pos_state.add(s);
+            
+            tempState1.changeTiles(6, tile);
+            pos_state.add(tempState1);
+            
+            tempState2.changeTiles(8, tile);
+            pos_state.add(tempState2);
+        }
     }
 }
