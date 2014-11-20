@@ -28,7 +28,9 @@ public class Graph {
      * 0 1 2
      * 3 4 5
      * 6 7 8
-     * This method will always choose the next smallest index to switch with
+     * This method checks where the empty tile is and calls other 
+     * methods to switch the tiles.
+     * 
      * @param s The state on which the next step will be based 
      */
     public void nextStep(State s){
@@ -39,25 +41,25 @@ public class Graph {
             this.corner(emptyTile, s);
         }
         else if(emptyTile == 1){
-            s.changeTiles(0, emptyTile);
+            this.midSection(emptyTile, s);
         }
          else if(emptyTile == 2){
             this.corner(emptyTile, s);
         }
          else if(emptyTile == 3){
-            s.changeTiles(0, emptyTile);
+            this.midSection(emptyTile, s);
         }
          else if(emptyTile == 4){
-            s.changeTiles(1, emptyTile);
+            this.center(emptyTile, s);
         }
          else if(emptyTile == 5){
-            s.changeTiles(2, emptyTile);
+            this.midSection(emptyTile, s);
         }
          else if(emptyTile == 6){
             this.corner(emptyTile, s);
         }
          else if(emptyTile == 7){
-            s.changeTiles(4, emptyTile);
+            this.midSection(emptyTile, s);
         }
          else if(emptyTile == 8){
             this.corner(emptyTile, s);
