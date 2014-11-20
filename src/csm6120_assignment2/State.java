@@ -13,12 +13,19 @@ public class State {
     
     /**
      * Constructor for the State object
-     * creates an empty arraylist in which the state data will be saved
+     * creates an empty arrayList in which the state data will be saved
      */
     public State(){
         this.state = new ArrayList();
     }
     
+    /**
+     * Constructor for the State object
+     * creates a deep clone of the state object which is specified
+     * in the parameter field 
+     * 
+     * @param s The state to clone
+     */
     public State(State s){
         this.state = new ArrayList();
         state.addAll(s.state);
@@ -26,7 +33,7 @@ public class State {
     
     
     /**
-     * Method to add an integer to the arraylist 
+     * Method to add an integer to the arrayList 
      * @param toAdd The integer to add 
      */
     public void addState(int toAdd){
