@@ -19,6 +19,12 @@ public class State {
         this.state = new ArrayList();
     }
     
+    public State(State s){
+        this.state = new ArrayList();
+        state.addAll(s.state);
+    }
+    
+    
     /**
      * Method to add an integer to the arraylist 
      * @param toAdd The integer to add 
@@ -60,6 +66,18 @@ public class State {
         this.state.remove(j);
         this.state.add(j, temp);
         
+    }
+    
+    /**
+     * This method clones the arrayList and returns it
+     * @return  The cloned arrayList
+     */
+    public ArrayList clone(){
+        ArrayList clone = new ArrayList();
+        for (Integer state1 : state) {
+            clone.add(state1);
+        }
+        return clone;
     }
     
 }
