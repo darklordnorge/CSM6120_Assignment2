@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author Stefan
  */
 public class Graph {
-    private ArrayList <Integer> pos_state;
+    private ArrayList <State> pos_state;
     /**
      * Constructor for the graph object 
      */
@@ -23,7 +23,7 @@ public class Graph {
      * horizontally and vertically.
      * To make the process easier simple numbers identifiers 
      * are assigned to the possible
-     * tiles in the puzzle. These numbers represent indices in the arraylist
+     * tiles in the puzzle. These numbers represent indices in the arrayList
      * and are :
      * 0 1 2
      * 3 4 5
@@ -36,13 +36,13 @@ public class Graph {
         emptyTile = s.returnIndex(0);
        
         if(emptyTile == 0){
-            s.changeTiles(1, emptyTile);
+            this.corner(emptyTile, s);
         }
         else if(emptyTile == 1){
             s.changeTiles(0, emptyTile);
         }
          else if(emptyTile == 2){
-            s.changeTiles(1, emptyTile);
+            this.corner(emptyTile, s);
         }
          else if(emptyTile == 3){
             s.changeTiles(0, emptyTile);
@@ -54,22 +54,57 @@ public class Graph {
             s.changeTiles(2, emptyTile);
         }
          else if(emptyTile == 6){
-            s.changeTiles(3, emptyTile);
+            this.corner(emptyTile, s);
         }
          else if(emptyTile == 7){
             s.changeTiles(4, emptyTile);
         }
          else if(emptyTile == 8){
-            s.changeTiles(5, emptyTile);
+            this.corner(emptyTile, s);
         }
     }
     
     /**
-     * This method generates the next level of the graph
      * 
-     * @param s The state to base the generation on
+     * 0 1 2
+     * 3 4 5
+     * 6 7 8
+     * @param tile 
      */
-    public void nextLevel(State s){
-        
+    public void corner(int tile, State s){
+        int tempIndex;
+        State tempState = s;
+        if(tile == 0){
+            tempIndex = tile;
+            s.changeTiles(1, 0);
+            pos_state.add(s);
+            
+            tempState.changeTiles(3, 0);
+            pos_state.add(tempState);
+        }
+        else if(tile == 2){
+            tempIndex = tile;
+            s.changeTiles(1, 2);
+            pos_state.add(s);
+            
+            tempState.changeTiles(5, 2);
+            pos_state.add(tempState);
+        }
+        else if(tile == 6){
+            tempIndex = tile;
+            s.changeTiles(3, 6);
+            pos_state.add(s);
+            
+            tempState.changeTiles(7, 6);
+            pos_state.add(tempState);
+        }
+        else if(tile == 8){
+            tempIndex = tile;
+            s.changeTiles(5, 8);
+            pos_state.add(s);
+            
+            tempState.changeTiles(7, 8);
+            pos_state.add(tempState);
+        }
     }
 }
