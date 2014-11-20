@@ -65,15 +65,16 @@ public class Graph {
     }
     
     /**
+     * This method is used to generate the next level of the graph
+     * when the empty tile is at a corner.
+     * Saves all changes to a arrayList of possible states
      * 
-     * 0 1 2
-     * 3 4 5
-     * 6 7 8
-     * @param tile 
+     * @param tile The index of the empty tile(0)
+     * @param s The state to base the process on
      */
     public void corner(int tile, State s){
         int tempIndex;
-        State tempState = s;
+        State tempState = new State(s);
         if(tile == 0){
             tempIndex = tile;
             s.changeTiles(1, 0);
