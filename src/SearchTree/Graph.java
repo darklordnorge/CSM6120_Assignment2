@@ -1,5 +1,5 @@
 
-package search_Algortihms;
+package SearchTree;
 
 import csm6120_assignment2.State;
 import java.util.ArrayList;
