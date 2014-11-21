@@ -44,4 +44,16 @@ public class TreeNode {
     public State returnState(){
         return this.state;
     }
+    
+    public TreeNode returnChild(){
+        return (TreeNode) this.firstChild.peek();
+    }
+    
+    public TreeNode returnSibling(){
+        return (TreeNode) this.nextSibling.peek();
+    }
+    
+    public boolean hasSibling(){
+        return this.nextSibling.isEmpty();
+    }
 }
