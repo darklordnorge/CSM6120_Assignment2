@@ -11,7 +11,7 @@ import java.util.Queue;
  */
 public class BFS {
     Graph tree;
-    TreeNode node, root, tempNode;
+    TreeNode node, root;
     Queue<TreeNode> searchQueue; 
     Queue<TreeNode> exploredQueue;
     int pathcost;
