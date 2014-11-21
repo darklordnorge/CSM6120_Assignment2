@@ -4,6 +4,7 @@ import SearchTree.*;
 import csm6120_assignment2.State;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 
 /**
@@ -13,13 +14,13 @@ import java.util.Queue;
 public class DFS {
     Graph tree;
     TreeNode node, root;
-    Queue<TreeNode> searchQueue, exploredQueue;
+    Stack<TreeNode> searchQueue, exploredQueue;
     int pathcost;
     
     public DFS(){
         tree = new Graph();
-        searchQueue = new LinkedList();
-        exploredQueue = new LinkedList();
+        searchQueue = new Stack();
+        exploredQueue = new Stack();
         pathcost = 0;
     }
     
@@ -40,7 +41,7 @@ public class DFS {
          searchQueue.add(root);
          
          while(searchQueue.size() > 0){
-             node = searchQueue.poll();
+             node = searchQueue.pop();
              
              /*
              check the current node for being the goal node
@@ -65,7 +66,7 @@ public class DFS {
              }
              exploredQueue.add(node);
              pathcost++;
-             node = searchQueue.poll();
+             node = searchQueue.pop();
         }
     }
 }
