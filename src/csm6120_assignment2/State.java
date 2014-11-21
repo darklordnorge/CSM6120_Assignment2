@@ -87,4 +87,16 @@ public class State {
         return clone;
     }
     
+    public boolean compare(State s){
+        int match = 0;
+        for(int i = 0;i < s.state.size(); i++){
+            if(this.state.get(i) == s.state.get(i)){
+                match++;
+            }
+        }
+        if(match == 9){
+            return true;
+        }
+        return false;
+    }
 }

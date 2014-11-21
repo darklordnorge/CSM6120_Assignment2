@@ -10,8 +10,8 @@ import java.util.LinkedList;
  */
 public class TreeNode {
     private State state;
-    private LinkedList firstChild;
-    private LinkedList nextSibling;
+    private LinkedList children;
+    private LinkedList siblings;
     
     /**
      * Constructor of the TreeNode class.
@@ -21,16 +21,25 @@ public class TreeNode {
      */
     public TreeNode(State s){
         this.state = new State(s);
-        this.firstChild = new LinkedList();
-        this.nextSibling = new LinkedList();  
+        this.children = new LinkedList();
+        this.siblings = new LinkedList();  
+    }
+    
+    public TreeNode(TreeNode t){
+        this.state = new State(t.returnState());
+        this.children = new LinkedList();
+        this.siblings = new LinkedList();  
+        
+        this.children.add(t.children);
+        this.siblings.add(t.siblings);
     }
     
     /**
      * Method to add a child to the linkedList
-     * @param child 
+     * @param chield 
      */
-    public void addChild(TreeNode child){
-        this.firstChild.add(child);
+    public void addChield(TreeNode chield){
+        this.children.add(chield);
     }
     
     /**
@@ -38,7 +47,7 @@ public class TreeNode {
      * @param sibling 
      */
     public void addSibling(TreeNode sibling){
-        this.nextSibling.addLast(sibling);
+        this.siblings.add(sibling);
     }
     
     public State returnState(){
@@ -46,14 +55,18 @@ public class TreeNode {
     }
     
     public TreeNode returnChild(){
-        return (TreeNode) this.firstChild.peek();
+        return (TreeNode) this.children.poll();
     }
     
     public TreeNode returnSibling(){
-        return (TreeNode) this.nextSibling.peek();
+        return (TreeNode) this.siblings.poll();
     }
     
     public boolean hasSibling(){
-        return this.nextSibling.isEmpty();
+        return this.siblings.isEmpty();
+    }
+    
+    public boolean hasChildren(){
+        return this.children.isEmpty();
     }
 }

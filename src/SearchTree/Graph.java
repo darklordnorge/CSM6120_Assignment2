@@ -83,47 +83,52 @@ public class Graph {
     public void corner(int tile, TreeNode s){
         State tempState1 = new State(s.returnState());
         State tempState2 = new State(s.returnState());
-        TreeNode firstChild, secondChild;
+        TreeNode firstChield, secondChield;
         if(tile == 0){
             tempState1.changeTiles(1, 0);
-            firstChild = new TreeNode(tempState1);
+            firstChield = new TreeNode(tempState1);
             
             tempState2.changeTiles(3, 0);
-            secondChild = new TreeNode(tempState2);
+            secondChield = new TreeNode(tempState2);
             
-            s.addChild(firstChild);
-            firstChild.addSibling(secondChild);
+            firstChield.addSibling(secondChield);
+            s.addChield(firstChield);
+            s.addChield(secondChield);
+            
             
         }
         else if(tile == 2){
             tempState1.changeTiles(1, 2);
-            firstChild = new TreeNode(tempState1);
+            firstChield = new TreeNode(tempState1);
             
             tempState2.changeTiles(5, 2);
-            secondChild = new TreeNode(tempState2);
+            secondChield = new TreeNode(tempState2);
             
-            s.addChild(firstChild);
-            firstChild.addSibling(secondChild);
+            firstChield.addSibling(secondChield);
+            s.addChield(firstChield);
+            s.addChield(secondChield);
         }
         else if(tile == 6){
             tempState1.changeTiles(3, 6);
-            firstChild = new TreeNode(tempState1);
+            firstChield = new TreeNode(tempState1);
             
             tempState2.changeTiles(7, 6);
-            secondChild = new TreeNode(tempState2);
+            secondChield = new TreeNode(tempState2);
             
-            s.addChild(firstChild);
-            firstChild.addSibling(secondChild);
+            firstChield.addSibling(secondChield);
+            s.addChield(firstChield);
+            s.addChield(secondChield);
         }
         else if(tile == 8){
              tempState1.changeTiles(5, 8);
-            firstChild = new TreeNode(tempState1);
+            firstChield = new TreeNode(tempState1);
             
             tempState2.changeTiles(7, 8);
-            secondChild = new TreeNode(tempState2);
+            secondChield = new TreeNode(tempState2);
             
-            s.addChild(firstChild);
-            firstChild.addSibling(secondChild);
+            firstChield.addSibling(secondChield);
+            s.addChield(firstChield);
+            s.addChield(secondChield);
         }
     }
     
@@ -145,64 +150,72 @@ public class Graph {
         State tempState1 = new State(s.returnState());
         State tempState2 = new State(s.returnState());
         State tempState3 = new State(s.returnState());
-        TreeNode child1, child2, child3;
+        TreeNode chield1, chield2, chield3;
         
         if(tile == 1){
             tempState1.changeTiles(0, tile);
-            child1 = new TreeNode(tempState1);
+            chield1 = new TreeNode(tempState1);
             
             tempState2.changeTiles(2, tile);
-            child2 = new TreeNode(tempState2);
+            chield2 = new TreeNode(tempState2);
             
             tempState3.changeTiles(4, tile);
-            child3 = new TreeNode(tempState3);
+            chield3 = new TreeNode(tempState3);
             
-            s.addChild(child1);
-            child1.addSibling(child2);
-            child2.addSibling(child3);
+            chield1.addSibling(chield2);
+            chield2.addSibling(chield3);
+            s.addChield(chield1);
+            s.addChield(chield2);
+            s.addChield(chield3);
             
         }
         else if(tile == 3){
            tempState1.changeTiles(0, tile);
-            child1 = new TreeNode(tempState1);
+            chield1 = new TreeNode(tempState1);
             
             tempState2.changeTiles(4, tile);
-            child2 = new TreeNode(tempState2);
+            chield2 = new TreeNode(tempState2);
             
             tempState3.changeTiles(6, tile);
-            child3 = new TreeNode(tempState3);
+            chield3 = new TreeNode(tempState3);
             
-            s.addChild(child1);
-            child1.addSibling(child2);
-            child2.addSibling(child3);
+            chield1.addSibling(chield2);
+            chield2.addSibling(chield3);
+            s.addChield(chield1);
+            s.addChield(chield2);
+            s.addChield(chield3);
         }
         else if(tile == 5){
             tempState1.changeTiles(2, tile);
-            child1 = new TreeNode(tempState1);
+            chield1 = new TreeNode(tempState1);
             
             tempState2.changeTiles(4, tile);
-            child2 = new TreeNode(tempState2);
+            chield2 = new TreeNode(tempState2);
             
             tempState3.changeTiles(8, tile);
-            child3 = new TreeNode(tempState3);
+            chield3 = new TreeNode(tempState3);
             
-            s.addChild(child1);
-            child1.addSibling(child2);
-            child2.addSibling(child3);
+            chield1.addSibling(chield2);
+            chield2.addSibling(chield3);
+            s.addChield(chield1);
+            s.addChield(chield2);
+            s.addChield(chield3);
         }
         else if(tile == 7){
             tempState1.changeTiles(4, tile);
-            child1 = new TreeNode(tempState1);
+            chield1 = new TreeNode(tempState1);
             
             tempState2.changeTiles(6, tile);
-            child2 = new TreeNode(tempState2);
+            chield2 = new TreeNode(tempState2);
             
             tempState3.changeTiles(8, tile);
-            child3 = new TreeNode(tempState3);
+            chield3 = new TreeNode(tempState3);
             
-            s.addChild(child1);
-            child1.addSibling(child2);
-            child2.addSibling(child3);
+            chield1.addSibling(chield2);
+            chield2.addSibling(chield3);
+            s.addChield(chield1);
+            s.addChield(chield2);
+            s.addChield(chield3);
         }
     }
     
@@ -224,23 +237,26 @@ public class Graph {
         State tempState2 = new State(s.returnState());
         State tempState3 = new State(s.returnState());
         State tempState4 = new State(s.returnState());
-        TreeNode child1, child2, child3, child4;
+        TreeNode chield1, chield2, chield3, chield4;
         
         tempState1.changeTiles(1, tile);
-        child1 = new TreeNode(tempState1);
+        chield1 = new TreeNode(tempState1);
         
         tempState2.changeTiles(3, tile);
-        child2 = new TreeNode(tempState2);
+        chield2 = new TreeNode(tempState2);
         
         tempState3.changeTiles(5, tile);
-        child3 = new TreeNode(tempState3);
+        chield3 = new TreeNode(tempState3);
         
         tempState4.changeTiles(7, tile);
-        child4 = new TreeNode(tempState4);
+        chield4 = new TreeNode(tempState4);
        
-        s.addChild(child1);
-        child1.addSibling(child2);
-        child2.addSibling(child3);
-        child3.addSibling(child4);
+        chield1.addSibling(chield2);
+        chield2.addSibling(chield3);
+        chield3.addSibling(chield4);
+        s.addChield(chield1);
+        s.addChield(chield2);
+        s.addChield(chield3);
+        s.addChield(chield4);
     }
 }

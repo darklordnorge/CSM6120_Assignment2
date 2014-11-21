@@ -11,7 +11,7 @@ import java.util.Queue;
  */
 public class BFS {
     Graph tree;
-    TreeNode node, root;
+    TreeNode node, root, tempNode;
     Queue<TreeNode> searchQueue; 
     Queue<TreeNode> exploredQueue;
     int pathcost;
@@ -27,7 +27,7 @@ public class BFS {
         /*
         check the root for being the goal state
         */
-        if(root.returnState().equals(goal)){
+        if(root.returnState().compare(goal)){
             System.out.println("Solution has been found.\n Path cost: " 
                     +  pathcost);
             System.out.println("Current node: ");
@@ -43,29 +43,27 @@ public class BFS {
              /*
              check the current node for being the goal node
              */
-             if(node.returnState() == goal){
+             if(node.returnState().compare(goal)){
+                System.out.println("Solution has been found.\n Path cost: " 
+                    +  pathcost);
+                System.out.println("Current node: ");
+                node.returnState().printArray();
+                System.out.println("Goal state: ");
+                goal.printArray();
                  break;
              }
              //generate the next level based on that node and add
-             // the first child to the queue
              tree.nextStep(node);
-             searchQueue.add(node.returnChild());
              
              /*
              add the child of the current node and all its siblings to the queue
              */
-             while(node.returnChild().hasSibling() != false){ 
-                 searchQueue.add(node.returnChild().returnSibling());
+             while(node.hasChildren() != true){ 
+                 searchQueue.add(node.returnChild());
              }
              exploredQueue.add(node);
              pathcost++;
              node = searchQueue.poll();
          }
-        System.out.println("Solution has been found.\n Path cost: " 
-            +  pathcost);
-        System.out.println("Current node: ");
-        node.returnState().printArray();
-        System.out.println("Goal state: ");
-        goal.printArray();
     }
 }
