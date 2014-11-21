@@ -23,6 +23,7 @@ public class BFS {
         pathcost = 0;
     }
     public void bfs(State start, State goal){
+        System.out.println("Using Breadth-First Search");
         root = new TreeNode(start);
         /*
         check the root for being the goal state

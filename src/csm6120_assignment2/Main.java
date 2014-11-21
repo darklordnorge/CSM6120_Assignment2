@@ -7,7 +7,7 @@ package csm6120_assignment2;
 import java.io.File;
 import SearchTree.Graph;
 import SearchTree.TreeNode;
-import search_Algortihms.BFS;
+import search_Algortihms.*;
 
 /**
  *
@@ -31,8 +31,10 @@ public class Main {
         r.reader(startState, sFile);
         r.reader(goalState, gFile);
         
-        BFS bfs = new BFS();
-        bfs.bfs(startState, goalState);
+//        BFS bfs = new BFS();
+//        bfs.bfs(startState, goalState);
+        DFS dfs = new DFS();
+        dfs.dfs(startState, goalState);
         
       
 //        node.returnState().printArray();
