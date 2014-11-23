@@ -2,6 +2,7 @@
 package search_Algortihms;
 import SearchTree.*;
 import csm6120_assignment2.State;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -14,14 +15,16 @@ import java.util.Stack;
 public class DFS {
     Graph tree;
     TreeNode node, root;
-    Stack<TreeNode> searchQueue, exploredQueue;
+    Stack<TreeNode> searchStack, exploredStack;
     int pathcost;
+    ArrayList expanded;
     
     public DFS(){
         tree = new Graph();
-        searchQueue = new Stack();
-        exploredQueue = new Stack();
+        searchStack = new Stack();
+        exploredStack = new Stack();
         pathcost = 0;
+        expanded = new ArrayList<String>();
     }
     
     public void dfs(State start, State goal){
@@ -38,10 +41,10 @@ public class DFS {
             System.out.println("Goal state: ");
             goal.printArray();
         }
-         searchQueue.add(root);
+         searchStack.add(root);
          
-         while(searchQueue.size() > 0){
-             node = searchQueue.pop();
+         while(searchStack.size() > 0){
+             node = searchStack.pop();
              
              /*
              check the current node for being the goal node
@@ -59,14 +62,29 @@ public class DFS {
              tree.nextStep(node);
              
              /*
+             Add the current node to a an ArrayList of expanded nodes
+             */
+             expanded.add(node.returnState().returnString());
+             
+             
+             /*
              add the child of the current node and all its siblings to the queue
              */
              while(node.hasChildren() != true){ 
-                 searchQueue.add(node.returnChild());
+                 String s = node.peekChield().returnState().returnString();
+                 if(expanded.contains(s) == false){
+                   searchStack.add(node.returnChield());  
+                 }
+                 else{
+                     node.removeFirstChield();
+                 }
+                
+                 
+                 
              }
-             exploredQueue.add(node);
+             exploredStack.add(node);
              pathcost++;
-             node = searchQueue.pop();
+             node = searchStack.pop();
         }
     }
 }

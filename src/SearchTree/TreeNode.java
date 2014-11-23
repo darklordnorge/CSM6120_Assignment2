@@ -54,7 +54,7 @@ public class TreeNode {
         return this.state;
     }
     
-    public TreeNode returnChild(){
+    public TreeNode returnChield(){
         return (TreeNode) this.children.poll();
     }
     
@@ -68,5 +68,13 @@ public class TreeNode {
     
     public boolean hasChildren(){
         return this.children.isEmpty();
+    }
+    
+    public TreeNode peekChield(){
+        return (TreeNode) this.children.peek();
+    }
+    
+    public void removeFirstChield(){
+        children.pop();
     }
 }

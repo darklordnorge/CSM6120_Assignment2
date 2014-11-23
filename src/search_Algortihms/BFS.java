@@ -60,7 +60,7 @@ public class BFS {
              add the child of the current node and all its siblings to the queue
              */
              while(node.hasChildren() != true){ 
-                 searchQueue.add(node.returnChild());
+                 searchQueue.add(node.returnChield());
              }
              exploredQueue.add(node);
              pathcost++;

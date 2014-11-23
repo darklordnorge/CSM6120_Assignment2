@@ -99,4 +99,8 @@ public class State {
         }
         return false;
     }
+    public String returnString(){
+        String s = this.state.toString();
+        return s;
+    }   
 }
