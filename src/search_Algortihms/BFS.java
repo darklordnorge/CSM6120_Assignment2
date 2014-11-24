@@ -59,8 +59,8 @@ public class BFS {
              /*
              add the child of the current node and all its siblings to the queue
              */
-             while(node.hasChildren() != true){ 
-                 searchQueue.add(node.returnChield());
+             while(node.childrenIsEmpty() != true){ 
+                 searchQueue.add(node.pollChield());
              }
              exploredQueue.add(node);
              pathcost++;

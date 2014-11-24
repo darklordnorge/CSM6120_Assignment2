@@ -64,7 +64,7 @@ public class DFS {
             /*
              add the child of the current node and all its siblings to the queue
              */
-            while (node.hasChildren() != true) {
+            while (node.childrenIsEmpty() != true) {
                 /*
                  Add the current node to a an ArrayList of expanded nodes
                  */
@@ -74,7 +74,7 @@ public class DFS {
                 String s = node.peekChield().returnState().returnString();
                 if (expanded.contains(s) == false) {
                     expanded.add(s);
-                    searchStack.push(node.returnChield());
+                    searchStack.push(node.pollChield());
                 } else {
                     node.removeFirstChield();
                 }
