@@ -34,8 +34,8 @@ public class Main {
         r.reader(goalState, gFile);
   //      System.out.println(startState.getStringtoString());
 
-//        BFS bfs = new BFS();
-//        bfs.bfs(startState, goalState);
+        BFS bfs = new BFS();
+        bfs.bfs(startState, goalState);
 //        DFS dfs = new DFS();
 //        dfs.dfs(startState, goalState);
 //        node.returnState().printArray();

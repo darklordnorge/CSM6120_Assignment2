@@ -3,12 +3,11 @@ package search_Algortihms;
 import SearchTree.*;
 import csm6120_assignment2.State;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /**
- *
+ * Depth-First search algorithm class 
+ * 
  * @author stefan
  */
 public class DFS {
@@ -18,7 +17,10 @@ public class DFS {
     Stack<TreeNode> searchStack, exploredStack;
     int pathcost;
     ArrayList expanded;
-
+    
+    /**
+     * Constructor of the DFS object
+     */
     public DFS() {
         tree = new Graph();
         searchStack = new Stack();
@@ -27,6 +29,12 @@ public class DFS {
         expanded = new ArrayList<String>();
     }
 
+    /**
+     * Depth-First Search algorithm
+     * 
+     * @param start The start state of the graph
+     * @param goal  The goal state of the graph 
+     */
     public void dfs(State start, State goal) {
         System.out.println("Using Depth-First Search");
         root = new TreeNode(start);
@@ -79,6 +87,10 @@ public class DFS {
                     node.removeFirstChield();
                 }
             }
+            /*
+            Add the current node to the exploredStack
+            and update the path cost
+            */
             exploredStack.add(node);
             pathcost++;
         }
