@@ -10,5 +10,5 @@ package search_Algortihms;
  * @author stefan
  */
 public class GBFS {
-    
+
 }
