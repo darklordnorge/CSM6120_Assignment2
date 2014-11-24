@@ -32,7 +32,7 @@ public class Main {
         Graph g = new Graph();
         r.reader(startState, sFile);
         r.reader(goalState, gFile);
-  //      System.out.println(startState.returnString());
+  //      System.out.println(startState.getStringtoString());
 
 //        BFS bfs = new BFS();
 //        bfs.bfs(startState, goalState);

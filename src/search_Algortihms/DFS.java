@@ -68,10 +68,10 @@ public class DFS {
                 /*
                  Add the current node to a an ArrayList of expanded nodes
                  */
-                if (expanded.contains(node.returnState().returnString()) == false) {
-                    expanded.add(node.returnState().returnString());
+                if (expanded.contains(node.returnState().getStringtoString()) == false) {
+                    expanded.add(node.returnState().getStringtoString());
                 }
-                String s = node.peekChield().returnState().returnString();
+                String s = node.peekChield().returnState().getStringtoString();
                 if (expanded.contains(s) == false) {
                     expanded.add(s);
                     searchStack.push(node.pollChield());

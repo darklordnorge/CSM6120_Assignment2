@@ -41,7 +41,7 @@ public class State {
     }
 
     /**
-     * Print the arraylist
+     * Print the ArrayList
      */
     public void printArray() {
         for (int i = 0; i < state.size(); i++) {
@@ -50,10 +50,10 @@ public class State {
     }
 
     /**
-     * Method to return the index of a specific item in the arraylist
+     * Method to return the index of a specific item in the ArrayList
      *
      * @param i The item to search for
-     * @return The position of the item in the arraylist
+     * @return The position of the item in the ArrayList
      */
     public int returnIndex(int i) {
         return this.state.indexOf(i);
@@ -66,7 +66,7 @@ public class State {
      * @param j Index of the Empty tile to change
      */
     public void changeTiles(int i, int j) {
-        int temp, tempIndex, empty, emptyIndex;
+        int temp;
 
         temp = this.state.get(i);
         this.state.remove(i);
@@ -88,11 +88,17 @@ public class State {
         }
         return clone;
     }
-
+    
+    /**
+     * Method to compare this object to another state object
+     * 
+     * @param s The state to compare too
+     * @return  True if the states are the same, false if not
+     */
     public boolean compare(State s) {
         int match = 0;
         for (int i = 0; i < s.state.size(); i++) {
-            if (this.state.get(i) == s.state.get(i)) {
+            if (this.state.get(i).equals(s.state.get(i))) {
                 match++;
             }
         }
@@ -102,7 +108,12 @@ public class State {
         return false;
     }
 
-    public String returnString() {
+    /**
+     * Method to return the string representation of the "state" ArrayList
+     * 
+     * @return The toString representation of the "state" ArrayList
+     */
+    public String getStringtoString() {
         String s = this.state.toString();
         return s;
     }
