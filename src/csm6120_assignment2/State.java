@@ -117,4 +117,21 @@ public class State {
         String s = this.state.toString();
         return s;
     }
+    
+    /**
+     * Method to return how many integers in this object compared
+     * to another object match
+     * 
+     * @param s The state to compare too
+     * @return  The number of matching ints 
+     */
+    public int compareMatching(State s){
+        int match = 0;
+        for (int i = 0; i < s.state.size(); i++) {
+            if (this.state.get(i).equals(s.state.get(i))) {
+                match++;
+            }
+        }
+        return match;
+    }
 }

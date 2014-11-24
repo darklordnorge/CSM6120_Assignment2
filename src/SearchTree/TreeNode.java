@@ -138,4 +138,13 @@ public class TreeNode {
     public boolean getExplored() {
         return explored;
     }
+    
+    /**
+     * Method to return the size of the "children" linkedList
+     * 
+     * @return  The size of the List
+     */
+    public int getNumOfChildren(){
+        return this.children.size();
+    }
 }
