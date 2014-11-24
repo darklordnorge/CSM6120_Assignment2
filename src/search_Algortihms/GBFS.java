@@ -88,6 +88,21 @@ public class GBFS {
         }
     }
     
+    public void checkHeuristic(TreeNode t, State goal){
+        TreeNode temp;
+        int matching = 0;
+        int prevMatch = 0;
+        for(int i = 0;i < t.getNumOfChildren();i++){
+            matching = t.peekChield().returnState().compareMatching(goal);
+            if(matching > prevMatch){
+                prevMatch = matching;
+                searchQueue.add(t.pollChield());
+            }
+            else if(matching < prevMatch){
+                t.removeFirstChield();
+            }
+        }
+    }
     
    
 }
