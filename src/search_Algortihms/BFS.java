@@ -18,6 +18,9 @@ public class BFS {
     Queue<TreeNode> exploredQueue;
     int pathcost;
 
+    /**
+     * Constructor of the BFS object
+     */
     public BFS() {
         tree = new Graph();
         searchQueue = new LinkedList();
@@ -25,6 +28,12 @@ public class BFS {
         pathcost = 0;
     }
 
+    /**
+     * Breath-First search method 
+     * 
+     * @param start The start State of the graph
+     * @param goal  The goal State of the graph 
+     */
     public void bfs(State start, State goal) {
         System.out.println("Using Breadth-First Search");
         root = new TreeNode(start);
@@ -41,6 +50,9 @@ public class BFS {
         }
         searchQueue.add(root);
 
+        /*
+        Iterate while the search queue is not empty
+        */
         while (searchQueue.size() > 0) {
             node = searchQueue.poll();
 
@@ -65,9 +77,13 @@ public class BFS {
             while (node.childrenIsEmpty() != true) {
                 searchQueue.add(node.pollChield());
             }
+            
+            /*
+            add the current node to the explored node and 
+            update path cost
+            */
             exploredQueue.add(node);
             pathcost++;
-            node = searchQueue.poll();
         }
     }
 }
