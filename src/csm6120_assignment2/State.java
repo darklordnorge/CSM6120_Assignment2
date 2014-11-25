@@ -57,6 +57,7 @@ public class State {
      */
     public int returnIndex(int i) {
         return this.state.indexOf(i);
+        
     }
 
     /**
@@ -134,4 +135,17 @@ public class State {
         }
         return match;
     }
+    
+    public int getArraySize(){
+        return this.state.size();
+    }
+    
+//    public int indexDifference(State s){
+//        int index ,thisIndex, sIndex;
+//        for(int i=0;i<state.size();i++){
+//            thisIndex = this.state.indexOf(i);
+//            sIndex = s.state.indexOf(i);
+//            index = sIndex - thisIndex;
+//        }
+//    }
 }

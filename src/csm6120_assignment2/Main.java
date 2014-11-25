@@ -32,13 +32,15 @@ public class Main {
         Graph g = new Graph();
         r.reader(startState, sFile);
         r.reader(goalState, gFile);
-  //      System.out.println(startState.getStringtoString());
+        //      System.out.println(startState.getStringtoString());
 
-//        BFS bfs = new BFS();
-//        bfs.bfs(startState, goalState);
-//        DFS dfs = new DFS();
-//        dfs.dfs(startState, goalState);
-          GBFS gbfs = new GBFS();
-          gbfs.gbfs(startState, goalState);
+        //        BFS bfs = new BFS();
+        //        bfs.bfs(startState, goalState);
+        //        DFS dfs = new DFS();
+        //        dfs.dfs(startState, goalState);
+        //          GBFS gbfs = new GBFS();
+        //          gbfs.gbfs(startState, goalState);
+        AStar astar = new AStar();
+        astar.astar(startState, goalState);
     }
 }
