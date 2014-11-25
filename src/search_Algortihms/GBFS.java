@@ -18,7 +18,6 @@ public class GBFS {
     private int pathcost;
     private Graph tree;
     private PriorityQueue<TreeNode> searchQueue;
-//    private Queue<TreeNode> searchQueue;
     private Queue<TreeNode> exploredQueue;
     private TreeNode node, root;
     private StateComparator comparator;
@@ -32,7 +31,6 @@ public class GBFS {
         this.tree = new Graph();
         this.exploredQueue = new LinkedList();
         comparator = new StateComparator();
-//        this.searchQueue = new LinkedList();
         this.searchQueue = new PriorityQueue(500, comparator);
         expanded = new ArrayList<String>();
     }
@@ -107,20 +105,4 @@ public class GBFS {
             pathcost++;
         }
     }
-
-//    public void checkHeuristic(TreeNode t, State goal){
-//        TreeNode temp;
-//        int matching = 0;
-//        int prevMatch = 0;
-//        for(int i = 0;i < t.getNumOfChildren();i++){
-//            matching = t.peekChield().returnState().compareMatching(goal);
-//            if(matching > prevMatch){
-//                prevMatch = matching;
-//                searchQueue.
-//            }
-//            else if(matching < prevMatch){
-//                t.removeFirstChield();
-//            }
-//        }
-//    }
 }
