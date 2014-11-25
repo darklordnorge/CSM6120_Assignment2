@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package search_Algortihms;
 
+import csm6120_assignment2.State;
+import java.util.Comparator;
+
 /**
+ * This class is used to compare to states together. Implements teh Comparator
+ * interface
  *
  * @author Stefan
  */
-public class StateComparator {
-    
+public class StateComparator implements Comparator<String> {
+
+    @Override
+    public int compare(String o1, String goal) {
+        int match;
+        match = o1.compareTo(goal);
+        return match;
+    }
+
 }
