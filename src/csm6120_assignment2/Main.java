@@ -34,13 +34,11 @@ public class Main {
         r.reader(goalState, gFile);
   //      System.out.println(startState.getStringtoString());
 
-        BFS bfs = new BFS();
-        bfs.bfs(startState, goalState);
+//        BFS bfs = new BFS();
+//        bfs.bfs(startState, goalState);
 //        DFS dfs = new DFS();
 //        dfs.dfs(startState, goalState);
-//        node.returnState().printArray();
-//        node.returnChild().returnState().printArray();
-//        System.out.println("Lol WhiteSpace");
-//        node.returnChild().returnSibling().returnState().printArray();
+          GBFS gbfs = new GBFS();
+          gbfs.gbfs(startState, goalState);
     }
 }

@@ -1,5 +1,6 @@
 package search_Algortihms;
 
+import SearchTree.TreeNode;
 import csm6120_assignment2.State;
 import java.util.Comparator;
 
@@ -9,12 +10,12 @@ import java.util.Comparator;
  *
  * @author Stefan
  */
-public class StateComparator implements Comparator<String> {
+public class StateComparator implements Comparator<TreeNode> {
 
     @Override
-    public int compare(String o1, String goal) {
+    public int compare(TreeNode o1, TreeNode o2) {
         int match;
-        match = o1.compareTo(goal);
+        match = o1.returnState().getStringtoString().compareTo(o2.returnState().getStringtoString());
         return match;
     }
 
