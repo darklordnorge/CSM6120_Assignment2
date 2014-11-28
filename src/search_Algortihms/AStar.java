@@ -26,6 +26,7 @@ public class AStar {
     private TreeNode node, root;
     private StateComparator comparator;
     private ArrayList<String> expanded;
+    private ManhattanDistance md;
     
     /**
      * A* class constructor
@@ -38,6 +39,7 @@ public class AStar {
         comparator = new StateComparator();
         this.searchQueue = new PriorityQueue(500, comparator);
         expanded = new ArrayList<String>();
+        
     }
     
     /**
@@ -48,6 +50,13 @@ public class AStar {
      */
     public void astar(State start, State goal) {
         System.out.println("Using A* Search");
+        /*
+        initialise ManhattanDistance
+        */
+        this.md = new ManhattanDistance(start, goal);
+        
+        int manDist;
+        
         root = new TreeNode(start);
         /*
          check the root for being the goal state
@@ -62,7 +71,9 @@ public class AStar {
         }
         searchQueue.add(root);
         
-        calcManhattenDistance(root.returnState(), goal);
+        manDist = md.calcManhattanDistance();
+        System.out.println("Manhatten distance is: " + manDist);
+        
 
         /*
          Iterate while the search queue is not empty
@@ -96,7 +107,7 @@ public class AStar {
                     expanded.add(node.returnState().getStringtoString());
                 }
                 String s = node.peekChield().returnState().getStringtoString();
-                if (expanded.contains(s) == false && pathcost < maxDistance) {
+                if (expanded.contains(s) == false && pathcost < manDist) {
                     expanded.add(s);
                     searchQueue.add(node.pollChield());
                 } else {
@@ -112,21 +123,33 @@ public class AStar {
             pathcost++;
         }
     }
-    
-    public void calcManhattenDistance(State s, State goal){
-        int sIndex, goalIndex, temp = 0;
-        for(int i = 0;i<goal.getArraySize();i++){
-            sIndex = s.returnIndex(i);
-            goalIndex = goal.returnIndex(i);
-            
-            if(goalIndex - sIndex < 0){
-                temp += sIndex + goalIndex;
-            }
-            if(goalIndex - sIndex > 0){
-               temp += goalIndex - sIndex; 
-            }
-            maxDistance = temp;
-        }
-        System.out.println("Manhatten distance is: " + maxDistance);
-    }
+    /**
+     * 1 0 3
+     * 4 8 5
+     * 9 7 2
+     * 
+     * @param s
+     * @param goal 
+     */
+//    public void calcManhattenDistance(State s, State goal){
+//        int sIndex, goalIndex, temp = 0;
+//        for(int i = 0;i<goal.getArraySize();i++){
+//            sIndex = s.returnIndex(i); //eg.3
+//            goalIndex = goal.returnIndex(i); //eg.5
+//            
+////            if(sIndex != goalIndex){
+////                temp = goal.returnIndex(sIndex);
+////                maxDistance += (sIndex - goalIndex) + (sIndex - temp);
+////            }
+//            
+//            if(goalIndex - sIndex < 0){
+//                maxDistance += sIndex + goalIndex;
+//            }
+//            if(goalIndex - sIndex > 0){
+//               maxDistance += goalIndex - sIndex; 
+//            }
+//           
+//        }
+//        System.out.println("Manhatten distance is: " + maxDistance);
+//    }
 }

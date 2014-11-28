@@ -32,6 +32,10 @@ public class Main {
         Graph g = new Graph();
         r.reader(startState, sFile);
         r.reader(goalState, gFile);
+    
+        
+//        ManhattanDistance md = new ManhattanDistance(startState, goalState);
+      
         //      System.out.println(startState.getStringtoString());
 
         //        BFS bfs = new BFS();
