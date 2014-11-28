@@ -139,5 +139,8 @@ public class State {
     public int getArraySize(){
         return this.state.size();
     }
-
+    
+    public ArrayList getList(){
+        return this.state;
+    }
 }
