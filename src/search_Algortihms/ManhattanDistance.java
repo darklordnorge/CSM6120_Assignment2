@@ -134,14 +134,17 @@ public class ManhattanDistance {
         return yCoordinate;
     }
 
+    
     /**
-     * Method to calculate the Manhattan Distance
-     *
-     * @return The calculate distance
+     * Calculate the Manhattan distance for 2 input states
+     * 
+     * @param start     The start State for the calculation
+     * @param goal      The goal State to calculate the distance to
+     * @return          An integer representing the Manhattan Distance;
      */
     public int calcManhattanDistance(State start, State goal) {
         int counter = 1; //Ignore the 0 tile to account for the movement of 
-        int totalDistance = 0; // 2 tiles at any time
+        int manhattanDistanceSum = 0; // 2 tiles at any time
 
         /*
          Set the startArray and goalArray values
@@ -161,10 +164,10 @@ public class ManhattanDistance {
                 if (startArray[i][j] == goalArray[i][j]) {
                     continue;
                 } else if (startArray[i][j] - goalArray[i][j] < 0) {
-                    totalDistance += Math.abs(x_start - x_goal)
+                    manhattanDistanceSum += Math.abs(x_start - x_goal)
                             + Math.abs(y_start - y_goal);
                 } else if (startArray[i][j] - goalArray[i][j] > 0) {
-                    totalDistance += Math.abs(x_goal - x_start)
+                    manhattanDistanceSum += Math.abs(x_goal - x_start)
                             + Math.abs(y_goal - y_start);
                 }
                 counter++;
@@ -172,6 +175,6 @@ public class ManhattanDistance {
 
         }
 
-        return totalDistance;
+        return manhattanDistanceSum;
     }
 }
