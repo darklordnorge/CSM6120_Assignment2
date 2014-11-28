@@ -71,7 +71,7 @@ public class AStar {
         }
         searchQueue.add(root);
         
-        manDist = md.calcManhattanDistance();
+        manDist = md.calcManhattanDistance(root.returnState(), goal);
         System.out.println("Manhatten distance is: " + manDist);
         
 

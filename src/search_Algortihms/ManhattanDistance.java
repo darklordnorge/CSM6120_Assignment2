@@ -74,13 +74,13 @@ public class ManhattanDistance {
     public void setGoalArray(int[][] toSet) {
         this.goalArray = toSet;
     }
-    
+
     /**
      * Method to find the X and Y coordinates of a given tile in a 2D array
-     * 
-     * @param array     The 2D array to search in
-     * @param index     The number/tile to search for
-     * @return          A 2D array holding the X and Y coordinates
+     *
+     * @param array The 2D array to search in
+     * @param index The number/tile to search for
+     * @return A 2D array holding the X and Y coordinates
      */
     public int[][] findCell(int[][] array, int index) {
         int[][] targetCoordinate = new int[1][1];
@@ -95,14 +95,13 @@ public class ManhattanDistance {
         }
         return targetCoordinate;
     }
-    
+
     /**
      * Method to find the X coordinates of a given tile in a 2D array
-     * 
-     * @param array     The 2D array to search through 
-     * @param index     The number/tile to search for 
-     * @return          An integer value representing the X coordinate in a 
-     *                  2d Array
+     *
+     * @param array The 2D array to search through
+     * @param index The number/tile to search for
+     * @return An integer value representing the X coordinate in a 2d Array
      */
     public int findXCoordinate(int[][] array, int index) {
         int xCoordinate = 0;
@@ -115,14 +114,13 @@ public class ManhattanDistance {
         }
         return xCoordinate;
     }
-    
+
     /**
      * Method to find the Y coordinates of a given tile in a 2D array
-     * 
-     * @param array     The 2D array to search through
-     * @param index     The number/tile to search for 
-     * @return          An integer value representing the Y coordinate in a 
-     *                  2d Array
+     *
+     * @param array The 2D array to search through
+     * @param index The number/tile to search for
+     * @return An integer value representing the Y coordinate in a 2d Array
      */
     public int findYCoordinate(int[][] array, int index) {
         int yCoordinate = 0;
@@ -145,8 +143,13 @@ public class ManhattanDistance {
         int counter = 1; //Ignore the 0 tile to account for the movement of 
         int totalDistance = 0; // 2 tiles at any time
 
-        this.setStartArray(this.convertTo2DArray(this.convertToArray(start.getList())));
-        this.setGoalArray(this.convertTo2DArray(this.convertToArray(goal.getList())));
+        /*
+         Set the startArray and goalArray values
+         */
+        this.setStartArray(this.convertTo2DArray(this.
+                convertToArray(start.getList())));
+        this.setGoalArray(this.convertTo2DArray(this.
+                convertToArray(goal.getList())));
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
