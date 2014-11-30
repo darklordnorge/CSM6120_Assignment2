@@ -1,0 +1,113 @@
+\hypertarget{class_search_tree_1_1_graph}{\section{Search\+Tree.\+Graph Class Reference}
+\label{class_search_tree_1_1_graph}\index{Search\+Tree.\+Graph@{Search\+Tree.\+Graph}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_search_tree_1_1_graph_a511884517a340c365e8db59929e10562}{Graph} ()
+\item 
+void \hyperlink{class_search_tree_1_1_graph_aabc4a4719795df1969dd25a6db1739b9}{next\+Step} (\hyperlink{class_search_tree_1_1_tree_node}{Tree\+Node} s)
+\item 
+void \hyperlink{class_search_tree_1_1_graph_a71a61c7ed6038292be2253d41e012063}{corner} (int tile, \hyperlink{class_search_tree_1_1_tree_node}{Tree\+Node} s)
+\item 
+void \hyperlink{class_search_tree_1_1_graph_a438e21a85d03906d9b7584ee82e796f6}{mid\+Section} (int tile, \hyperlink{class_search_tree_1_1_tree_node}{Tree\+Node} s)
+\item 
+void \hyperlink{class_search_tree_1_1_graph_af2507d636316785e23744e22020fd1f1}{center} (int tile, \hyperlink{class_search_tree_1_1_tree_node}{Tree\+Node} s)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to generate the next step in the graph.
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_search_tree_1_1_graph_a511884517a340c365e8db59929e10562}{\index{Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}!Graph@{Graph}}
+\index{Graph@{Graph}!Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}}
+\subsubsection[{Graph}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Tree.\+Graph.\+Graph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_search_tree_1_1_graph_a511884517a340c365e8db59929e10562}
+Constructor for the graph object 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_search_tree_1_1_graph_af2507d636316785e23744e22020fd1f1}{\index{Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}!center@{center}}
+\index{center@{center}!Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}}
+\subsubsection[{center}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Graph.\+center (
+\begin{DoxyParamCaption}
+\item[{int}]{tile, }
+\item[{{\bf Tree\+Node}}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_search_tree_1_1_graph_af2507d636316785e23744e22020fd1f1}
+This method generates the next level of the graph if the empty tile(0) is in the center of the puzzle. (Tile 4 in the representation below Saves all possible states to an array\+List.
+
+0 1 2 3 4 5 6 7 8
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The index of the empty tile \\
+\hline
+{\em s} & The state to base algorithm on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_search_tree_1_1_graph_a71a61c7ed6038292be2253d41e012063}{\index{Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}!corner@{corner}}
+\index{corner@{corner}!Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}}
+\subsubsection[{corner}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Graph.\+corner (
+\begin{DoxyParamCaption}
+\item[{int}]{tile, }
+\item[{{\bf Tree\+Node}}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_search_tree_1_1_graph_a71a61c7ed6038292be2253d41e012063}
+This method is used to generate the next level of the graph when the empty tile is at a corner. Saves all changes to a array\+List of possible states. The tiles where this method is used corresponds with the fields 0, 2, 6 ,and 8 as shown below
+
+0 1 2 3 4 5 6 7 8
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The index of the empty tile(0) \\
+\hline
+{\em s} & The state to base algorithm on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_search_tree_1_1_graph_a438e21a85d03906d9b7584ee82e796f6}{\index{Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}!mid\+Section@{mid\+Section}}
+\index{mid\+Section@{mid\+Section}!Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}}
+\subsubsection[{mid\+Section}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Graph.\+mid\+Section (
+\begin{DoxyParamCaption}
+\item[{int}]{tile, }
+\item[{{\bf Tree\+Node}}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_search_tree_1_1_graph_a438e21a85d03906d9b7584ee82e796f6}
+This method to generate the next level of the graph when the empty tile(0) is on the midsection of the sides. Saves all possible states to an array\+List. The tiles where this method will be used correspond to the fields 1, 3, 5, and 7 as shown below
+
+0 1 2 3 4 5 6 7 8
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The index of the empty tile(0) \\
+\hline
+{\em s} & The state to base algorithm on \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_search_tree_1_1_graph_aabc4a4719795df1969dd25a6db1739b9}{\index{Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}!next\+Step@{next\+Step}}
+\index{next\+Step@{next\+Step}!Search\+Tree\+::\+Graph@{Search\+Tree\+::\+Graph}}
+\subsubsection[{next\+Step}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Graph.\+next\+Step (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\+Node}}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_search_tree_1_1_graph_aabc4a4719795df1969dd25a6db1739b9}
+Algorithm to generate the next state in the graph Based on the fact that empty space can only move horizontally and vertically. To make the process easier simple numbers identifiers are assigned to the possible tiles in the puzzle. These numbers represent indices in the array\+List and are \+: 0 1 2 3 4 5 6 7 8 This method checks where the empty tile is and calls other methods to switch the tiles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The state on which the next step will be based \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Stefan/\+Documents/\+Git\+Hub/\+C\+S\+M6120\+\_\+\+Assignment2/src/\+Search\+Tree/Graph.\+java\end{DoxyCompactItemize}

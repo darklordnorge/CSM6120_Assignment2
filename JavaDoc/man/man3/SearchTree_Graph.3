@@ -1,0 +1,95 @@
+.TH "SearchTree.Graph" 3 "Sun Nov 30 2014" "Version 1.0" "CSM6120 Assignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SearchTree.Graph \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBGraph\fP ()"
+.br
+.ti -1c
+.RI "void \fBnextStep\fP (\fBTreeNode\fP s)"
+.br
+.ti -1c
+.RI "void \fBcorner\fP (int tile, \fBTreeNode\fP s)"
+.br
+.ti -1c
+.RI "void \fBmidSection\fP (int tile, \fBTreeNode\fP s)"
+.br
+.ti -1c
+.RI "void \fBcenter\fP (int tile, \fBTreeNode\fP s)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class is used to generate the next step in the graph\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Stefan 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "SearchTree\&.Graph\&.Graph ()"
+Constructor for the graph object 
+.SH "Member Function Documentation"
+.PP 
+.SS "void SearchTree\&.Graph\&.center (inttile, \fBTreeNode\fPs)"
+This method generates the next level of the graph if the empty tile(0) is in the center of the puzzle\&. (Tile 4 in the representation below Saves all possible states to an arrayList\&.
+.PP
+0 1 2 3 4 5 6 7 8
+.PP
+\fBParameters:\fP
+.RS 4
+\fItile\fP The index of the empty tile 
+.br
+\fIs\fP The state to base algorithm on 
+.RE
+.PP
+
+.SS "void SearchTree\&.Graph\&.corner (inttile, \fBTreeNode\fPs)"
+This method is used to generate the next level of the graph when the empty tile is at a corner\&. Saves all changes to a arrayList of possible states\&. The tiles where this method is used corresponds with the fields 0, 2, 6 ,and 8 as shown below
+.PP
+0 1 2 3 4 5 6 7 8
+.PP
+\fBParameters:\fP
+.RS 4
+\fItile\fP The index of the empty tile(0) 
+.br
+\fIs\fP The state to base algorithm on 
+.RE
+.PP
+
+.SS "void SearchTree\&.Graph\&.midSection (inttile, \fBTreeNode\fPs)"
+This method to generate the next level of the graph when the empty tile(0) is on the midsection of the sides\&. Saves all possible states to an arrayList\&. The tiles where this method will be used correspond to the fields 1, 3, 5, and 7 as shown below
+.PP
+0 1 2 3 4 5 6 7 8
+.PP
+\fBParameters:\fP
+.RS 4
+\fItile\fP The index of the empty tile(0) 
+.br
+\fIs\fP The state to base algorithm on 
+.RE
+.PP
+
+.SS "void SearchTree\&.Graph\&.nextStep (\fBTreeNode\fPs)"
+Algorithm to generate the next state in the graph Based on the fact that empty space can only move horizontally and vertically\&. To make the process easier simple numbers identifiers are assigned to the possible tiles in the puzzle\&. These numbers represent indices in the arrayList and are : 0 1 2 3 4 5 6 7 8 This method checks where the empty tile is and calls other methods to switch the tiles\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP The state on which the next step will be based 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CSM6120 Assignment from the source code\&.

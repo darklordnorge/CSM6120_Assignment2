@@ -1,0 +1,72 @@
+\hypertarget{classsearch___algortihms_1_1_a_star}{\section{search\+\_\+\+Algortihms.\+A\+Star Class Reference}
+\label{classsearch___algortihms_1_1_a_star}\index{search\+\_\+\+Algortihms.\+A\+Star@{search\+\_\+\+Algortihms.\+A\+Star}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsearch___algortihms_1_1_a_star_a0cecb45d6312b96fecd1006eddd128f9}{A\+Star} ()
+\item 
+void \hyperlink{classsearch___algortihms_1_1_a_star_a5107a07cfd414e5a2d1f0de077eb794a}{astar} (\hyperlink{classcsm6120__assignment2_1_1_state}{State} start, \hyperlink{classcsm6120__assignment2_1_1_state}{State} goal)
+\item 
+void \hyperlink{classsearch___algortihms_1_1_a_star_acd414dfcf00cc0a21364f2cc9cabec56}{add\+Node} (\hyperlink{class_search_tree_1_1_tree_node}{Tree\+Node} current, \hyperlink{classcsm6120__assignment2_1_1_state}{State} goal)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A$\ast$ algorithm class
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsearch___algortihms_1_1_a_star_a0cecb45d6312b96fecd1006eddd128f9}{\index{search\+\_\+\+Algortihms\+::\+A\+Star@{search\+\_\+\+Algortihms\+::\+A\+Star}!A\+Star@{A\+Star}}
+\index{A\+Star@{A\+Star}!search\+\_\+\+Algortihms\+::\+A\+Star@{search\+\_\+\+Algortihms\+::\+A\+Star}}
+\subsubsection[{A\+Star}]{\setlength{\rightskip}{0pt plus 5cm}search\+\_\+\+Algortihms.\+A\+Star.\+A\+Star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classsearch___algortihms_1_1_a_star_a0cecb45d6312b96fecd1006eddd128f9}
+A$\ast$ class constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classsearch___algortihms_1_1_a_star_acd414dfcf00cc0a21364f2cc9cabec56}{\index{search\+\_\+\+Algortihms\+::\+A\+Star@{search\+\_\+\+Algortihms\+::\+A\+Star}!add\+Node@{add\+Node}}
+\index{add\+Node@{add\+Node}!search\+\_\+\+Algortihms\+::\+A\+Star@{search\+\_\+\+Algortihms\+::\+A\+Star}}
+\subsubsection[{add\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void search\+\_\+\+Algortihms.\+A\+Star.\+add\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\+Node}}]{current, }
+\item[{{\bf State}}]{goal}
+\end{DoxyParamCaption}
+)}}\label{classsearch___algortihms_1_1_a_star_acd414dfcf00cc0a21364f2cc9cabec56}
+Method to add a new node the the search queue. This method calculates the Manhattan Distance for every child in the current node and only add them to the search queue if the Manhattan Distance is less than the original calculated one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current node \\
+\hline
+{\em goal} & The goal node, use for the Manhattan Distance calculation \\
+\hline
+\end{DoxyParams}
+\hypertarget{classsearch___algortihms_1_1_a_star_a5107a07cfd414e5a2d1f0de077eb794a}{\index{search\+\_\+\+Algortihms\+::\+A\+Star@{search\+\_\+\+Algortihms\+::\+A\+Star}!astar@{astar}}
+\index{astar@{astar}!search\+\_\+\+Algortihms\+::\+A\+Star@{search\+\_\+\+Algortihms\+::\+A\+Star}}
+\subsubsection[{astar}]{\setlength{\rightskip}{0pt plus 5cm}void search\+\_\+\+Algortihms.\+A\+Star.\+astar (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{start, }
+\item[{{\bf State}}]{goal}
+\end{DoxyParamCaption}
+)}}\label{classsearch___algortihms_1_1_a_star_a5107a07cfd414e5a2d1f0de077eb794a}
+A$\ast$ algorithm
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start State \\
+\hline
+{\em goal} & The goal State \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Stefan/\+Documents/\+Git\+Hub/\+C\+S\+M6120\+\_\+\+Assignment2/src/search\+\_\+\+Algortihms/A\+Star.\+java\end{DoxyCompactItemize}

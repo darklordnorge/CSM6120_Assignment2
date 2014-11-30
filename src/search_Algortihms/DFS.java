@@ -37,6 +37,7 @@ public class DFS {
      */
     public void dfs(State start, State goal) {
         System.out.println("Using Depth-First Search");
+        System.out.println("This may take a lot of time, please be patient");
         root = new TreeNode(start);
         /*
          check the root for being the goal state

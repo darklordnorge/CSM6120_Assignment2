@@ -16,7 +16,7 @@ import java.util.Queue;
  */
 public class AStar {
 
-    private int pathcost, maxDistance;
+    private int pathcost;
     private Graph tree;
     private PriorityQueue<TreeNode> searchQueue;
     private Queue<TreeNode> exploredQueue;
@@ -31,7 +31,6 @@ public class AStar {
      */
     public AStar() {
         this.pathcost = 0;
-        this.maxDistance = 0;
         this.tree = new Graph();
         this.exploredQueue = new LinkedList();
         comparator = new StateComparator();

@@ -1,0 +1,177 @@
+.TH "csm6120_assignment2.State" 3 "Sun Nov 30 2014" "Version 1.0" "CSM6120 Assignment" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+csm6120_assignment2.State \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBState\fP ()"
+.br
+.ti -1c
+.RI "\fBState\fP (\fBState\fP s)"
+.br
+.ti -1c
+.RI "void \fBaddState\fP (int toAdd)"
+.br
+.ti -1c
+.RI "void \fBprintArray\fP ()"
+.br
+.ti -1c
+.RI "int \fBreturnIndex\fP (int i)"
+.br
+.ti -1c
+.RI "void \fBchangeTiles\fP (int i, int j)"
+.br
+.ti -1c
+.RI "ArrayList \fBclone\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBcompare\fP (\fBState\fP s)"
+.br
+.ti -1c
+.RI "String \fBgetStringtoString\fP ()"
+.br
+.ti -1c
+.RI "int \fBcompareMatching\fP (\fBState\fP s)"
+.br
+.ti -1c
+.RI "int \fBgetArraySize\fP ()"
+.br
+.ti -1c
+.RI "ArrayList \fBgetStateArray\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+This class has methods and variables to hold an input state\&. This will be used to hold the start and goal state object\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+stefan 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "csm6120_assignment2\&.State\&.State ()"
+Constructor for the \fBState\fP object creates an empty arrayList in which the state data will be saved 
+.SS "csm6120_assignment2\&.State\&.State (\fBState\fPs)"
+Constructor for the \fBState\fP object creates a deep clone of the state object which is specified in the parameter field
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP The state to clone 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void csm6120_assignment2\&.State\&.addState (inttoAdd)"
+Method to add an integer to the arrayList
+.PP
+\fBParameters:\fP
+.RS 4
+\fItoAdd\fP The integer to add 
+.RE
+.PP
+
+.SS "void csm6120_assignment2\&.State\&.changeTiles (inti, intj)"
+Method to exchange to tiles
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP Index of the tile to change 
+.br
+\fIj\fP Index of the Empty tile to change 
+.RE
+.PP
+
+.SS "ArrayList csm6120_assignment2\&.State\&.clone ()"
+This method clones the arrayList and returns it
+.PP
+\fBReturns:\fP
+.RS 4
+The cloned arrayList 
+.RE
+.PP
+
+.SS "boolean csm6120_assignment2\&.State\&.compare (\fBState\fPs)"
+Method to compare this object to another state object
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP The state to compare too 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+True if the states are the same, false if not 
+.RE
+.PP
+
+.SS "int csm6120_assignment2\&.State\&.compareMatching (\fBState\fPs)"
+Method to return how many integers in this object compared to another object match
+.PP
+\fBParameters:\fP
+.RS 4
+\fIs\fP The state to compare too 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The number of matching ints 
+.RE
+.PP
+
+.SS "int csm6120_assignment2\&.State\&.getArraySize ()"
+Method to return the size of the state array
+.PP
+\fBReturns:\fP
+.RS 4
+int value of the state array size 
+.RE
+.PP
+
+.SS "ArrayList csm6120_assignment2\&.State\&.getStateArray ()"
+Method to return the state ArrayList
+.PP
+\fBReturns:\fP
+.RS 4
+The state ArrayList 
+.RE
+.PP
+
+.SS "String csm6120_assignment2\&.State\&.getStringtoString ()"
+Method to return the string representation of the 'state' ArrayList
+.PP
+\fBReturns:\fP
+.RS 4
+The toString representation of the 'state' ArrayList 
+.RE
+.PP
+
+.SS "void csm6120_assignment2\&.State\&.printArray ()"
+Print the ArrayList 
+.SS "int csm6120_assignment2\&.State\&.returnIndex (inti)"
+Method to return the index of a specific item in the ArrayList
+.PP
+\fBParameters:\fP
+.RS 4
+\fIi\fP The item to search for 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+The position of the item in the ArrayList 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for CSM6120 Assignment from the source code\&.

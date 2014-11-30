@@ -40,6 +40,9 @@ public class Main {
         String algorithm = args[2];
         File sFile = new File(sPath);
         File gFile = new File(gPath);
+        /*
+        Create a FileManager instance and read the input files
+        */
         FileManager r = new FileManager();
         r.reader(startState, sFile);
         r.reader(goalState, gFile);
@@ -67,18 +70,5 @@ public class Main {
             System.out.println("gbfs  - Greedy Best-First search");
             System.out.println("astar - A star search");
         }
-        
-//        ManhattanDistance md = new ManhattanDistance(startState, goalState);
-      
-        //      System.out.println(startState.getStringtoString());
-
-        //        BFS bfs = new BFS();
-        //        bfs.bfs(startState, goalState);
-        //        DFS dfs = new DFS();
-        //        dfs.dfs(startState, goalState);
-        //          GBFS gbfs = new GBFS();
-        //          gbfs.gbfs(startState, goalState);
-//        AStar astar = new AStar();
-//        astar.astar(startState, goalState);
     }
 }
