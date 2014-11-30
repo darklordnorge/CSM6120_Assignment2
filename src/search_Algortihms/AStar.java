@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package search_Algortihms;
 
 import SearchTree.Graph;
@@ -48,8 +44,8 @@ public class AStar {
     /**
      * A* algorithm
      *
-     * @param start The start State
-     * @param goal The goal State
+     * @param start  The start State
+     * @param goal   The goal State
      */
     public void astar(State start, State goal) {
         System.out.println("Using A* Search");
@@ -62,17 +58,17 @@ public class AStar {
         /*
          check the root for being the goal state
          */
-        if (root.returnState().compare(goal)) {
+        if (root.getState().compare(goal)) {
             System.out.println("Solution has been found.\n Path cost: "
                     + pathcost);
             System.out.println("Current node: ");
-            root.returnState().printArray();
+            root.getState().printArray();
             System.out.println("Goal state: ");
             goal.printArray();
         }
         searchQueue.add(root);
 
-        manhattanDistanceSum = md.calcManhattanDistance(root.returnState(), goal);
+        manhattanDistanceSum = md.calcManhattanDistance(root.getState(), goal);
         System.out.println("Manhatten distance is: " + manhattanDistanceSum);
 
 
@@ -85,11 +81,11 @@ public class AStar {
             /*
              check the current node for being the goal node
              */
-            if (node.returnState().compare(goal)) {
+            if (node.getState().compare(goal)) {
                 System.out.println("Solution has been found.\n Path cost: "
                         + pathcost);
                 System.out.println("Current node: ");
-                node.returnState().printArray();
+                node.getState().printArray();
                 System.out.println("Goal state: ");
                 goal.printArray();
                 break;
@@ -97,24 +93,6 @@ public class AStar {
             //generate the next level based on that node and add
             tree.nextStep(node);
             this.addNode(node, goal);
-            /*
-             add the child of the current node and all its siblings to the queue
-             */
-//            while (node.childrenIsEmpty() != true) {
-//                /*
-//                 Add the current node to a an ArrayList of expanded nodes
-//                 */
-//                if (expanded.contains(node.returnState().getStringtoString()) == false) {
-//                    expanded.add(node.returnState().getStringtoString());
-//                }
-//                String s = node.peekChield().returnState().getStringtoString();
-//                if (expanded.contains(s) == false && pathcost < manhattanDistanceSum) {
-//                    expanded.add(s);
-//                    searchQueue.add(node.pollChield());
-//                } else {
-//                    node.removeFirstChield();
-//                }
-//            }
 
             /*
              add the current node to the explored node and 
@@ -144,23 +122,23 @@ public class AStar {
             /*
              Add the current node to the list of expanded nodes
              */
-            if (expanded.contains(current.returnState().getStringtoString()) == false) {
-                expanded.add(current.returnState().getStringtoString());
+            if (expanded.contains(current.getState().getStringtoString()) == false) {
+                expanded.add(current.getState().getStringtoString());
             }
 
-            s = current.peekChield().returnState().getStringtoString();
+            s = current.peekChild().getState().getStringtoString();
 
             if (expanded.contains(s) == false) {
-                temp = current.pollChield();
+                temp = current.getFirstChild();
                 currentManhattanDistance = md.
-                        calcManhattanDistance(temp.returnState(), goal);
+                        calcManhattanDistance(temp.getState(), goal);
 
                 if (currentManhattanDistance < manhattanDistanceSum) {
                     expanded.add(s);
                     searchQueue.add(temp);
                 }
             } else {
-                current.removeFirstChield();
+                current.removeFirstChild();
             }
         }
     }

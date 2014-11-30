@@ -1,7 +1,7 @@
 package SearchTree;
 
 import csm6120_assignment2.State;
-import java.util.ArrayList;
+
 
 /**
  * This class is used to generate the next step in the graph.
@@ -10,13 +10,11 @@ import java.util.ArrayList;
  */
 public class Graph {
 
-    private ArrayList<State> pos_state;
-
     /**
      * Constructor for the graph object
      */
     public Graph() {
-        this.pos_state = new ArrayList();
+
     }
 
     /**
@@ -31,7 +29,7 @@ public class Graph {
      */
     public void nextStep(TreeNode s) {
         int emptyTile; //index of the empty tile
-        emptyTile = s.returnState().returnIndex(0);
+        emptyTile = s.getState().returnIndex(0);
 
         if (emptyTile == 0) {
             this.corner(emptyTile, s);
@@ -68,8 +66,8 @@ public class Graph {
      * @param s The state to base algorithm on
      */
     public void corner(int tile, TreeNode s) {
-        State tempState1 = new State(s.returnState());
-        State tempState2 = new State(s.returnState());
+        State tempState1 = new State(s.getState());
+        State tempState2 = new State(s.getState());
         TreeNode firstChield, secondChield;
         if (tile == 0) {
             tempState1.changeTiles(1, 0);
@@ -79,8 +77,8 @@ public class Graph {
             secondChield = new TreeNode(tempState2);
 
             firstChield.addSibling(secondChield);
-            s.addChield(firstChield);
-            s.addChield(secondChield);
+            s.addChild(firstChield);
+            s.addChild(secondChield);
 
         } else if (tile == 2) {
             tempState1.changeTiles(1, 2);
@@ -90,8 +88,8 @@ public class Graph {
             secondChield = new TreeNode(tempState2);
 
             firstChield.addSibling(secondChield);
-            s.addChield(firstChield);
-            s.addChield(secondChield);
+            s.addChild(firstChield);
+            s.addChild(secondChield);
         } else if (tile == 6) {
             tempState1.changeTiles(3, 6);
             firstChield = new TreeNode(tempState1);
@@ -100,8 +98,8 @@ public class Graph {
             secondChield = new TreeNode(tempState2);
 
             firstChield.addSibling(secondChield);
-            s.addChield(firstChield);
-            s.addChield(secondChield);
+            s.addChild(firstChield);
+            s.addChild(secondChield);
         } else if (tile == 8) {
             tempState1.changeTiles(5, 8);
             firstChield = new TreeNode(tempState1);
@@ -110,8 +108,8 @@ public class Graph {
             secondChield = new TreeNode(tempState2);
 
             firstChield.addSibling(secondChield);
-            s.addChield(firstChield);
-            s.addChield(secondChield);
+            s.addChild(firstChield);
+            s.addChild(secondChield);
         }
     }
 
@@ -129,9 +127,9 @@ public class Graph {
      * @param s The state to base algorithm on
      */
     public void midSection(int tile, TreeNode s) {
-        State tempState1 = new State(s.returnState());
-        State tempState2 = new State(s.returnState());
-        State tempState3 = new State(s.returnState());
+        State tempState1 = new State(s.getState());
+        State tempState2 = new State(s.getState());
+        State tempState3 = new State(s.getState());
         TreeNode chield1, chield2, chield3;
 
         if (tile == 1) {
@@ -146,9 +144,9 @@ public class Graph {
 
             chield1.addSibling(chield2);
             chield2.addSibling(chield3);
-            s.addChield(chield1);
-            s.addChield(chield2);
-            s.addChield(chield3);
+            s.addChild(chield1);
+            s.addChild(chield2);
+            s.addChild(chield3);
 
         } else if (tile == 3) {
             tempState1.changeTiles(0, tile);
@@ -162,9 +160,9 @@ public class Graph {
 
             chield1.addSibling(chield2);
             chield2.addSibling(chield3);
-            s.addChield(chield1);
-            s.addChield(chield2);
-            s.addChield(chield3);
+            s.addChild(chield1);
+            s.addChild(chield2);
+            s.addChild(chield3);
         } else if (tile == 5) {
             tempState1.changeTiles(2, tile);
             chield1 = new TreeNode(tempState1);
@@ -177,9 +175,9 @@ public class Graph {
 
             chield1.addSibling(chield2);
             chield2.addSibling(chield3);
-            s.addChield(chield1);
-            s.addChield(chield2);
-            s.addChield(chield3);
+            s.addChild(chield1);
+            s.addChild(chield2);
+            s.addChild(chield3);
         } else if (tile == 7) {
             tempState1.changeTiles(4, tile);
             chield1 = new TreeNode(tempState1);
@@ -192,9 +190,9 @@ public class Graph {
 
             chield1.addSibling(chield2);
             chield2.addSibling(chield3);
-            s.addChield(chield1);
-            s.addChield(chield2);
-            s.addChield(chield3);
+            s.addChild(chield1);
+            s.addChild(chield2);
+            s.addChild(chield3);
         }
     }
 
@@ -211,10 +209,10 @@ public class Graph {
      * @param s The state to base algorithm on
      */
     public void center(int tile, TreeNode s) {
-        State tempState1 = new State(s.returnState());
-        State tempState2 = new State(s.returnState());
-        State tempState3 = new State(s.returnState());
-        State tempState4 = new State(s.returnState());
+        State tempState1 = new State(s.getState());
+        State tempState2 = new State(s.getState());
+        State tempState3 = new State(s.getState());
+        State tempState4 = new State(s.getState());
         TreeNode chield1, chield2, chield3, chield4;
 
         tempState1.changeTiles(1, tile);
@@ -232,9 +230,9 @@ public class Graph {
         chield1.addSibling(chield2);
         chield2.addSibling(chield3);
         chield3.addSibling(chield4);
-        s.addChield(chield1);
-        s.addChield(chield2);
-        s.addChield(chield3);
-        s.addChield(chield4);
+        s.addChild(chield1);
+        s.addChild(chield2);
+        s.addChild(chield3);
+        s.addChild(chield4);
     }
 }

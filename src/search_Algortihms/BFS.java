@@ -4,6 +4,7 @@ import SearchTree.*;
 import csm6120_assignment2.State;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 /**
  * Class file for the Breadth first search algorithm
@@ -15,7 +16,7 @@ public class BFS {
     Graph tree;
     TreeNode node, root;
     Queue<TreeNode> searchQueue;
-    Queue<TreeNode> exploredQueue;
+    Stack<TreeNode> exploredStack;
     int pathcost;
 
     /**
@@ -24,15 +25,15 @@ public class BFS {
     public BFS() {
         tree = new Graph();
         searchQueue = new LinkedList();
-        exploredQueue = new LinkedList();
+        exploredStack = new Stack();
         pathcost = 0;
     }
 
     /**
      * Breath-First search method 
      * 
-     * @param start The start State of the graph
-     * @param goal  The goal State of the graph 
+     * @param start     The start State of the graph
+     * @param goal      The goal State of the graph 
      */
     public void bfs(State start, State goal) {
         System.out.println("Using Breadth-First Search");
@@ -40,11 +41,11 @@ public class BFS {
         /*
          check the root for being the goal state
          */
-        if (root.returnState().compare(goal)) {
+        if (root.getState().compare(goal)) {
             System.out.println("Solution has been found.\n Path cost: "
                     + pathcost);
             System.out.println("Current node: ");
-            root.returnState().printArray();
+            root.getState().printArray();
             System.out.println("Goal state: ");
             goal.printArray();
         }
@@ -59,11 +60,11 @@ public class BFS {
             /*
              check the current node for being the goal node
              */
-            if (node.returnState().compare(goal)) {
+            if (node.getState().compare(goal)) {
                 System.out.println("Solution has been found.\n Path cost: "
                         + pathcost);
                 System.out.println("Current node: ");
-                node.returnState().printArray();
+                node.getState().printArray();
                 System.out.println("Goal state: ");
                 goal.printArray();
                 break;
@@ -75,15 +76,15 @@ public class BFS {
              add the child of the current node and all its siblings to the queue
              */
             while (node.childrenIsEmpty() != true) {
-                searchQueue.add(node.pollChield());
+                searchQueue.add(node.getFirstChild());
             }
             
             /*
             add the current node to the explored node and 
             update path cost
             */
-            exploredQueue.add(node);
-            pathcost++;
+            exploredStack.add(node);
+            pathcost = exploredStack.size();
         }
     }
 }

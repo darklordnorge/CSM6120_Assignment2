@@ -136,11 +136,21 @@ public class State {
         return match;
     }
     
+    /**
+     * Method to return the size of the state array
+     * 
+     * @return      int value of the state array size
+     */
     public int getArraySize(){
         return this.state.size();
     }
     
-    public ArrayList getList(){
+    /**
+     * Method to return the state ArrayList
+     * 
+     * @return      The state ArrayList
+     */
+    public ArrayList getStateArray(){
         return this.state;
     }
 }

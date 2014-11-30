@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package csm6120_assignment2;
 
 import java.io.File;
@@ -11,7 +7,8 @@ import SearchTree.TreeNode;
 import search_Algortihms.*;
 
 /**
- *
+ * This class is the entrance to the program. 
+ * 
  * @author stefan
  */
 public class Main {
@@ -20,6 +17,21 @@ public class Main {
     private static State goalState = new State();
 
     /**
+     * Main method of the program. 
+     * This method can be called from the command line with a set of 
+     * arguments. 
+     * 
+     * javac main theStartFile theGoalFile theAlgorithmToUse
+     * 
+     * where theStartFile is a text file holding the start State,
+     * theGoalFile holds the goal State of the puzzle. 
+     * TheAlgorithmToUse specifies which algorithm, possibilities are:
+     * 
+     * bfs - Breadth-First search
+     * dfs - Depth-First search
+     * gbfs - Greedy Best-First search 
+     * astar - A* search
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {

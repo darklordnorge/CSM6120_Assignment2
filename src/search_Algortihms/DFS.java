@@ -41,11 +41,11 @@ public class DFS {
         /*
          check the root for being the goal state
          */
-        if (root.returnState().compare(goal)) {
+        if (root.getState().compare(goal)) {
             System.out.println("Solution has been found.\n Path cost: "
                     + pathcost);
             System.out.println("Current node: ");
-            root.returnState().printArray();
+            root.getState().printArray();
             System.out.println("Goal state: ");
             goal.printArray();
         }
@@ -57,11 +57,11 @@ public class DFS {
             /*
              check the current node for being the goal node
              */
-            if (node.returnState().compare(goal)) {
+            if (node.getState().compare(goal)) {
                 System.out.println("Solution has been found.\n Path cost: "
                         + pathcost);
                 System.out.println("Current node: ");
-                node.returnState().printArray();
+                node.getState().printArray();
                 System.out.println("Goal state: ");
                 goal.printArray();
                 break;
@@ -76,15 +76,15 @@ public class DFS {
                 /*
                  Add the current node to a an ArrayList of expanded nodes
                  */
-                if (expanded.contains(node.returnState().getStringtoString()) == false) {
-                    expanded.add(node.returnState().getStringtoString());
+                if (expanded.contains(node.getState().getStringtoString()) == false) {
+                    expanded.add(node.getState().getStringtoString());
                 }
-                String s = node.peekChield().returnState().getStringtoString();
+                String s = node.peekChild().getState().getStringtoString();
                 if (expanded.contains(s) == false) {
                     expanded.add(s);
-                    searchStack.push(node.pollChield());
+                    searchStack.push(node.getFirstChild());
                 } else {
-                    node.removeFirstChield();
+                    node.removeFirstChild();
                 }
             }
             /*
@@ -92,7 +92,7 @@ public class DFS {
             and update the path cost
             */
             exploredStack.add(node);
-            pathcost++;
+            pathcost = exploredStack.size();
         }
     }
 }

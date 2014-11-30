@@ -20,8 +20,10 @@ public class ManhattanDistance {
      * @param goal The goal State to compare too
      */
     public ManhattanDistance(State start, State goal) {
-        this.startArray = new int[start.getList().size()][start.getList().size()];
-        this.goalArray = new int[goal.getList().size()][goal.getList().size()];
+        this.startArray = new int[start.getStateArray().size()][start.
+                getStateArray().size()];
+        this.goalArray = new int[goal.getStateArray().size()][goal.
+                getStateArray().size()];
 
     }
 
@@ -150,9 +152,9 @@ public class ManhattanDistance {
          Set the startArray and goalArray values
          */
         this.setStartArray(this.convertTo2DArray(this.
-                convertToArray(start.getList())));
+                convertToArray(start.getStateArray())));
         this.setGoalArray(this.convertTo2DArray(this.
-                convertToArray(goal.getList())));
+                convertToArray(goal.getStateArray())));
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
@@ -172,9 +174,7 @@ public class ManhattanDistance {
                 }
                 counter++;
             }
-
         }
-
         return manhattanDistanceSum;
     }
 }

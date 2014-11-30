@@ -19,7 +19,7 @@ public class TreeNode {
      * Constructor of the TreeNode class. Creates a deep copy of the state which
      * is passed as parameter Initialises the linkedLists.
      *
-     * @param s The State the node referes too
+     * @param s     The State the node referes too
      */
     public TreeNode(State s) {
         this.state = new State(s);
@@ -27,9 +27,15 @@ public class TreeNode {
         this.siblings = new LinkedList();
         this.explored = false;
     }
-
+    
+    /**
+     * Constructor of the TreeNode class. 
+     * Creates a deep copy of another TreeNode object.
+     * 
+     * @param t     The TreeNode object this instance is a copy off
+     */
     public TreeNode(TreeNode t) {
-        this.state = new State(t.returnState());
+        this.state = new State(t.getState());
         this.children = new LinkedList();
         this.siblings = new LinkedList();
 
@@ -40,16 +46,16 @@ public class TreeNode {
     /**
      * Method to add a child to the linkedList
      *
-     * @param chield
+     * @param child     The TreeNode object to add to the children list 
      */
-    public void addChield(TreeNode chield) {
-        this.children.add(chield);
+    public void addChild(TreeNode child) {
+        this.children.add(child);
     }
 
     /**
-     * Method to add a sibling
+     * Method to add a sibling to the linkedList of siblings
      *
-     * @param sibling
+     * @param sibling   The TreeNode object to add to the siblings list 
      */
     public void addSibling(TreeNode sibling) {
         this.siblings.add(sibling);
@@ -60,7 +66,7 @@ public class TreeNode {
      *
      * @return the State object of the node
      */
-    public State returnState() {
+    public State getState() {
         return this.state;
     }
 
@@ -70,7 +76,7 @@ public class TreeNode {
      *
      * @return The head of the "children" linkedList
      */
-    public TreeNode pollChield() {
+    public TreeNode getFirstChild() {
         return (TreeNode) this.children.poll();
     }
 
@@ -80,7 +86,7 @@ public class TreeNode {
      *
      * @return The head of the "siblings" linkedList
      */
-    public TreeNode pollSibling() {
+    public TreeNode getFirstSibling() {
         return (TreeNode) this.siblings.poll();
     }
 
@@ -110,14 +116,14 @@ public class TreeNode {
      *
      * @return The head of the "children" LinkedList
      */
-    public TreeNode peekChield() {
+    public TreeNode peekChild() {
         return (TreeNode) this.children.peek();
     }
 
     /**
      * Method to remove the head of the children linkedList
      */
-    public void removeFirstChield() {
+    public void removeFirstChild() {
         children.pop();
     }
 

@@ -14,7 +14,10 @@ import java.util.logging.Logger;
  * @author stefan
  */
 public class FileManager {
-    
+       
+    /**
+     * Constructor of the FileManager class
+     */
     public FileManager(){
         
     }
@@ -22,8 +25,8 @@ public class FileManager {
      * Read a given file path and calls the findInteger() method. 
      * This is used to read the input files and read them line for line.
      * 
-     * @param s     The State object to save too
-     * @param path  The path of the input file
+     * @param s         The State object to save too
+     * @param path      The path of the input file
      */
     public void reader(State s, File path){
         try{
@@ -43,8 +46,8 @@ public class FileManager {
     
     /**
      * Changes the input line from being Strings to single Integers.
-     * @param s     The String to analyse and change
-     * @param state The State object to save too
+     * @param s         The String to analyse and change
+     * @param state     The State object to save too
      */
     public void findInteger(String s, State state){
         String[] parts = s.split(",");
