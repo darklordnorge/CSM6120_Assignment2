@@ -3,7 +3,6 @@ package csm6120_assignment2;
 
 import java.io.File;
 import SearchTree.Graph;
-import SearchTree.TreeNode;
 import search_Algortihms.*;
 
 /**
@@ -38,13 +37,36 @@ public class Main {
 
         String sPath = args[0];
         String gPath = args[1];
+        String algorithm = args[2];
         File sFile = new File(sPath);
         File gFile = new File(gPath);
         FileManager r = new FileManager();
-        Graph g = new Graph();
         r.reader(startState, sFile);
         r.reader(goalState, gFile);
-    
+        
+        if(algorithm.equals("bfs")){
+            BFS bfs = new BFS();
+            bfs.bfs(startState, goalState);
+        }
+        else if(algorithm.equals("dfs")){
+            DFS dfs = new DFS();
+            dfs.dfs(startState, goalState);
+        }
+        else if(algorithm.equals("gbfs")){
+            GBFS gbfs = new GBFS();
+            gbfs.gbfs(startState, goalState);
+        }
+        else if(algorithm.equals("astar")){
+            AStar astar = new AStar();
+            astar.astar(startState, goalState);
+        }
+        else{
+            System.out.println("Not a legal argument");
+            System.out.println("bfs   - Breadth-First search");
+            System.out.println("dfs   - Depth-First search");
+            System.out.println("gbfs  - Greedy Best-First search");
+            System.out.println("astar - A star search");
+        }
         
 //        ManhattanDistance md = new ManhattanDistance(startState, goalState);
       
@@ -56,7 +78,7 @@ public class Main {
         //        dfs.dfs(startState, goalState);
         //          GBFS gbfs = new GBFS();
         //          gbfs.gbfs(startState, goalState);
-        AStar astar = new AStar();
-        astar.astar(startState, goalState);
+//        AStar astar = new AStar();
+//        astar.astar(startState, goalState);
     }
 }
