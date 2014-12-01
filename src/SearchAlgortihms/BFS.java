@@ -1,43 +1,43 @@
-package search_Algortihms;
+package SearchAlgortihms;
 
-import SearchTree.*;
-import csm6120_assignment2.State;
-import java.util.ArrayList;
+import SearchTree.TreeNode;
+import SearchTree.Graph;
+import csm6120.State;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
- * Depth-First search algorithm class 
- * 
+ * Class file for the Breadth first search algorithm
+ *
  * @author stefan
  */
-public class DFS {
+public class BFS {
 
     Graph tree;
     TreeNode node, root;
-    Stack<TreeNode> searchStack, exploredStack;
+    Queue<TreeNode> searchQueue;
+    Stack<TreeNode> exploredStack;
     int pathcost;
-    ArrayList expanded;
-    
+
     /**
-     * Constructor of the DFS object
+     * Constructor of the BFS object
      */
-    public DFS() {
+    public BFS() {
         tree = new Graph();
-        searchStack = new Stack();
+        searchQueue = new LinkedList();
         exploredStack = new Stack();
         pathcost = 0;
-        expanded = new ArrayList<String>();
     }
 
     /**
-     * Depth-First Search algorithm
+     * Breath-First search method 
      * 
-     * @param start The start state of the graph
-     * @param goal  The goal state of the graph 
+     * @param start     The start State of the graph
+     * @param goal      The goal State of the graph 
      */
-    public void dfs(State start, State goal) {
-        System.out.println("Using Depth-First Search");
-        System.out.println("This may take a lot of time, please be patient");
+    public void bfs(State start, State goal) {
+        System.out.println("Using Breadth-First Search");
         root = new TreeNode(start);
         /*
          check the root for being the goal state
@@ -50,10 +50,13 @@ public class DFS {
             System.out.println("Goal state: ");
             goal.printArray();
         }
-        searchStack.add(root);
+        searchQueue.add(root);
 
-        while (searchStack.size() > 0) {
-            node = searchStack.pop();
+        /*
+        Iterate while the search queue is not empty
+        */
+        while (searchQueue.size() > 0) {
+            node = searchQueue.poll();
 
             /*
              check the current node for being the goal node
@@ -74,23 +77,12 @@ public class DFS {
              add the child of the current node and all its siblings to the queue
              */
             while (node.childrenIsEmpty() != true) {
-                /*
-                 Add the current node to a an ArrayList of expanded nodes
-                 */
-                if (expanded.contains(node.getState().getStringtoString()) == false) {
-                    expanded.add(node.getState().getStringtoString());
-                }
-                String s = node.peekChild().getState().getStringtoString();
-                if (expanded.contains(s) == false) {
-                    expanded.add(s);
-                    searchStack.push(node.getFirstChild());
-                } else {
-                    node.removeFirstChild();
-                }
+                searchQueue.add(node.getFirstChild());
             }
+            
             /*
-            Add the current node to the exploredStack
-            and update the path cost
+            add the current node to the explored node and 
+            update path cost
             */
             exploredStack.add(node);
             pathcost = exploredStack.size();

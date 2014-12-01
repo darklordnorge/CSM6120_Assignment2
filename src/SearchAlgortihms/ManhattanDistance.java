@@ -1,6 +1,6 @@
-package search_Algortihms;
+package SearchAlgortihms;
 
-import csm6120_assignment2.State;
+import csm6120.State;
 import java.util.ArrayList;
 
 /**

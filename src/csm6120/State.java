@@ -1,4 +1,4 @@
-package csm6120_assignment2;
+package csm6120;
 
 import java.util.ArrayList;
 

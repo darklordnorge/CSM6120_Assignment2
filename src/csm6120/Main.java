@@ -1,9 +1,12 @@
 
-package csm6120_assignment2;
+package csm6120;
 
+import SearchAlgortihms.DFS;
+import SearchAlgortihms.GBFS;
+import SearchAlgortihms.AStar;
+import SearchAlgortihms.BFS;
 import java.io.File;
 import SearchTree.Graph;
-import search_Algortihms.*;
 
 /**
  * This class is the entrance to the program. 

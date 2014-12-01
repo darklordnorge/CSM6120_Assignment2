@@ -5,6 +5,7 @@
  */
 package csm6120_assignment2;
 
+import csm6120.State;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;

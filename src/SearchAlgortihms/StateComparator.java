@@ -1,4 +1,4 @@
-package search_Algortihms;
+package SearchAlgortihms;
 
 import SearchTree.TreeNode;
 import java.util.Comparator;

@@ -1,9 +1,9 @@
 
-package search_Algortihms;
+package SearchAlgortihms;
 
 import SearchTree.Graph;
 import SearchTree.TreeNode;
-import csm6120_assignment2.State;
+import csm6120.State;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.PriorityQueue;

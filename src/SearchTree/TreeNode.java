@@ -1,6 +1,6 @@
 package SearchTree;
 
-import csm6120_assignment2.State;
+import csm6120.State;
 import java.util.LinkedList;
 
 /**
