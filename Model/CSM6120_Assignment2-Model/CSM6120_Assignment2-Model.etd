@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="omg.org/UML/1.4" xmi.version="2.0"> <XMI.header> <XMI.metamodel xmi.name="UML" xmi.version="1.4"/> <XMI.documentation> <XMI.exporter> Embarcadero's Describe </XMI.exporter> <XMI.exporterVersion> 6.0 </XMI.exporterVersion> </XMI.documentation> </XMI.header> <XMI.content> <UML:Project xmi.id="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77" mode="Implementation" defaultLanguage="Java" projVersion="6.1.4.837" name="CSM6120_Assignment2-Model">
+<UML:Element.ownedElement><UML:Package name="csm6120" xmi.id="DCE.98579937-7B00-B6A2-ABF5-8DC30744B2E8">
+<UML:Element.ownedElement><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="State" xmi.id="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" owner="DCE.98579937-7B00-B6A2-ABF5-8DC30744B2E8" associationEnd="DCE.E98176F5-AB40-9E1B-786D-1F6D6686D676 DCE.BBE139B2-8EC4-50FA-8951-0983B9960510 DCE.A899D698-8E47-B349-7B1C-F95E7B3B5A91"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/csm6120/State.java" xmi.id="DCE.A5C17274-B5CF-1C5B-3DA1-1263C5608666" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"/><UML:TaggedValue xmi.id="DCE.CB72BE1C-5421-56AF-1DBD-7A6B326D8E98" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class has methods and variables to hold an input state. This will be
+ used to hold the start and goal state object.
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.CBEA2D4F-60D8-B0FE-B297-015944C4458D" name="state" xmi.id="DCE.A7653A57-D6B1-E627-3A97-9CA5F291FE9A" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC">
+<UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.1F2EEF59-6373-8C30-A845-2FE6A33B0FA1">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="ArrayList" xmi.id="DCE.257EDC12-6402-96D5-0158-E8565E30B5B0"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="State" xmi.id="DCE.4A1EECB7-B445-54BD-8E86-81FA0EC1B2AE" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.82BD5196-D40A-4AAB-3502-11D150FDC9A8" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor for the State object creates an empty arrayList in which the
+     state data will be saved
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="State" xmi.id="DCE.C00A2C2D-E81D-D960-7408-DC2C76BB7D8D" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.05BB9EA8-8844-76DC-DDF8-C9F6E3B9B67A" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor for the State object creates a deep clone of the state object
+     which is specified in the parameter field
+     
+     @param s The state to clone
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="s" xmi.id="DCE.3367819D-AD08-94B9-9520-C149FFDCF270" owner="DCE.C00A2C2D-E81D-D960-7408-DC2C76BB7D8D"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="addState" xmi.id="DCE.08E17EF9-B3BC-5164-4301-0A5923DC4970" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.52E818A8-251E-BE90-81F2-308675DC8643" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to add an integer to the arrayList
+     
+     @param toAdd The integer to add
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.CE1A0D60-535C-EDFC-44C6-8D3020835EEE" owner="DCE.08E17EF9-B3BC-5164-4301-0A5923DC4970"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="toAdd" xmi.id="DCE.A02F2365-E198-0550-66BF-43C120A3341E" owner="DCE.08E17EF9-B3BC-5164-4301-0A5923DC4970"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="printArray" xmi.id="DCE.3B31A628-01A7-C605-B949-A3DB2FCAA826" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.21309F0C-B5DC-1C04-AF28-477C613CDED0" name="documentation">
+<UML:TaggedValue.dataValue>
+     Print the ArrayList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.362FF725-01D9-DE1F-D1FD-7A645F3F3FCD" owner="DCE.3B31A628-01A7-C605-B949-A3DB2FCAA826"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="returnIndex" xmi.id="DCE.1CF8D564-4259-AB84-0795-A19F98F83A35" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.D7977EC4-3691-940C-BEA6-D9CC1C293756" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return the index of a specific item in the ArrayList
+     
+     @param i The item to search for
+     @return The position of the item in the ArrayList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.A1B7651B-13CC-0EAD-F36D-54A25F964C4A" owner="DCE.1CF8D564-4259-AB84-0795-A19F98F83A35"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="i" xmi.id="DCE.B2ECC067-A62B-763C-02B0-B1FB44AD1383" owner="DCE.1CF8D564-4259-AB84-0795-A19F98F83A35"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="changeTiles" xmi.id="DCE.A054BAF4-3C78-C114-951D-3379B8CE2BEA" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.7B8E93AC-4C19-4B88-E4FE-C2987917F2B1" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to exchange to tiles
+     
+     @param i Index of the tile to change
+     @param j Index of the Empty tile to change
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.052395B4-8D95-6FD4-862C-9C239C82E58B" owner="DCE.A054BAF4-3C78-C114-951D-3379B8CE2BEA"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="i" xmi.id="DCE.D434D1A4-77D4-69A6-3080-053D35778399" owner="DCE.A054BAF4-3C78-C114-951D-3379B8CE2BEA"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="j" xmi.id="DCE.936741EB-09AE-01AE-0B64-772EEA76B0B6" owner="DCE.A054BAF4-3C78-C114-951D-3379B8CE2BEA"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="clone" xmi.id="DCE.B3100AC0-0DAE-C57E-F4FA-B317590832B6" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E11D2EA5-20A1-42CF-5E39-E7DF045A4A5A" name="documentation">
+<UML:TaggedValue.dataValue>
+     This method clones the arrayList and returns it
+     
+     @return The cloned arrayList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.4C9A1C54-1728-825B-AF6F-0EBD5EDB58C9" xmi.id="DCE.15546CE9-F305-CCD1-51A0-6B8435CBA6CF" owner="DCE.B3100AC0-0DAE-C57E-F4FA-B317590832B6"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="compare" xmi.id="DCE.12054513-3B85-DCD2-44D9-57F5DD254A9E" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E98A270D-D365-0B99-469F-D5C3BE0216FE" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to compare this object to another state object
+     
+     @param s The state to compare too
+     @return  True if the states are the same, false if not
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" xmi.id="DCE.7DFF8A74-C0BB-5469-7CD8-3A5DF096E378" owner="DCE.12054513-3B85-DCD2-44D9-57F5DD254A9E"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="s" xmi.id="DCE.2452E3FB-FE43-6A84-A17D-F337E06E9532" owner="DCE.12054513-3B85-DCD2-44D9-57F5DD254A9E"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getStringtoString" xmi.id="DCE.B2607043-C33A-EBC3-D89D-F2A2CA870029" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.2493212B-7923-8B31-445D-1422419FFF44" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return the string representation of the "state" ArrayList
+     
+     @return The toString representation of the "state" ArrayList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.0618FA8F-CFB4-EEE6-E563-A88F9681DF35" xmi.id="DCE.F9F52B51-BC46-76E8-F0DE-1B8B363C8561" owner="DCE.B2607043-C33A-EBC3-D89D-F2A2CA870029"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="compareMatching" xmi.id="DCE.020BE6BA-640F-587E-D11B-841CD71B069F" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.820ECBE3-9E34-9995-E887-A37DDCF3D33A" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return how many integers in this object compared
+     to another object match
+     
+     @param s The state to compare too
+     @return  The number of matching ints 
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.AE91D7EE-761A-F315-1E97-65B5257F0448" owner="DCE.020BE6BA-640F-587E-D11B-841CD71B069F"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="s" xmi.id="DCE.087A67B3-6296-FB88-4AFC-1E667B62D92D" owner="DCE.020BE6BA-640F-587E-D11B-841CD71B069F"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getArraySize" xmi.id="DCE.5F8E3A70-1B61-BAC2-B0D3-EFD1D52936FD" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.ADB2B6A4-D525-1C93-AD44-5BC7D4B497F6" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return the size of the state array
+     
+     @return      int value of the state array size
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.5AB86555-017F-2CB6-D4C9-14626FABB82E" owner="DCE.5F8E3A70-1B61-BAC2-B0D3-EFD1D52936FD"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getStateArray" xmi.id="DCE.E34679F7-5726-7AEF-55D6-4311383A7BD8" owner="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.AB99E649-F65E-7990-F05A-B9AD2AF27B58" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return the state ArrayList
+     
+     @return      The state ArrayList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.4C9A1C54-1728-825B-AF6F-0EBD5EDB58C9" xmi.id="DCE.E4CC9D11-A217-A65E-04F9-17E8ABED3C4F" owner="DCE.E34679F7-5726-7AEF-55D6-4311383A7BD8"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="Main" xmi.id="DCE.03B1C7A6-5768-F83C-B4A4-DA1ACF75A3AF" owner="DCE.98579937-7B00-B6A2-ABF5-8DC30744B2E8" associationEnd="DCE.07B487EE-35CA-9339-977D-B74D17A76465 DCE.79F0FFB3-34BC-A7B8-BE9A-D312F948058F"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/csm6120/Main.java" xmi.id="DCE.1FF4C1E2-3943-BC92-5DA0-A9B5114E7A6B" owner="DCE.03B1C7A6-5768-F83C-B4A4-DA1ACF75A3AF"/><UML:TaggedValue xmi.id="DCE.D121B7B0-ABA2-C2FB-77DE-6407F5958874" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class is the entrance to the program. 
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="State" AssociationType="Aggregation" name="startState"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" isStatic="true" type="State" AssociationType="Aggregation" name="goalState"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isStatic="true" name="main" xmi.id="DCE.5C77151E-982B-0ABF-BAC1-AEC5C90544C0" owner="DCE.03B1C7A6-5768-F83C-B4A4-DA1ACF75A3AF"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.A199C4AC-4A84-8846-0CAF-87043221A0AB" name="documentation">
+<UML:TaggedValue.dataValue>
+     Main method of the program. 
+     This method can be called from the command line with a set of 
+     arguments. 
+     
+     javac main theStartFile theGoalFile theAlgorithmToUse
+     
+     where theStartFile is a text file holding the start State,
+     theGoalFile holds the goal State of the puzzle. 
+     TheAlgorithmToUse specifies which algorithm, possibilities are:
+     
+     bfs - Breadth-First search
+     dfs - Depth-First search
+     gbfs - Greedy Best-First search 
+     astar - Asearch
+     
+     @param args the command line arguments
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.DFB79434-2347-FAF9-9093-429CB9C66473" owner="DCE.5C77151E-982B-0ABF-BAC1-AEC5C90544C0"/><UML:Parameter visibility="package" isQuery="false" type="DCE.0618FA8F-CFB4-EEE6-E563-A88F9681DF35" name="args" xmi.id="DCE.EF5B1FBA-9DB9-D52D-60A2-542B8E261763" owner="DCE.5C77151E-982B-0ABF-BAC1-AEC5C90544C0"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.2FD28FEA-F73C-F780-581E-8CA4A5FA3B94"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.E83C34BB-6646-7896-A09C-A4DC387E5D04"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="FileManager" xmi.id="DCE.E263B581-A929-0546-24D0-273572A6FC18" owner="DCE.98579937-7B00-B6A2-ABF5-8DC30744B2E8"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/csm6120/FileManager.java" xmi.id="DCE.8F61D09A-B3A0-BAED-23B9-9FA92B8CB584" owner="DCE.E263B581-A929-0546-24D0-273572A6FC18"/><UML:TaggedValue xmi.id="DCE.886C7F39-1598-79D4-7F7D-B43F7583BA89" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class holds methods to manipulate the input files.
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="FileManager" xmi.id="DCE.E3D75870-C9E0-65FB-F8D5-FFC24A4A803F" owner="DCE.E263B581-A929-0546-24D0-273572A6FC18">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.D2047741-60BF-4A46-F5C3-82A7734D213E" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the FileManager class
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="reader" xmi.id="DCE.7A0ADC9E-ABB8-3F88-27A4-77F65DCF69C7" owner="DCE.E263B581-A929-0546-24D0-273572A6FC18"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.DB1E1C9F-CFEE-15DE-81AF-70B7FD3F4BBE" name="documentation">
+<UML:TaggedValue.dataValue>
+     Read a given file path and calls the findInteger() method. 
+     This is used to read the input files and read them line for line.
+     
+     @param s         The State object to save too
+     @param path      The path of the input file
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.304237F3-4045-84AB-97E9-72FC430DBFD9" owner="DCE.7A0ADC9E-ABB8-3F88-27A4-77F65DCF69C7"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="s" xmi.id="DCE.6F253F03-832F-1F55-B9BC-4DF36297B503" owner="DCE.7A0ADC9E-ABB8-3F88-27A4-77F65DCF69C7"/><UML:Parameter visibility="package" isQuery="false" type="DCE.9ABD7421-6190-AFB6-1AB5-597796DCDF0D" name="path" xmi.id="DCE.2F52C91A-4DFE-AB0A-4762-EFFBA13F68BF" owner="DCE.7A0ADC9E-ABB8-3F88-27A4-77F65DCF69C7"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="findInteger" xmi.id="DCE.FE1FB10D-0D1A-B3D9-83DF-53DDF4F755F2" owner="DCE.E263B581-A929-0546-24D0-273572A6FC18"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.FF7AA874-1BBE-4C70-745A-21F75AE7248C" name="documentation">
+<UML:TaggedValue.dataValue>
+     Changes the input line from being Strings to single Integers.
+     @param s         The String to analyse and change
+     @param state     The State object to save too
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.3FB1BD57-1294-9523-7A6A-5FF0E1F24B3E" owner="DCE.FE1FB10D-0D1A-B3D9-83DF-53DDF4F755F2"/><UML:Parameter visibility="package" isQuery="false" type="DCE.0618FA8F-CFB4-EEE6-E563-A88F9681DF35" name="s" xmi.id="DCE.1095294C-C690-3CD3-3AF7-D4AA2660FA2C" owner="DCE.FE1FB10D-0D1A-B3D9-83DF-53DDF4F755F2"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="state" xmi.id="DCE.2D1CEEEA-C259-9000-2CB7-4F6A7CDD9682" owner="DCE.FE1FB10D-0D1A-B3D9-83DF-53DDF4F755F2"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class>
+<UML:Aggregation xmi.id="DCE.636E2A9A-8CB5-0BF1-1E9D-8894779FDD2F" owner="DCE.98579937-7B00-B6A2-ABF5-8DC30744B2E8" aggregateEnd="DCE.07B487EE-35CA-9339-977D-B74D17A76465" partEnd="DCE.BBE139B2-8EC4-50FA-8951-0983B9960510"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.07B487EE-35CA-9339-977D-B74D17A76465" visibility="private" type="DCE.03B1C7A6-5768-F83C-B4A4-DA1ACF75A3AF" association="DCE.636E2A9A-8CB5-0BF1-1E9D-8894779FDD2F"/>
+<UML:NavigableEnd xmi.id="DCE.BBE139B2-8EC4-50FA-8951-0983B9960510" visibility="private" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" association="DCE.636E2A9A-8CB5-0BF1-1E9D-8894779FDD2F" name="startState" isStatic="true"><UML:Attribute.default><UML:Expression xmi.id="DCE.BC29EB9B-BC2B-DF65-ACB3-83A8245D3D78"><UML:Expression.body>new State()</UML:Expression.body></UML:Expression></UML:Attribute.default></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.51CF8CBF-1DAD-30EB-4306-37E6666E8F55" owner="DCE.98579937-7B00-B6A2-ABF5-8DC30744B2E8" aggregateEnd="DCE.79F0FFB3-34BC-A7B8-BE9A-D312F948058F" partEnd="DCE.A899D698-8E47-B349-7B1C-F95E7B3B5A91"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.79F0FFB3-34BC-A7B8-BE9A-D312F948058F" visibility="private" type="DCE.03B1C7A6-5768-F83C-B4A4-DA1ACF75A3AF" association="DCE.51CF8CBF-1DAD-30EB-4306-37E6666E8F55"/>
+<UML:NavigableEnd xmi.id="DCE.A899D698-8E47-B349-7B1C-F95E7B3B5A91" visibility="private" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" association="DCE.51CF8CBF-1DAD-30EB-4306-37E6666E8F55" name="goalState" isStatic="true"><UML:Attribute.default><UML:Expression xmi.id="DCE.AE78313F-85C3-EBC8-659B-D56C39926543"><UML:Expression.body>new State()</UML:Expression.body></UML:Expression></UML:Attribute.default></UML:NavigableEnd></UML:Association.end></UML:Aggregation></UML:Element.ownedElement></UML:Package><UML:Package name="SearchAlgortihms" xmi.id="DCE.650B4C88-C315-CE4C-4A93-783D60954842">
+<UML:Element.ownedElement><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="StateComparator" xmi.id="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" associationEnd="DCE.4125C9C0-138F-D8B1-36BA-27E3AFEB9396 DCE.F48A277E-812F-A09D-D3EF-51FCED804E48" clientDependency="DCE.0A643AC8-F5C6-8A4B-703C-E0859A445CB5"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchAlgortihms/StateComparator.java" xmi.id="DCE.A6AD096B-552D-FB2C-4E5C-F2955107834A" owner="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36"/><UML:TaggedValue xmi.id="DCE.8EB60746-6F20-3078-7F33-174F7A9CD42E" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class is used to compare to states together. 
+ Implements the Comparator interface
+ 
+ @author Stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="compare" xmi.id="DCE.3F70B270-F0CB-95A3-6672-4EC8341B3F82" owner="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36"><UML:Element.ownedElement><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.ACA53117-04B3-6A88-A763-2A7B8AD1D693" owner="DCE.3F70B270-F0CB-95A3-6672-4EC8341B3F82"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="o1" xmi.id="DCE.631A15DD-CFA4-C1EC-C7D0-7E4C03400BE2" owner="DCE.3F70B270-F0CB-95A3-6672-4EC8341B3F82"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="o2" xmi.id="DCE.FE64D15E-410F-382D-9782-F790AB90921A" owner="DCE.3F70B270-F0CB-95A3-6672-4EC8341B3F82"/></UML:Element.ownedElement></UML:Operation>
+<UML:Implementation xmi.id="DCE.0A643AC8-F5C6-8A4B-703C-E0859A445CB5" owner="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36" client="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36" supplier="DCE.F25DB427-592E-90C2-6DE3-DB9AEDB8FE7D"/></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="ManhattanDistance" xmi.id="DCE.2F4CA183-5557-A241-7751-224833A643B5" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" associationEnd="DCE.1A136E16-DCDF-9773-F0B5-ED27BBD3B651"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchAlgortihms/ManhattanDistance.java" xmi.id="DCE.D1490B89-DFED-0432-1171-83C1088F7D5A" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"/><UML:TaggedValue xmi.id="DCE.550F3EFD-23E6-2E7D-44C9-B05EBC00DCC7" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class is used to calculate the Manhattan distance for the Aalgorithm
+ 
+ @author Stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="startArray" xmi.id="DCE.57102212-053D-7FB6-CB76-45C26BDFF5C2" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.DB0DEA3D-F4BE-B76C-C6C8-E2549177D84D"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.E5191210-743E-5C87-69E2-D753276315C3"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.EECBF011-936C-BD4B-CF40-74166B2CF977"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="goalArray" xmi.id="DCE.777F494B-1C46-52F7-A4ED-7D34AFAC4678" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.344262EE-F333-A680-FE24-F8BB66604411"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.C7231F7C-7D42-8876-C75A-B300774D9C35"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.5E3A1A75-9C1B-8B94-BD71-6FB7877904EF"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="ManhattanDistance" xmi.id="DCE.FB9DD13A-57AF-43AA-E36A-07784BB48027" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.6CAD79BB-518E-7A05-D2DF-1481B1E8D3EC" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the ManhattanDistance class
+     
+     @param start The State to compare to the goal
+     @param goal The goal State to compare too
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="start" xmi.id="DCE.742FF288-E0D9-3B50-CE2D-220A3255272F" owner="DCE.FB9DD13A-57AF-43AA-E36A-07784BB48027"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.80784C7F-B76B-2368-2930-F954477F8FFC" owner="DCE.FB9DD13A-57AF-43AA-E36A-07784BB48027"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="convertToArray" xmi.id="DCE.DA5E940F-E7D3-57D1-A3B9-53009BCCFE50" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.64B501C0-34D8-2D40-4F13-0D688510C8B8" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to convert an ArrayList to an array
+     
+     @param i The arrayList to convert
+     @return An integer array
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.4AADFF2D-FF33-A983-923E-A0356C99AAD7" owner="DCE.DA5E940F-E7D3-57D1-A3B9-53009BCCFE50"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.56ABB6F1-F7D2-6894-BAA1-4BEF7A8FE460"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.094C3CCA-D32B-37AF-7927-6ECFBBB9161D"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.CBEA2D4F-60D8-B0FE-B297-015944C4458D" name="i" xmi.id="DCE.BAF12D55-D548-2B52-4600-EAF14D069DD5" owner="DCE.DA5E940F-E7D3-57D1-A3B9-53009BCCFE50">
+<UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.6E091F01-4F20-FB6C-3036-473A95ECEB2D">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="ArrayList" xmi.id="DCE.AD1D445C-F47E-B9AF-2E7F-740640424572"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="convertTo2DArray" xmi.id="DCE.62F0354E-3579-9C88-F3B1-A1972693003E" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.1B3A38FB-000F-FF2D-2E9B-4AE9F06B3CBA" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to convert an 1D integer array to a 2D integer array
+     
+     @param intArray The integer array to convert
+     @return An 2D integer array
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.725E22E1-ECDE-0BD6-7253-D7FBF742FA88" owner="DCE.62F0354E-3579-9C88-F3B1-A1972693003E"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.E535E07A-3120-78A3-68DC-49A54722EE94"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.289B4BFB-2BBF-8BA0-D0E7-1DCD72D2B04C"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.B58449C5-04BF-00DC-5ED9-A52C35D63982"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="intArray" xmi.id="DCE.8E975DF3-EA84-83D6-DEE1-D4D9B9AED51C" owner="DCE.62F0354E-3579-9C88-F3B1-A1972693003E"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.C6C434F0-23A4-9FF5-9813-6E783E1D4B54"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.5D47F0E4-0F51-BDB7-2E24-AA03B4FF26A7"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="setStartArray" xmi.id="DCE.700D2395-161D-A772-60CE-A71B6DC0B5AA" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.1AE71841-F359-D9CC-CA3B-0540CEB04520" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to set the startArray
+     
+     @param toSet 2D array to set too
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.FB363C06-278F-D4B6-496E-73E1A5CE43E3" owner="DCE.700D2395-161D-A772-60CE-A71B6DC0B5AA"/><UML:Parameter visibility="package" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="toSet" xmi.id="DCE.7DB83B63-3DEF-4F94-9645-D8C29A483E3E" owner="DCE.700D2395-161D-A772-60CE-A71B6DC0B5AA"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.7E896372-6B37-FC8F-8E2F-25E2A30BDFE6"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.B03D3C4A-4834-46FD-E9C1-B19D6563CF09"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.18015FF5-398B-990F-265C-CB9941E5B3D2"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="setGoalArray" xmi.id="DCE.A2184938-5B33-393B-3A7F-22C9274570A3" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.5D0E2233-6254-D344-73CB-8399EC058453" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to set the goalArray
+     
+     @param toSet 2D array to set too
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.59D5CCD1-29A9-1F43-F4E9-918D1A2D9B75" owner="DCE.A2184938-5B33-393B-3A7F-22C9274570A3"/><UML:Parameter visibility="package" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="toSet" xmi.id="DCE.9BCDCDE3-A728-64B9-B614-DE8A704F07A2" owner="DCE.A2184938-5B33-393B-3A7F-22C9274570A3"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.9F3D7412-D130-9B82-6E88-C7D736DD270C"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.6DDA698E-9299-DB7A-2CD7-595EEBA855F2"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.1BBEA510-48F9-AE5B-DC43-C58F16DE418C"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="findCell" xmi.id="DCE.BA95A22E-3C50-8281-DA6F-577F858D11E4" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.FBB24F8D-C981-0219-371C-434E17DF6889" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to find the X and Y coordinates of a given tile in a 2D array
+     
+     @param array The 2D array to search in
+     @param index The number/tile to search for
+     @return A 2D array holding the X and Y coordinates
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.BAB4ECF6-4576-26AD-4789-903AAED3CB8F" owner="DCE.BA95A22E-3C50-8281-DA6F-577F858D11E4"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.9A3EF010-0C90-754F-B6B0-228FFD117EE7"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.74FA5AC6-3163-85A7-B471-A19B4CF5D9ED"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.1927687B-22F8-6A22-D7BC-46FB046225AD"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="array" xmi.id="DCE.A3ED44FA-7196-D05A-C480-6828A6B1ACCC" owner="DCE.BA95A22E-3C50-8281-DA6F-577F858D11E4"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.62156678-C95C-4AFA-6D6F-9D6BB319E116"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.6449BB25-57B8-DA0D-1642-1B4DB996D293"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.F8DA33F9-2BDF-5B30-A2CA-2F929707D19D"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="index" xmi.id="DCE.2A643AF1-A311-5C32-2CB5-CF91772A8B89" owner="DCE.BA95A22E-3C50-8281-DA6F-577F858D11E4"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="findXCoordinate" xmi.id="DCE.953B4C51-D79D-66D0-D067-740F68D82837" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.84297A64-382F-98C8-B0F2-2E1F38B3D7C7" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to find the X coordinates of a given tile in a 2D array
+     
+     @param array The 2D array to search through
+     @param index The number/tile to search for
+     @return An integer value representing the X coordinate in a 2d Array
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.C9D220C9-0596-E920-74AA-C32C6D2A183F" owner="DCE.953B4C51-D79D-66D0-D067-740F68D82837"/><UML:Parameter visibility="package" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="array" xmi.id="DCE.9ECE411E-603D-6207-1167-9B0AEECBDFF6" owner="DCE.953B4C51-D79D-66D0-D067-740F68D82837"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.AD7735F0-ABCA-5870-4E5C-233D1931CB5F"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.1B132E0F-318C-401C-D22F-3E3CFBBEA0DA"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.23AF85B5-6A09-0524-C7EB-D9139774D782"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="index" xmi.id="DCE.B1F51481-A1B5-6399-EE7E-94425B3D763F" owner="DCE.953B4C51-D79D-66D0-D067-740F68D82837"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="findYCoordinate" xmi.id="DCE.48E1C245-DE10-39D7-114E-0B97A3D71ED0" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.2ACEEAD8-4FF5-3209-F196-8A4CA749965F" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to find the Y coordinates of a given tile in a 2D array
+     
+     @param array The 2D array to search through
+     @param index The number/tile to search for
+     @return An integer value representing the Y coordinate in a 2d Array
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.B6530BCE-36EA-1E94-F5BB-DD65F6C9EB2D" owner="DCE.48E1C245-DE10-39D7-114E-0B97A3D71ED0"/><UML:Parameter visibility="package" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="array" xmi.id="DCE.AF041E59-4390-F108-442C-7FBCD991781A" owner="DCE.48E1C245-DE10-39D7-114E-0B97A3D71ED0"><UML:TypedElement.multiplicity><UML:Multiplicity xmi.id="DCE.776271A2-FE0E-DE0C-AD24-7A7DE7842F46"><UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.DFD54EF6-08D6-B3A4-A7FB-AE3A10F65030"/><UML:MultiplicityRange lower="0" upper="*" collectionType="[]" xmi.id="DCE.672F4881-3184-4B6A-B3D6-CDB894FFC5F0"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Parameter><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="index" xmi.id="DCE.8D346E0D-159A-C8F7-4CE7-D91F5612DB07" owner="DCE.48E1C245-DE10-39D7-114E-0B97A3D71ED0"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="calcManhattanDistance" xmi.id="DCE.250CFC59-17BF-2FE6-D890-AC16E59FC3FD" owner="DCE.2F4CA183-5557-A241-7751-224833A643B5"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.984D89FC-855D-21AD-679B-2CA63444584D" name="documentation">
+<UML:TaggedValue.dataValue>
+     Calculate the Manhattan distance for 2 input states
+     
+     @param start     The start State for the calculation
+     @param goal      The goal State to calculate the distance to
+     @return          An integer representing the Manhattan Distance;
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.CEC6F4D6-91A4-CFB4-69D0-F838E790E7C6" owner="DCE.250CFC59-17BF-2FE6-D890-AC16E59FC3FD"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="start" xmi.id="DCE.4270C8F0-31B2-3CB4-5208-471BADD394C0" owner="DCE.250CFC59-17BF-2FE6-D890-AC16E59FC3FD"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.38BF55A6-C78D-CAA8-2F2A-0703D8028A19" owner="DCE.250CFC59-17BF-2FE6-D890-AC16E59FC3FD"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="GBFS" xmi.id="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" associationEnd="DCE.DA9921CF-1225-B1E8-DE1F-AC69300A8DD9 DCE.61D2B1B0-7E48-F409-CD90-A1BFD5611493 DCE.4C09DBAC-7F05-4BC9-B8AE-77AD4150ED80 DCE.23D9FF00-A67E-8B12-ADD7-833AB6C5A2FA DCE.C31EEA91-071D-1FE4-2A14-8E32BD4721BF DCE.413660B1-CC80-672F-3AB7-866FD0C29A9A"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchAlgortihms/GBFS.java" xmi.id="DCE.1710797D-3198-A456-5B10-2C84AAE3407B" owner="DCE.05F77A37-4508-3ACB-12BC-7542280023DD"/><UML:TaggedValue xmi.id="DCE.FD22B445-1EB1-DEE9-A9F9-641DA625E880" name="documentation">
+<UML:TaggedValue.dataValue>
+ Greedy Best-First Search class
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="pathcost" xmi.id="DCE.35DBA08B-CD32-1EAD-5973-6E80FC7C0CE0" owner="DCE.05F77A37-4508-3ACB-12BC-7542280023DD"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="Graph" AssociationType="Aggregation" name="tree"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" name="searchQueue">
+</UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" name="exploredStack">
+</UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="node"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="root"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="StateComparator" AssociationType="Aggregation" name="comparator"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.0618FA8F-CFB4-EEE6-E563-A88F9681DF35" name="expanded" xmi.id="DCE.367D7E5B-8132-60A5-59AD-9B95D753AB2B" owner="DCE.05F77A37-4508-3ACB-12BC-7542280023DD">
+<UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.7CFF9A67-9737-25BF-3246-CF682D93338F">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="ArrayList" xmi.id="DCE.B0ADDA63-3124-F953-B9FF-F858E5CEA733"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Attribute><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="GBFS" xmi.id="DCE.8F8A3564-E58C-5496-3BF1-327F78BBC027" owner="DCE.05F77A37-4508-3ACB-12BC-7542280023DD">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.454ECF98-E27F-B975-DA85-39D6FC30B440" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the GBFS class
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="gbfs" xmi.id="DCE.AC2FB049-2DF2-AD07-4356-D2BFF0BD9DA3" owner="DCE.05F77A37-4508-3ACB-12BC-7542280023DD"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.4671B78C-B2C7-BD1A-348F-8EDFA9F449A7" name="documentation">
+<UML:TaggedValue.dataValue>
+     Greedy Best-First Search algorithm
+     
+     @param start The start State of the graph
+     @param goal The goal State of the graph
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.6A697AA6-5C1A-D7E1-0783-BB5F961513A0" owner="DCE.AC2FB049-2DF2-AD07-4356-D2BFF0BD9DA3"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="start" xmi.id="DCE.70E019F2-97B4-9B11-F0E6-C5A1DB3D3093" owner="DCE.AC2FB049-2DF2-AD07-4356-D2BFF0BD9DA3"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.C083A2AB-B814-64C6-0183-CD4583FAAAEF" owner="DCE.AC2FB049-2DF2-AD07-4356-D2BFF0BD9DA3"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="DFS" xmi.id="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" associationEnd="DCE.CBEEA16D-C694-C9AB-BCC3-797D7F277EA2 DCE.CCF39D42-ECAC-07DE-7D63-34050236A616 DCE.D73A080A-5545-3D45-875B-C428661793C4 DCE.502A8075-BAB4-A870-92F1-90B4158EDC61 DCE.023FDA02-1532-F98A-6EF5-B8BE75F8B7DD"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchAlgortihms/DFS.java" xmi.id="DCE.5CE2D41B-2D3D-3BA9-4AE1-E580B94F25DB" owner="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA"/><UML:TaggedValue xmi.id="DCE.0CE4A199-9687-1517-84E7-667C90ABD9D1" name="documentation">
+<UML:TaggedValue.dataValue>
+ Depth-First search algorithm class 
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="Graph" AssociationType="Aggregation" name="tree"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="node"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="root"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" name="searchStack">
+</UML:Attribute><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" name="exploredStack">
+</UML:Attribute><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="pathcost" xmi.id="DCE.5B3CBFCF-F152-CD43-BFF7-CF7831406E92" owner="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="DCE.4C9A1C54-1728-825B-AF6F-0EBD5EDB58C9" AssociationType="Aggregation" name="expanded" xmi.id="DCE.9AA2BDFC-6957-565B-EDAD-24265007688D" owner="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="DFS" xmi.id="DCE.10747FC1-7A26-AC79-BD3A-304B85168EA0" owner="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.75839F39-564D-CC4F-F73E-DA537958ADB7" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the DFS object
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="dfs" xmi.id="DCE.6FFF6478-FA0B-02C3-9A72-92ED54D2E2C2" owner="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.16F17381-157F-276F-E01B-0FBCFED0776A" name="documentation">
+<UML:TaggedValue.dataValue>
+     Depth-First Search algorithm
+     
+     @param start The start state of the graph
+     @param goal  The goal state of the graph 
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.DAC214B9-30A3-3B2F-DE6D-4A8617C3A31F" owner="DCE.6FFF6478-FA0B-02C3-9A72-92ED54D2E2C2"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="start" xmi.id="DCE.E1A7DF1E-27E5-DB47-3614-11D47B271393" owner="DCE.6FFF6478-FA0B-02C3-9A72-92ED54D2E2C2"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.2F068E9D-52A3-11E3-814E-8FC0CD739F8D" owner="DCE.6FFF6478-FA0B-02C3-9A72-92ED54D2E2C2"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="BFS" xmi.id="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" associationEnd="DCE.12214DE5-C552-1E7C-6600-620BA6768C82 DCE.81900DA8-585E-D795-CFFF-57EEA91D4C17 DCE.42ED0A42-6C35-24C7-8E0E-EC89E0921D12 DCE.127C46AA-75D9-4FC6-CFEB-4C664F259B46 DCE.99582A02-9EB2-B688-6CA6-E461022C6862"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchAlgortihms/BFS.java" xmi.id="DCE.703DD090-BBE7-BF7B-4710-87C316A5D324" owner="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E"/><UML:TaggedValue xmi.id="DCE.34AE3A54-A13C-9BE1-690F-53EF9460F0CD" name="documentation">
+<UML:TaggedValue.dataValue>
+ Class file for the Breadth first search algorithm
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="Graph" AssociationType="Aggregation" name="tree"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="node"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="root"/><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" name="searchQueue">
+</UML:Attribute><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="TreeNode" name="exploredStack">
+</UML:Attribute><UML:Attribute visibility="package" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="pathcost" xmi.id="DCE.DD2FE6E6-4C80-34DE-BCE9-E1082506C7EE" owner="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="BFS" xmi.id="DCE.0FDF9C6A-1574-A36A-5360-FB38CC433015" owner="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.952A4AE3-A303-A4F3-2103-B79B5FE20EDF" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the BFS object
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="bfs" xmi.id="DCE.ACA493CF-C3F8-2D0C-9448-2A05EBC45EB6" owner="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.7034DDB5-15BB-1A6E-8900-46172EE983F5" name="documentation">
+<UML:TaggedValue.dataValue>
+     Breath-First search method 
+     
+     @param start     The start State of the graph
+     @param goal      The goal State of the graph 
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.FD7C1A8D-E4FB-CD29-AC0E-85A9DAAF832D" owner="DCE.ACA493CF-C3F8-2D0C-9448-2A05EBC45EB6"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="start" xmi.id="DCE.0825A083-8B35-8A36-5B46-9F689087DE25" owner="DCE.ACA493CF-C3F8-2D0C-9448-2A05EBC45EB6"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.0C4CD54B-9989-F3A6-CB9D-451842B2AEF7" owner="DCE.ACA493CF-C3F8-2D0C-9448-2A05EBC45EB6"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="AStar" xmi.id="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" associationEnd="DCE.D0DB51A3-8A21-244A-C793-283EBCA34288 DCE.6D41F8C1-7A70-163B-4E20-39D95FA49EF3 DCE.6E656D07-4323-B77C-7825-3377ADF46426 DCE.F35498FE-B882-00EC-DD6E-64AD0C229E64 DCE.7CD0D2D6-2A25-873F-E6D6-FB338FEC8B4D DCE.55AEC071-2B18-6504-E6BC-551053615856 DCE.B3683A5F-08A6-1680-F07C-A591EE9CCA6F"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchAlgortihms/AStar.java" xmi.id="DCE.B0927C2E-B27E-BBE0-7857-82E5F19190A2" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2"/><UML:TaggedValue xmi.id="DCE.319C900D-9B8B-C357-2972-58727726ABBC" name="documentation">
+<UML:TaggedValue.dataValue>
+ Aalgorithm class
+ 
+ @author Stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="pathcost" xmi.id="DCE.8D216233-FC2C-39BA-F2C1-30B47802DF49" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="Graph" AssociationType="Aggregation" name="tree"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" name="searchQueue">
+</UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" name="exploredQueue">
+</UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="node"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="TreeNode" AssociationType="Aggregation" name="root"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="StateComparator" AssociationType="Aggregation" name="comparator"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.0618FA8F-CFB4-EEE6-E563-A88F9681DF35" name="expanded" xmi.id="DCE.6E3E0FC0-072E-A854-C68C-7929F5C022E0" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2">
+<UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.9C9096FB-53F2-3D69-B904-774B34CD7A2A">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="ArrayList" xmi.id="DCE.09A512A4-BDB6-035A-9ACD-DB4176124BA6"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:Attribute><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="ManhattanDistance" AssociationType="Aggregation" name="md"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="manhattanDistanceSum" xmi.id="DCE.F8E1A001-595A-C777-6B64-9B3FE6827231" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="AStar" xmi.id="DCE.A4DCF909-F9B4-A9CE-ABFE-0A2DDB552456" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E7A87EBE-D0CC-1920-985B-4BF477901238" name="documentation">
+<UML:TaggedValue.dataValue>
+     Aclass constructor
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="astar" xmi.id="DCE.32A6E876-CBEE-C347-EB2C-35BB876F2575" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.B59A3195-BDE5-AA88-3724-CA053A301793" name="documentation">
+<UML:TaggedValue.dataValue>
+     Aalgorithm
+     
+     @param start  The start State
+     @param goal   The goal State
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.732DBD6B-31B3-D501-BFC9-3A55B17A5A91" owner="DCE.32A6E876-CBEE-C347-EB2C-35BB876F2575"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="start" xmi.id="DCE.3E055430-81D0-9F2A-2423-90863025AB9C" owner="DCE.32A6E876-CBEE-C347-EB2C-35BB876F2575"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.4B98CCF2-A398-2129-E7A5-3245A12A6EF9" owner="DCE.32A6E876-CBEE-C347-EB2C-35BB876F2575"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="addNode" xmi.id="DCE.5B06C482-EAFC-022F-C495-C0B1E38B6957" owner="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.0CDBDCCD-DF7D-4DA5-56C3-ED1551B4834C" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to add a new node the the search queue.
+     This method calculates the Manhattan Distance for every child in the 
+     current node and only add them to the search queue if the 
+     Manhattan Distance is less than the original calculated one.
+     
+     @param current       The current node
+     @param goal          The goal node, use for the Manhattan Distance
+                          calculation
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.84F788A5-C36B-2F90-B0E2-0FFE5FB73C73" owner="DCE.5B06C482-EAFC-022F-C495-C0B1E38B6957"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="current" xmi.id="DCE.E38BA846-5ECC-2882-E9C7-80CF28790619" owner="DCE.5B06C482-EAFC-022F-C495-C0B1E38B6957"/><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="goal" xmi.id="DCE.EECB9384-BCDC-5543-890E-FF84F4A7FE60" owner="DCE.5B06C482-EAFC-022F-C495-C0B1E38B6957"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class>
+<UML:Aggregation xmi.id="DCE.ABA9B8D1-18C4-03EE-EB9D-B9C607C97E75" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.CBEEA16D-C694-C9AB-BCC3-797D7F277EA2" partEnd="DCE.2E8EE385-3AA3-A74C-AE39-28814CA4ABF1"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.CBEEA16D-C694-C9AB-BCC3-797D7F277EA2" visibility="private" type="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA" association="DCE.ABA9B8D1-18C4-03EE-EB9D-B9C607C97E75"/>
+<UML:NavigableEnd xmi.id="DCE.2E8EE385-3AA3-A74C-AE39-28814CA4ABF1" visibility="package" type="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63" association="DCE.ABA9B8D1-18C4-03EE-EB9D-B9C607C97E75" name="tree"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.3746A03B-E3DE-171B-DDFA-47BF1E5A1181" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.CCF39D42-ECAC-07DE-7D63-34050236A616" partEnd="DCE.A6B5DEDC-8A38-E0B8-9516-27A5C0DAD625"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.CCF39D42-ECAC-07DE-7D63-34050236A616" visibility="private" type="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA" association="DCE.3746A03B-E3DE-171B-DDFA-47BF1E5A1181"/>
+<UML:NavigableEnd xmi.id="DCE.A6B5DEDC-8A38-E0B8-9516-27A5C0DAD625" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.3746A03B-E3DE-171B-DDFA-47BF1E5A1181" name="node"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.AAF417A4-A769-ECAA-365F-F81A14F94542" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.D73A080A-5545-3D45-875B-C428661793C4" partEnd="DCE.DEEDF455-D85A-999C-A7C4-DCCE4D553F39"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.D73A080A-5545-3D45-875B-C428661793C4" visibility="private" type="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA" association="DCE.AAF417A4-A769-ECAA-365F-F81A14F94542"/>
+<UML:NavigableEnd xmi.id="DCE.DEEDF455-D85A-999C-A7C4-DCCE4D553F39" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.AAF417A4-A769-ECAA-365F-F81A14F94542" name="root"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.EAE02C40-AB85-F51D-F225-8AD978B0AF3C" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.502A8075-BAB4-A870-92F1-90B4158EDC61" partEnd="DCE.BCFA4AA9-E0BA-F0F3-8DBB-34087B0402DD"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.502A8075-BAB4-A870-92F1-90B4158EDC61" visibility="private" type="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA" association="DCE.EAE02C40-AB85-F51D-F225-8AD978B0AF3C"/>
+<UML:NavigableEnd xmi.id="DCE.BCFA4AA9-E0BA-F0F3-8DBB-34087B0402DD" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.EAE02C40-AB85-F51D-F225-8AD978B0AF3C" name="searchStack"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.2F91EE4C-23B3-124B-9B9B-EEE962BD3C77">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="Stack" xmi.id="DCE.E98B78A5-AD71-264D-CD07-711AA8404ABC"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.CE6D0B40-7D93-E3E2-008B-41E1414C6995" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.023FDA02-1532-F98A-6EF5-B8BE75F8B7DD" partEnd="DCE.64CF4FDC-6206-966C-48B1-AF190213CD24"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.023FDA02-1532-F98A-6EF5-B8BE75F8B7DD" visibility="private" type="DCE.06D2F020-41EB-21E4-7C2C-8EC76058C7AA" association="DCE.CE6D0B40-7D93-E3E2-008B-41E1414C6995"/>
+<UML:NavigableEnd xmi.id="DCE.64CF4FDC-6206-966C-48B1-AF190213CD24" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.CE6D0B40-7D93-E3E2-008B-41E1414C6995" name="exploredStack"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.4D9F3CD8-95F5-0781-8537-9F805FA3FF80">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="Stack" xmi.id="DCE.91F7056D-26D5-CC51-9B1F-ECFBA0550E30"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.88CB5428-4D85-0D80-CC18-20F7974D9756" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.D0DB51A3-8A21-244A-C793-283EBCA34288" partEnd="DCE.65CB0BD0-7AA5-E43D-4ABE-8FBFE24B2FD3"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.D0DB51A3-8A21-244A-C793-283EBCA34288" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.88CB5428-4D85-0D80-CC18-20F7974D9756"/>
+<UML:NavigableEnd xmi.id="DCE.65CB0BD0-7AA5-E43D-4ABE-8FBFE24B2FD3" visibility="private" type="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63" association="DCE.88CB5428-4D85-0D80-CC18-20F7974D9756" name="tree"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.8A7F2C99-8F25-6683-E6B4-076702A574E0" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.6D41F8C1-7A70-163B-4E20-39D95FA49EF3" partEnd="DCE.297F645D-738D-AB74-3B51-67BD989295C3"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.6D41F8C1-7A70-163B-4E20-39D95FA49EF3" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.8A7F2C99-8F25-6683-E6B4-076702A574E0"/>
+<UML:NavigableEnd xmi.id="DCE.297F645D-738D-AB74-3B51-67BD989295C3" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.8A7F2C99-8F25-6683-E6B4-076702A574E0" name="searchQueue"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.37A2127A-CC05-F277-98C9-6E27DB7781E7">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="PriorityQueue" xmi.id="DCE.E7A0B18B-0958-7926-3122-D0283DA16464"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.963698A8-5765-5494-9382-BF101A49BD88" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.6E656D07-4323-B77C-7825-3377ADF46426" partEnd="DCE.50A42232-DEDF-E9B0-B388-68A25205CD50"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.6E656D07-4323-B77C-7825-3377ADF46426" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.963698A8-5765-5494-9382-BF101A49BD88"/>
+<UML:NavigableEnd xmi.id="DCE.50A42232-DEDF-E9B0-B388-68A25205CD50" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.963698A8-5765-5494-9382-BF101A49BD88" name="exploredQueue"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.FB294D21-DE31-BF64-71D1-2D586263DB24">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="Queue" xmi.id="DCE.162F4677-709B-2ADF-0287-FF4E0ED8C888"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.3DC7548A-E632-4FE9-7685-2A9550D2F844" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.F35498FE-B882-00EC-DD6E-64AD0C229E64" partEnd="DCE.15927E5A-1380-673A-EE66-9A760F75C564"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.F35498FE-B882-00EC-DD6E-64AD0C229E64" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.3DC7548A-E632-4FE9-7685-2A9550D2F844"/>
+<UML:NavigableEnd xmi.id="DCE.15927E5A-1380-673A-EE66-9A760F75C564" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.3DC7548A-E632-4FE9-7685-2A9550D2F844" name="node"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.59A5AE5D-7060-27FF-2D33-288200E3C8EF" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.7CD0D2D6-2A25-873F-E6D6-FB338FEC8B4D" partEnd="DCE.264B14CE-A218-C1B1-29E8-6AFA406FA1B0"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.7CD0D2D6-2A25-873F-E6D6-FB338FEC8B4D" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.59A5AE5D-7060-27FF-2D33-288200E3C8EF"/>
+<UML:NavigableEnd xmi.id="DCE.264B14CE-A218-C1B1-29E8-6AFA406FA1B0" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.59A5AE5D-7060-27FF-2D33-288200E3C8EF" name="root"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.F26643A2-476B-55A5-E45B-78A8C5C6AA6D" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.55AEC071-2B18-6504-E6BC-551053615856" partEnd="DCE.4125C9C0-138F-D8B1-36BA-27E3AFEB9396"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.55AEC071-2B18-6504-E6BC-551053615856" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.F26643A2-476B-55A5-E45B-78A8C5C6AA6D"/>
+<UML:NavigableEnd xmi.id="DCE.4125C9C0-138F-D8B1-36BA-27E3AFEB9396" visibility="private" type="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36" association="DCE.F26643A2-476B-55A5-E45B-78A8C5C6AA6D" name="comparator"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.6F46AEBC-877B-A0F7-60E1-118AF7DD7C45" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.B3683A5F-08A6-1680-F07C-A591EE9CCA6F" partEnd="DCE.1A136E16-DCDF-9773-F0B5-ED27BBD3B651"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.B3683A5F-08A6-1680-F07C-A591EE9CCA6F" visibility="private" type="DCE.3A01F7D6-9F58-2951-DD73-D247D9C0AFA2" association="DCE.6F46AEBC-877B-A0F7-60E1-118AF7DD7C45"/>
+<UML:NavigableEnd xmi.id="DCE.1A136E16-DCDF-9773-F0B5-ED27BBD3B651" visibility="private" type="DCE.2F4CA183-5557-A241-7751-224833A643B5" association="DCE.6F46AEBC-877B-A0F7-60E1-118AF7DD7C45" name="md"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.172F539D-07A8-22E9-7914-49E49CD78A87" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.DA9921CF-1225-B1E8-DE1F-AC69300A8DD9" partEnd="DCE.26CB1339-9591-265F-741D-911881B8F1AB"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.DA9921CF-1225-B1E8-DE1F-AC69300A8DD9" visibility="private" type="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" association="DCE.172F539D-07A8-22E9-7914-49E49CD78A87"/>
+<UML:NavigableEnd xmi.id="DCE.26CB1339-9591-265F-741D-911881B8F1AB" visibility="private" type="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63" association="DCE.172F539D-07A8-22E9-7914-49E49CD78A87" name="tree"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.6B0CEA43-82FA-6577-6719-57603A07FA22" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.61D2B1B0-7E48-F409-CD90-A1BFD5611493" partEnd="DCE.F89579E4-E330-A676-8328-3DFEFA3A1B11"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.61D2B1B0-7E48-F409-CD90-A1BFD5611493" visibility="private" type="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" association="DCE.6B0CEA43-82FA-6577-6719-57603A07FA22"/>
+<UML:NavigableEnd xmi.id="DCE.F89579E4-E330-A676-8328-3DFEFA3A1B11" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.6B0CEA43-82FA-6577-6719-57603A07FA22" name="searchQueue"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.B6CE9791-9BB1-B01E-0D37-76A5C3C1CD9E">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="PriorityQueue" xmi.id="DCE.442D3ADD-B8CB-571B-0CEF-D6AC7D73371C"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.C2A2B046-6C92-56FB-5714-58FF23D28AE5" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.4C09DBAC-7F05-4BC9-B8AE-77AD4150ED80" partEnd="DCE.BABC8B42-8CF2-BB3A-875C-F006ED1D7DF3"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.4C09DBAC-7F05-4BC9-B8AE-77AD4150ED80" visibility="private" type="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" association="DCE.C2A2B046-6C92-56FB-5714-58FF23D28AE5"/>
+<UML:NavigableEnd xmi.id="DCE.BABC8B42-8CF2-BB3A-875C-F006ED1D7DF3" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.C2A2B046-6C92-56FB-5714-58FF23D28AE5" name="exploredStack"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.D8B45D2A-846E-77C7-343F-357937DEE5BF">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="Stack" xmi.id="DCE.FAD1E871-39C0-4468-C99A-A8F0A60A5944"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.777E9937-0199-6C8A-A05A-FCEC6BE054AB" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.23D9FF00-A67E-8B12-ADD7-833AB6C5A2FA" partEnd="DCE.49FA2C14-699F-B3DA-76B1-98E28A5D6608"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.23D9FF00-A67E-8B12-ADD7-833AB6C5A2FA" visibility="private" type="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" association="DCE.777E9937-0199-6C8A-A05A-FCEC6BE054AB"/>
+<UML:NavigableEnd xmi.id="DCE.49FA2C14-699F-B3DA-76B1-98E28A5D6608" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.777E9937-0199-6C8A-A05A-FCEC6BE054AB" name="node"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.95D77E66-6E77-D970-82E0-2ED4E44C8021" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.C31EEA91-071D-1FE4-2A14-8E32BD4721BF" partEnd="DCE.DC23D6C2-24B2-0E5A-983E-653F771844A4"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.C31EEA91-071D-1FE4-2A14-8E32BD4721BF" visibility="private" type="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" association="DCE.95D77E66-6E77-D970-82E0-2ED4E44C8021"/>
+<UML:NavigableEnd xmi.id="DCE.DC23D6C2-24B2-0E5A-983E-653F771844A4" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.95D77E66-6E77-D970-82E0-2ED4E44C8021" name="root"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.790FC3B5-4D71-8438-79E7-BFDF54E21182" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.413660B1-CC80-672F-3AB7-866FD0C29A9A" partEnd="DCE.F48A277E-812F-A09D-D3EF-51FCED804E48"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.413660B1-CC80-672F-3AB7-866FD0C29A9A" visibility="private" type="DCE.05F77A37-4508-3ACB-12BC-7542280023DD" association="DCE.790FC3B5-4D71-8438-79E7-BFDF54E21182"/>
+<UML:NavigableEnd xmi.id="DCE.F48A277E-812F-A09D-D3EF-51FCED804E48" visibility="private" type="DCE.46FEBC3D-F384-92A9-F67B-79D444A53B36" association="DCE.790FC3B5-4D71-8438-79E7-BFDF54E21182" name="comparator"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.8626ED03-73B0-00CF-EFC5-E5DA7A6F8AE9" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.12214DE5-C552-1E7C-6600-620BA6768C82" partEnd="DCE.FE4CB631-0E0A-ED46-907C-5F3729370C05"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.12214DE5-C552-1E7C-6600-620BA6768C82" visibility="private" type="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E" association="DCE.8626ED03-73B0-00CF-EFC5-E5DA7A6F8AE9"/>
+<UML:NavigableEnd xmi.id="DCE.FE4CB631-0E0A-ED46-907C-5F3729370C05" visibility="package" type="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63" association="DCE.8626ED03-73B0-00CF-EFC5-E5DA7A6F8AE9" name="tree"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.FB51BEF8-84BD-6252-16D5-7124C688AD42" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.81900DA8-585E-D795-CFFF-57EEA91D4C17" partEnd="DCE.744BE2E4-CFC9-BD61-CED0-0D40C4701A1F"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.81900DA8-585E-D795-CFFF-57EEA91D4C17" visibility="private" type="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E" association="DCE.FB51BEF8-84BD-6252-16D5-7124C688AD42"/>
+<UML:NavigableEnd xmi.id="DCE.744BE2E4-CFC9-BD61-CED0-0D40C4701A1F" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.FB51BEF8-84BD-6252-16D5-7124C688AD42" name="node"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.7DD79B3D-EBD3-18E3-EB46-F86A63BCDE6E" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.42ED0A42-6C35-24C7-8E0E-EC89E0921D12" partEnd="DCE.6B1A1E51-6199-8FF5-D308-E008DB259353"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.42ED0A42-6C35-24C7-8E0E-EC89E0921D12" visibility="private" type="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E" association="DCE.7DD79B3D-EBD3-18E3-EB46-F86A63BCDE6E"/>
+<UML:NavigableEnd xmi.id="DCE.6B1A1E51-6199-8FF5-D308-E008DB259353" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.7DD79B3D-EBD3-18E3-EB46-F86A63BCDE6E" name="root"/></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.47068296-6C10-0DC3-07AF-EB31B4EF6326" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.127C46AA-75D9-4FC6-CFEB-4C664F259B46" partEnd="DCE.B53287AD-53BD-CF44-66BF-E73DE74FB7A7"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.127C46AA-75D9-4FC6-CFEB-4C664F259B46" visibility="private" type="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E" association="DCE.47068296-6C10-0DC3-07AF-EB31B4EF6326"/>
+<UML:NavigableEnd xmi.id="DCE.B53287AD-53BD-CF44-66BF-E73DE74FB7A7" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.47068296-6C10-0DC3-07AF-EB31B4EF6326" name="searchQueue"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.4229D2B0-02A7-73A5-915D-14781E6CCF4F">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="Queue" xmi.id="DCE.4061A659-5247-A132-4D23-DE2EB08CC042"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation>
+<UML:Aggregation xmi.id="DCE.003C4650-908B-8EC8-F742-2BABAACAA558" owner="DCE.650B4C88-C315-CE4C-4A93-783D60954842" aggregateEnd="DCE.99582A02-9EB2-B688-6CA6-E461022C6862" partEnd="DCE.6B33518E-BBF0-D81C-12D8-2D4265FFD9E9"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.99582A02-9EB2-B688-6CA6-E461022C6862" visibility="private" type="DCE.2917941B-EEF8-8EDB-97E3-E304DA418D6E" association="DCE.003C4650-908B-8EC8-F742-2BABAACAA558"/>
+<UML:NavigableEnd xmi.id="DCE.6B33518E-BBF0-D81C-12D8-2D4265FFD9E9" visibility="package" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.003C4650-908B-8EC8-F742-2BABAACAA558" name="exploredStack"><UML:TypedElement.multiplicity>
+<UML:Multiplicity xmi.id="DCE.E03E3ACB-4614-EFC7-3706-642CFC6E1B1B">
+<UML:Multiplicity.range><UML:MultiplicityRange lower="0" upper="*" collectionType="Stack" xmi.id="DCE.B5F60C5F-A325-FE9A-96FF-F9EFBCBA996C"/></UML:Multiplicity.range></UML:Multiplicity></UML:TypedElement.multiplicity></UML:NavigableEnd></UML:Association.end></UML:Aggregation></UML:Element.ownedElement></UML:Package><UML:Package name="SearchTree" xmi.id="DCE.E3BFB23D-AD5D-29B6-98BB-315A9947C91E">
+<UML:Element.ownedElement><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="TreeNode" xmi.id="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" owner="DCE.E3BFB23D-AD5D-29B6-98BB-315A9947C91E" associationEnd="DCE.A6B5DEDC-8A38-E0B8-9516-27A5C0DAD625 DCE.DEEDF455-D85A-999C-A7C4-DCCE4D553F39 DCE.BCFA4AA9-E0BA-F0F3-8DBB-34087B0402DD DCE.64CF4FDC-6206-966C-48B1-AF190213CD24 DCE.CD5CB243-7D4F-924D-0989-D5D058504B1C DCE.297F645D-738D-AB74-3B51-67BD989295C3 DCE.50A42232-DEDF-E9B0-B388-68A25205CD50 DCE.15927E5A-1380-673A-EE66-9A760F75C564 DCE.264B14CE-A218-C1B1-29E8-6AFA406FA1B0 DCE.F89579E4-E330-A676-8328-3DFEFA3A1B11 DCE.BABC8B42-8CF2-BB3A-875C-F006ED1D7DF3 DCE.49FA2C14-699F-B3DA-76B1-98E28A5D6608 DCE.DC23D6C2-24B2-0E5A-983E-653F771844A4 DCE.744BE2E4-CFC9-BD61-CED0-0D40C4701A1F DCE.6B1A1E51-6199-8FF5-D308-E008DB259353 DCE.B53287AD-53BD-CF44-66BF-E73DE74FB7A7 DCE.6B33518E-BBF0-D81C-12D8-2D4265FFD9E9"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchTree/TreeNode.java" xmi.id="DCE.EA7BA18B-7DA2-9AC1-A881-EDBC94D418A3" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"/><UML:TaggedValue xmi.id="DCE.B7ACD66D-56C7-CFA3-B2C7-19A2190F1864" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class represents a node in the search tree/graph
+ 
+ @author stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="State" AssociationType="Aggregation" name="state"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.DFBB35B0-5AA7-601A-C9A2-CDD684848BCB" AssociationType="Aggregation" name="children" xmi.id="DCE.56CBF271-37EC-C635-AACF-CABF269F81F9" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.DFBB35B0-5AA7-601A-C9A2-CDD684848BCB" AssociationType="Aggregation" name="siblings" xmi.id="DCE.6EC85397-D71B-9412-97B5-591A3CABC220" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"/><UML:Attribute visibility="private" isLeaf="false" ownerScope="instance" type="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" name="explored" xmi.id="DCE.EC77D606-265F-AA4C-AAF6-BF91CCC6BE68" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"/><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="TreeNode" xmi.id="DCE.63886775-C52F-7034-25F4-543AD62D2E93" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.C09FC906-E472-28F1-44F8-45A9EE2AF3AE" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the TreeNode class. Creates a deep copy of the state which
+     is passed as parameter Initialises the linkedLists.
+     
+     @param s     The State the node referes too
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" name="s" xmi.id="DCE.6E47C47D-D8C2-47A3-50E4-94493055CDD4" owner="DCE.63886775-C52F-7034-25F4-543AD62D2E93"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="TreeNode" xmi.id="DCE.F088CF74-0074-25DE-B63B-066F1DB0EBCF" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.33B42785-C793-2C36-2E71-DB6E0CBB4F27" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor of the TreeNode class. 
+     Creates a deep copy of another TreeNode object.
+     
+     @param t     The TreeNode object this instance is a copy off
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="t" xmi.id="DCE.735FF7F8-4B57-7B7C-1D77-55F2584A61C0" owner="DCE.F088CF74-0074-25DE-B63B-066F1DB0EBCF"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="addChild" xmi.id="DCE.0FDE5985-7C52-6CB3-DE4C-003CC9391960" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.342FEB2B-8E0F-E5A2-B48C-916C7FFCF52A" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to add a child to the linkedList
+     
+     @param child     The TreeNode object to add to the children list 
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.03A64A89-DAFC-2191-00FE-80E8C6A6CC07" owner="DCE.0FDE5985-7C52-6CB3-DE4C-003CC9391960"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="child" xmi.id="DCE.C5E08907-180C-99D8-EA58-0B97A6D8F050" owner="DCE.0FDE5985-7C52-6CB3-DE4C-003CC9391960"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="addSibling" xmi.id="DCE.9A62EE52-B679-2F63-DA90-F568AE19344D" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.C4571A6D-203E-2634-3B34-4521FDE76262" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to add a sibling to the linkedList of siblings
+     
+     @param sibling   The TreeNode object to add to the siblings list 
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.1D196C9D-B652-9EAC-EE56-1E7B0ACD0194" owner="DCE.9A62EE52-B679-2F63-DA90-F568AE19344D"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="sibling" xmi.id="DCE.55E930CF-DD7C-AA04-A676-4254AA26E016" owner="DCE.9A62EE52-B679-2F63-DA90-F568AE19344D"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getState" xmi.id="DCE.B18DC7D4-CF14-7B6A-C47C-B1A55717355C" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.B00C8F53-2322-54D6-EB8E-B8C9817B6E51" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return the state of the node object
+     
+     @return the State object of the node
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" xmi.id="DCE.DA688D01-0945-2664-DB0E-E7471391CFF3" owner="DCE.B18DC7D4-CF14-7B6A-C47C-B1A55717355C"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getFirstChild" xmi.id="DCE.7E9F463A-2329-C375-31D3-33270A13F58B" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.AB9FBAEB-6A3D-F166-6587-47BE49C4D548" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return(poll) and remove the first element of the "Children"
+     linkedList
+     
+     @return The head of the "children" linkedList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" xmi.id="DCE.CA0B5ABF-7D9E-3166-E77E-E400311115D5" owner="DCE.7E9F463A-2329-C375-31D3-33270A13F58B"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getFirstSibling" xmi.id="DCE.0C6B6FEC-4C34-F7F5-D6B0-516907DB2A38" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.5D436FDC-1232-E0F1-BFD6-92F640BC3DB7" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return(poll) and remove the first element of the "siblings"
+     linkedList
+     
+     @return The head of the "siblings" linkedList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" xmi.id="DCE.12E86F7A-CD87-EB63-BF1C-D326EC08BE12" owner="DCE.0C6B6FEC-4C34-F7F5-D6B0-516907DB2A38"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="siblingIsEmpty" xmi.id="DCE.605F3135-F627-2828-7138-FF901F8115EC" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.D36DFBD6-2622-9302-5090-D4A8CEBFC8C0" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to check if the TreeNode object has siblings. Returns true if the
+     linkedList is empty
+     
+     @return Boolean "True" if the list is empty
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" xmi.id="DCE.7EDB3C7E-BB97-72AA-9621-1418A4FC6363" owner="DCE.605F3135-F627-2828-7138-FF901F8115EC"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="childrenIsEmpty" xmi.id="DCE.A973CAE8-AF05-EADF-367B-FA3E93E86FB6" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.85650F1A-53A2-0711-AC42-BB3C493FCC2D" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to check if the TreeNode object has children. Returns true if the
+     linkedList is empty
+     
+     @return Boolean "True" if the list is empty
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" xmi.id="DCE.9527D1FB-3262-60C4-198B-71CF8E8C54EE" owner="DCE.A973CAE8-AF05-EADF-367B-FA3E93E86FB6"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="peekChild" xmi.id="DCE.88ED758D-2E25-4027-5FC6-8018C5FC05B4" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.6EAEEB5C-74CB-CE51-47D1-53C4103CB1B4" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to peek(return but not remove) the head of the "children"
+     linkedList
+     
+     @return The head of the "children" LinkedList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" xmi.id="DCE.D47AB934-40CA-C981-48EE-45F30DA940FE" owner="DCE.88ED758D-2E25-4027-5FC6-8018C5FC05B4"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="removeFirstChild" xmi.id="DCE.40D70867-CD6B-5D67-2D3E-9EFA1806A03D" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.5618D87D-E4CF-C9B4-ADA0-4428BFA3FD79" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to remove the head of the children linkedList
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.238FE3BA-313A-1902-EE02-795C9E1B0877" owner="DCE.40D70867-CD6B-5D67-2D3E-9EFA1806A03D"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="setExplored" xmi.id="DCE.F0174D39-8B8B-7A02-1282-D6F692E7E565" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.9C7639E7-6712-185C-0DAA-0638E6F490D3" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to set the "explored" variable of the object
+     
+     @param b The boolean value to set
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.064ACCBC-6543-05DC-102F-0BF4B8BC079E" owner="DCE.F0174D39-8B8B-7A02-1282-D6F692E7E565"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" name="b" xmi.id="DCE.98BC54C1-24B5-1D80-5660-616C976E38F4" owner="DCE.F0174D39-8B8B-7A02-1282-D6F692E7E565"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getExplored" xmi.id="DCE.15161B48-8E7C-906E-04B7-E338DB3BA44D" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.E5EF38BF-2430-B7DA-FABD-28388FC824BE" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to get the "explored" variable of the object
+     
+     @return The boolean value of "explored"
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" xmi.id="DCE.D2EE6307-BAC4-20FF-3D51-26188E951C4F" owner="DCE.15161B48-8E7C-906E-04B7-E338DB3BA44D"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="getNumOfChildren" xmi.id="DCE.56E45628-F07B-4BB3-F900-2F15B9D3F87B" owner="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.98C9015B-FD24-52F9-5BE0-0E2459AC99E7" name="documentation">
+<UML:TaggedValue.dataValue>
+     Method to return the size of the "children" linkedList
+     
+     @return  The size of the List
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" xmi.id="DCE.412288A1-E140-FC6D-890A-174CDE5E9E7C" owner="DCE.56E45628-F07B-4BB3-F900-2F15B9D3F87B"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class><UML:Class isAbstract="false" isLeaf="false" visibility="public" name="Graph" xmi.id="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63" owner="DCE.E3BFB23D-AD5D-29B6-98BB-315A9947C91E" associationEnd="DCE.2E8EE385-3AA3-A74C-AE39-28814CA4ABF1 DCE.65CB0BD0-7AA5-E43D-4ABE-8FBFE24B2FD3 DCE.26CB1339-9591-265F-741D-911881B8F1AB DCE.FE4CB631-0E0A-ED46-907C-5F3729370C05"><UML:Element.ownedElement><UML:SourceFileArtifact sourcefile="{${src.dir}}/SearchTree/Graph.java" xmi.id="DCE.6AC3EF38-6993-417A-642A-6F8D1BC31C08" owner="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63"/><UML:TaggedValue xmi.id="DCE.938E0B1D-69C0-5F83-C14E-BC2B691E0BC0" name="documentation">
+<UML:TaggedValue.dataValue>
+ This class is used to generate the next step in the graph.
+ 
+ @author Stefan
+ </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" isConstructor="true" name="Graph" xmi.id="DCE.0F5DEEDD-E893-0AC6-E879-51C3D15043E4" owner="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63">
+<UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.F4A095DF-CFCF-A5DB-4335-A716FFCC2809" name="documentation">
+<UML:TaggedValue.dataValue>
+     Constructor for the graph object
+     </UML:TaggedValue.dataValue></UML:TaggedValue></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="nextStep" xmi.id="DCE.19A8C14B-DF25-FCE8-2B57-22C04EF03CA5" owner="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.BD4E5A2C-29A0-38BE-783C-6E6DE5B2DEAF" name="documentation">
+<UML:TaggedValue.dataValue>
+     Algorithm to generate the next state in the graph Based on the fact that
+     empty space can only move horizontally and vertically. To make the
+     process easier simple numbers identifiers are assigned to the possible
+     tiles in the puzzle. These numbers represent indices in the arrayList and
+     are : 0 1 2 3 4 5 6 7 8 This method checks where the empty tile is and
+     calls other methods to switch the tiles.
+     
+     @param s The state on which the next step will be based
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.7882A960-3C75-4AA8-15DE-FF2292C621B7" owner="DCE.19A8C14B-DF25-FCE8-2B57-22C04EF03CA5"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="s" xmi.id="DCE.67AB7BE2-3629-3EAC-7E8F-B4BCF80FBF91" owner="DCE.19A8C14B-DF25-FCE8-2B57-22C04EF03CA5"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="corner" xmi.id="DCE.33492483-7FA2-C027-F7A1-86DA5D10608E" owner="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.58B3DDDE-C43A-2649-9542-3656CD31A61D" name="documentation">
+<UML:TaggedValue.dataValue>
+     This method is used to generate the next level of the graph when the
+     empty tile is at a corner. Saves all changes to a arrayList of possible
+     states. The tiles where this method is used corresponds with the fields
+     0, 2, 6 ,and 8 as shown below
+     
+     0 1 2
+     3 4 5
+     6 7 8
+     
+     @param tile The index of the empty tile(0)
+     @param s The state to base algorithm on
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.8C15B6C8-D7F4-3959-3ECE-53D2A86316D4" owner="DCE.33492483-7FA2-C027-F7A1-86DA5D10608E"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="tile" xmi.id="DCE.A6AB1BBD-4B1D-E7C9-E736-288607623168" owner="DCE.33492483-7FA2-C027-F7A1-86DA5D10608E"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="s" xmi.id="DCE.5E09F2EC-2A0A-87C2-1A99-11EFF176849E" owner="DCE.33492483-7FA2-C027-F7A1-86DA5D10608E"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="midSection" xmi.id="DCE.3C0E7925-C756-CD4F-CF5C-78C5DBD8444B" owner="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.1F93CD4C-3D82-38DA-F8CA-B5FFFFCDDCAC" name="documentation">
+<UML:TaggedValue.dataValue>
+     This method to generate the next level of the graph when the empty
+     tile(0) is on the midsection of the sides. Saves all possible states to
+     an arrayList. The tiles where this method will be used correspond to the
+     fields 1, 3, 5, and 7 as shown below
+     
+     0 1 2
+     3 4 5
+     6 7 8
+     
+     @param tile The index of the empty tile(0)
+     @param s The state to base algorithm on
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.2A6B7D26-3A46-BD12-A326-55727ACCCE7F" owner="DCE.3C0E7925-C756-CD4F-CF5C-78C5DBD8444B"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="tile" xmi.id="DCE.5C57B3ED-F0A6-F74B-6FC1-8152353B2DA4" owner="DCE.3C0E7925-C756-CD4F-CF5C-78C5DBD8444B"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="s" xmi.id="DCE.81DD8EAA-8A48-34DB-820F-CDEA828E6CC4" owner="DCE.3C0E7925-C756-CD4F-CF5C-78C5DBD8444B"/></UML:Element.ownedElement></UML:Operation><UML:Operation visibility="public" isLeaf="false" ownerScope="instance" isAbstract="false" name="center" xmi.id="DCE.958DCD9B-49E5-66A2-E9C2-94A98E2C83B5" owner="DCE.9C00F4C5-20B4-9E7B-4602-DF6AEE1AEF63"><UML:Element.ownedElement><UML:TaggedValue xmi.id="DCE.5F307E0D-2EBD-BB6E-D39F-28B962C96CA3" name="documentation">
+<UML:TaggedValue.dataValue>
+     This method generates the next level of the graph if the empty tile(0) is
+     in the center of the puzzle. (Tile 4 in the representation below Saves
+     all possible states to an arrayList.
+     
+     0 1 2
+     3 4 5
+     6 7 8
+     
+     @param tile The index of the empty tile
+     @param s The state to base algorithm on
+     </UML:TaggedValue.dataValue></UML:TaggedValue><UML:Parameter visibility="package" direction="result" isQuery="false" type="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" xmi.id="DCE.5B5508BE-CCB7-4C9C-6E21-99E3B73CD050" owner="DCE.958DCD9B-49E5-66A2-E9C2-94A98E2C83B5"/><UML:Parameter visibility="package" isQuery="false" direction="in" type="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="tile" xmi.id="DCE.544AA590-2F1F-E95A-7351-574F55F8A76B" owner="DCE.958DCD9B-49E5-66A2-E9C2-94A98E2C83B5"/><UML:Parameter visibility="package" isQuery="false" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" name="s" xmi.id="DCE.8301112E-C064-D823-D396-204E1151B0F1" owner="DCE.958DCD9B-49E5-66A2-E9C2-94A98E2C83B5"/></UML:Element.ownedElement></UML:Operation></UML:Element.ownedElement>
+</UML:Class>
+<UML:Aggregation xmi.id="DCE.CF5DE477-2DAE-FAE0-ACA0-BA38E3407665" owner="DCE.E3BFB23D-AD5D-29B6-98BB-315A9947C91E" aggregateEnd="DCE.CD5CB243-7D4F-924D-0989-D5D058504B1C" partEnd="DCE.E98176F5-AB40-9E1B-786D-1F6D6686D676"><UML:Association.end>
+<UML:AssociationEnd xmi.id="DCE.CD5CB243-7D4F-924D-0989-D5D058504B1C" visibility="private" type="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" association="DCE.CF5DE477-2DAE-FAE0-ACA0-BA38E3407665"/>
+<UML:NavigableEnd xmi.id="DCE.E98176F5-AB40-9E1B-786D-1F6D6686D676" visibility="private" type="DCE.48FC9ECF-6EE0-F9B6-E331-450DAC2F4DBC" association="DCE.CF5DE477-2DAE-FAE0-ACA0-BA38E3407665" name="state"/></UML:Association.end></UML:Aggregation></UML:Element.ownedElement></UML:Package>
+<UML:DataType xmi.id="DCE.AABAA27C-E0DE-A913-D984-78EBE314A4A0" name="int" owner="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77"/>
+<UML:Package xmi.id="DCE.0B819774-0429-A0B9-E1E8-743E06C6E559" name="java" owner="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77"><UML:Element.ownedElement>
+<UML:Package xmi.id="DCE.B850F6DF-F272-3B92-E14D-79DAF7904AF1" name="util" owner="DCE.0B819774-0429-A0B9-E1E8-743E06C6E559"><UML:Element.ownedElement>
+<UML:DataType xmi.id="DCE.4C9A1C54-1728-825B-AF6F-0EBD5EDB58C9" name="ArrayList" owner="DCE.B850F6DF-F272-3B92-E14D-79DAF7904AF1"/>
+<UML:DataType xmi.id="DCE.DFBB35B0-5AA7-601A-C9A2-CDD684848BCB" name="LinkedList" owner="DCE.B850F6DF-F272-3B92-E14D-79DAF7904AF1"/>
+<UML:DataType xmi.id="DCE.306C4423-7E49-CE98-0719-3283A523794F" name="Comparator" owner="DCE.B850F6DF-F272-3B92-E14D-79DAF7904AF1" templateParameter="DCE.8AA4801F-DDE7-2AF2-2FB7-69A03BD03F30" supplierDependency="DCE.BA7E38D1-7D7F-A0F6-AACB-BC5E05D92FEE"><UML:Element.ownedElement>
+<UML:ParameterableElement xmi.id="DCE.8AA4801F-DDE7-2AF2-2FB7-69A03BD03F30" name="T" owner="DCE.306C4423-7E49-CE98-0719-3283A523794F"/></UML:Element.ownedElement></UML:DataType>
+<UML:DerivationClassifier xmi.id="DCE.F25DB427-592E-90C2-6DE3-DB9AEDB8FE7D" name="Comparator&lt;TreeNode&gt;" owner="DCE.B850F6DF-F272-3B92-E14D-79DAF7904AF1" clientDependency="DCE.BA7E38D1-7D7F-A0F6-AACB-BC5E05D92FEE" supplierDependency="DCE.0A643AC8-F5C6-8A4B-703C-E0859A445CB5"><UML:Element.ownedElement>
+<UML:Derivation xmi.id="DCE.BA7E38D1-7D7F-A0F6-AACB-BC5E05D92FEE" supplier="DCE.306C4423-7E49-CE98-0719-3283A523794F" owner="DCE.F25DB427-592E-90C2-6DE3-DB9AEDB8FE7D" client="DCE.F25DB427-592E-90C2-6DE3-DB9AEDB8FE7D"><UML:Element.ownedElement>
+<UML:Binding xmi.id="DCE.ED1A19C3-0FC7-8D33-EC98-0355023151AF" actual="DCE.F5DACD7E-7A63-1B4B-D4BC-F3B3CD87D2F4" formal="DCE.8AA4801F-DDE7-2AF2-2FB7-69A03BD03F30" owner="DCE.BA7E38D1-7D7F-A0F6-AACB-BC5E05D92FEE"/></UML:Element.ownedElement></UML:Derivation></UML:Element.ownedElement></UML:DerivationClassifier></UML:Element.ownedElement></UML:Package>
+<UML:Package xmi.id="DCE.FBDFB8EB-B66E-224A-CC91-D3C815F52FD7" name="io" owner="DCE.0B819774-0429-A0B9-E1E8-743E06C6E559"><UML:Element.ownedElement>
+<UML:DataType xmi.id="DCE.9ABD7421-6190-AFB6-1AB5-597796DCDF0D" name="File" owner="DCE.FBDFB8EB-B66E-224A-CC91-D3C815F52FD7"/></UML:Element.ownedElement></UML:Package></UML:Element.ownedElement></UML:Package>
+<UML:DataType xmi.id="DCE.6AAF1552-F52F-0019-D1FA-60F22FA52B7D" name="void" owner="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77"/>
+<UML:DataType xmi.id="DCE.CBEA2D4F-60D8-B0FE-B297-015944C4458D" name="Integer" owner="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77"/>
+<UML:DataType xmi.id="DCE.E89E1601-6EF1-9732-E7F9-E843E055ACEF" name="boolean" owner="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77"/>
+<UML:DataType xmi.id="DCE.0618FA8F-CFB4-EEE6-E563-A88F9681DF35" name="String" owner="DCE.CF93F306-CC18-2D25-103B-BE06D7641B77"/></UML:Element.ownedElement></UML:Project></XMI.content> </XMI>
