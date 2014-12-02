@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.2.4)  2 DEC 2014 12:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.2.4)  2 DEC 2014 12:41
 entering extended mode
-**bare_jrnl.tex
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\bare_jrnl.tex
+**Report.tex
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -99,7 +99,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count90
 \@IEEEtranrubishbin=\box26
-) (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\bare_jrnl.aux)
+) (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 392.
 LaTeX Font Info:    ... okay on input line 392.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 392.
@@ -113,30 +113,24 @@ LaTeX Font Info:    ... okay on input line 392.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 392.
 LaTeX Font Info:    ... okay on input line 392.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 482.
+(Font)              <8> on input line 530.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 482.
+(Font)              <6> on input line 530.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 482.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 482.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 519.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 695.
+(Font)              <5> on input line 530.
 
 [1
 
 
-] (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\bare_jrnl.aux) )
- 
-Here is how much of TeX's memory you used:
- 912 strings out of 493922
- 16346 string characters out of 3144897
- 65392 words of memory out of 3000000
- 4278 multiletter control sequences out of 15000+200000
- 30210 words of font info for 68 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 26i,8n,28p,190b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on bare_jrnl.dvi (1 page, 3132 bytes).
+] (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 902 strings out of 493922
+ 16204 string characters out of 3144897
+ 63392 words of memory out of 3000000
+ 4271 multiletter control sequences out of 15000+200000
+ 28765 words of font info for 64 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 26i,8n,28p,187b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Report.dvi (1 page, 1748 bytes).
