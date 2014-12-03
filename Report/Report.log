@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.2.4)  2 DEC 2014 12:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.2.4)  3 DEC 2014 11:54
 entering extended mode
 **Report.tex
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.tex
@@ -113,11 +113,11 @@ LaTeX Font Info:    ... okay on input line 392.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 392.
 LaTeX Font Info:    ... okay on input line 392.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 530.
+(Font)              <8> on input line 533.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 530.
+(Font)              <6> on input line 533.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 530.
+(Font)              <5> on input line 533.
 
 [1
 
@@ -133,4 +133,4 @@ Here is how much of TeX's memory you used:
  841 hyphenation exceptions out of 8191
  26i,8n,28p,187b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Report.dvi (1 page, 1748 bytes).
+Output written on Report.dvi (1 page, 1944 bytes).
