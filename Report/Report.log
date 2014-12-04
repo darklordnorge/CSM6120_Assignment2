@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.2.4)  3 DEC 2014 11:54
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  4 DEC 2014 00:42
 entering extended mode
 **Report.tex
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.tex
@@ -26,11 +26,11 @@ istensen
 \@IEEEtrantmptoksA=\toks14
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
--- Using DVI output.
+-- Using PDF output.
 \@IEEEnormalsizeunitybaselineskip=\dimen104
 -- This is a 10 point document.
 \CLASSINFOnormalsizebaselineskip=\dimen105
@@ -99,38 +99,341 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 \@IEEEtmpitemindent=\dimen116
 \c@IEEEbiography=\count90
 \@IEEEtranrubishbin=\box26
-) (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 392.
-LaTeX Font Info:    ... okay on input line 392.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 392.
-LaTeX Font Info:    ... okay on input line 392.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 392.
-LaTeX Font Info:    ... okay on input line 392.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 392.
-LaTeX Font Info:    ... okay on input line 392.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 392.
-LaTeX Font Info:    ... okay on input line 392.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 392.
-LaTeX Font Info:    ... okay on input line 392.
+) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen117
+\Gin@req@width=\dimen118
+)
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count92
+\calc@Bcount=\count93
+\calc@Adimen=\dimen119
+\calc@Bdimen=\dimen120
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count94
+\calc@Cskip=\skip46
+)
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box27
+\AM@toc@title=\toks16
+\c@AM@survey=\count95
+\AM@templatesizebox=\box28
+)
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count96
+\lst@gtempboxa=\box29
+\lst@token=\toks17
+\lst@length=\count97
+\lst@currlwidth=\dimen121
+\lst@column=\count98
+\lst@pos=\count99
+\lst@lostspace=\dimen122
+\lst@width=\dimen123
+\lst@newlines=\count100
+\lst@lineno=\count101
+\lst@maxwidth=\dimen124
+
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+\c@lstnumber=\count102
+\lst@skipnumbers=\count103
+\lst@framebox=\box30
+)
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2014/09/06 1.5e listings configuration
+))
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
+
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 417.
+LaTeX Font Info:    ... okay on input line 417.
+
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen125
+\scratchbox=\box31
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen126
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks19
+)
+\AtBeginShipoutBox=\box32
+\c@lstlisting=\count110
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--518
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--546
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--557
+
+ []
+
+[1{C:/Users/Stefan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+
+]
+Underfull \hbox (badness 5548) in paragraph at lines 558--562
+\OT1/ptm/m/n/10 The al-go-rithms use the classes from the SearchTree
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--562
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--566
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 568--570
+
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 572--576
+\OT1/ptm/m/n/10 queue the el-e-ments are sorted ac-cord-ing to its \OT1/ptm/m/i
+t/10 nat-u-ral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--576
+
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 578--583
+\OT1/ptm/m/n/10 in it-self, the other is a method used to de-cide which
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 578--583
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--592
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--595
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--598
+
+ []
+
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 598.
+
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+[2] [3
+
+]
+<../Model/CSM6120_Assignment2-Model/ClassDiagram1.png, id=16, 912.40875pt x 559
+.08875pt>
+File: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png Graphic file (type p
+ng)
+ <use ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png>
+Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png u
+sed on input line 649.
+(pdftex.def)             Requested size: 733.73643pt x 449.61761pt.
+
+Overfull \hbox (209.63669pt too wide) in paragraph at lines 649--650
+ [][] 
+ []
+
+[4
+
+ <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignment
+2-Model/ClassDiagram1.png (PNG copy)>]
+<../Model/CSM6120_Assignment2-Model/ClassDiagram3.png, id=20, 912.40875pt x 559
+.08875pt>
+File: ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png Graphic file (type p
+ng)
+ <use ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png>
+Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png u
+sed on input line 657.
+(pdftex.def)             Requested size: 733.73643pt x 449.61761pt.
+
+Overfull \hbox (209.63669pt too wide) in paragraph at lines 657--658
+ [][] 
+ []
+
+[5 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
+nt2-Model/ClassDiagram3.png (PNG copy)>]
+<../Model/CSM6120_Assignment2-Model/ClassDiagram2.png, id=24, 1824.8175pt x 111
+8.1775pt>
+File: ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png Graphic file (type p
+ng)
+ <use ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png>
+Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png u
+sed on input line 667.
+(pdftex.def)             Requested size: 838.56279pt x 513.82191pt.
+
+Overfull \hbox (314.46304pt too wide) in paragraph at lines 667--668
+ [][] 
+ []
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 533.
+(Font)              <8> on input line 690.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 533.
+(Font)              <6> on input line 690.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 533.
-
-[1
-
-
-
-] (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
+(Font)              <5> on input line 690.
+[6 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
+nt2-Model/ClassDiagram2.png (PNG copy)>] [7]
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
 Here is how much of TeX's memory you used:
- 902 strings out of 493922
- 16204 string characters out of 3144897
- 63392 words of memory out of 3000000
- 4271 multiletter control sequences out of 15000+200000
- 28765 words of font info for 64 fonts, out of 3000000 for 9000
+ 4454 strings out of 493921
+ 67657 string characters out of 3144873
+ 172961 words of memory out of 3000000
+ 7717 multiletter control sequences out of 15000+200000
+ 43602 words of font info for 79 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 26i,8n,28p,187b,212s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,9n,49p,560b,990s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/urw/times/utmbi8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/times/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on Report.pdf (7 pages, 232016 bytes).
+PDF statistics:
+ 50 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on Report.dvi (1 page, 1944 bytes).
