@@ -3,6 +3,7 @@ package SearchAlgortihms;
 import SearchTree.TreeNode;
 import SearchTree.Graph;
 import csm6120.State;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -14,11 +15,12 @@ import java.util.Stack;
  */
 public class BFS {
 
-    Graph tree;
-    TreeNode node, root;
-    Queue<TreeNode> searchQueue;
-    Stack<TreeNode> exploredStack;
-    int pathcost;
+    private Graph tree;
+    private TreeNode node, root;
+    private Queue<TreeNode> searchQueue;
+    private Stack<TreeNode> exploredStack;
+    private ArrayList<String> expanded;
+    private int pathcost;
 
     /**
      * Constructor of the BFS object
@@ -28,13 +30,14 @@ public class BFS {
         searchQueue = new LinkedList();
         exploredStack = new Stack();
         pathcost = 0;
+        expanded = new ArrayList();
     }
 
     /**
-     * Breath-First search method 
-     * 
-     * @param start     The start State of the graph
-     * @param goal      The goal State of the graph 
+     * Breath-First search method
+     *
+     * @param start The start State of the graph
+     * @param goal The goal State of the graph
      */
     public void bfs(State start, State goal) {
         System.out.println("Using Breadth-First Search");
@@ -45,6 +48,7 @@ public class BFS {
         if (root.getState().compare(goal)) {
             System.out.println("Solution has been found.\n Path cost: "
                     + pathcost);
+            System.out.println("Nodes expanded: " + expanded.size());
             System.out.println("Current node: ");
             root.getState().printArray();
             System.out.println("Goal state: ");
@@ -53,8 +57,8 @@ public class BFS {
         searchQueue.add(root);
 
         /*
-        Iterate while the search queue is not empty
-        */
+         Iterate while the search queue is not empty
+         */
         while (searchQueue.size() > 0) {
             node = searchQueue.poll();
 
@@ -64,6 +68,7 @@ public class BFS {
             if (node.getState().compare(goal)) {
                 System.out.println("Solution has been found.\n Path cost: "
                         + pathcost);
+                System.out.println("Nodes expanded: " + expanded.size());
                 System.out.println("Current node: ");
                 node.getState().printArray();
                 System.out.println("Goal state: ");
@@ -77,13 +82,25 @@ public class BFS {
              add the child of the current node and all its siblings to the queue
              */
             while (node.childrenIsEmpty() != true) {
-                searchQueue.add(node.getFirstChild());
+                /*
+                 Add the current node to a an ArrayList of expanded nodes
+                 */
+                if (expanded.contains(node.getState().getStringtoString()) == false) {
+                    expanded.add(node.getState().getStringtoString());
+                }
+                String s = node.peekChild().getState().getStringtoString();
+                if (expanded.contains(s) == false) {
+                    expanded.add(s);
+                    searchQueue.add(node.getFirstChild());
+                } else {
+                    node.removeFirstChild();
+                }
             }
-            
+
             /*
-            add the current node to the explored node and 
-            update path cost
-            */
+             add the current node to the explored node and 
+             update path cost
+             */
             exploredStack.add(node);
             pathcost = exploredStack.size();
         }
