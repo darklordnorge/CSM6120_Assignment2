@@ -1,98 +1,93 @@
 
 
  Changelog history of the IEEEtran LaTeX class.
- 
-
- v1.8 -- 2012/11/21
- by Harald Hanche-Olsen and Anders Christensen (IEEE Computational Intelligence Society)
-
-*******
-11/2012 v1.8 changes:
-
-1335c1335
-<                 \itemindent 0em%
----
->                 \itemindent 0.3em%
-1386c1386
-<                 \itemindent 0em%
----
->                 \itemindent .3em%
-1436c1436
-<                 \itemindent 0em%
----
->                 \itemindent .3em%
-1524c1524
-< \def\unnumberedfootnote{\gdef\@thefnmark{}\@footnotetext}
----
-> \def\unnumberedfootnote{\gdef\@thefnmark{\quad}\@footnotetext}
-1526c1526
-< \skip\@mpfootins = \skip\footins
----
-> \skip\@mpfootins 0.3\baselineskip
-1531a1532
-> %\long\def\@makefnmark{\scriptsize\normalfont\@thefnmark}
-1541c1542
-< \def\footnoterule{\vskip-2pt \hrule height 0.4pt depth \z@ \vskip1.6pt\relax}
----
-> \def\footnoterule{\vskip-2pt \hrule height 0.6pt depth \z@ \vskip1.6pt\relax}
-1652c1653
-< \def\figurename{Figure}
----
-> \def\figurename{Fig.}
-1740c1741
-< \setlength\abovecaptionskip{0.25\baselineskip}
----
-> \setlength\abovecaptionskip{0.65\baselineskip}
-1799c1800
-< \footnotesize{\centering\normalfont\footnotesize#1.\quad\scshape #2\par}%
----
-> \footnotesize{\centering\normalfont\footnotesize#1.\qquad\scshape #2\par}%
-1812c1813
-< \ifCLASSOPTIONconference \hbox to\hsize{\normalfont\footnotesize\hfil\box\@tempboxa\hfil}%
----
-> \ifCLASSOPTIONconference \hbox to\hsize{\normalfont\footnotesize\box\@tempboxa\hfil}%
-1856c1857
-< \def\table{\def\@floatboxreset{\reset@font\footnotesize\@setminipage}%
----
-> \def\table{\def\@floatboxreset{\reset@font\scriptsize\@setminipage}%
-1861c1862
-< \@namedef{table*}{\def\@floatboxreset{\reset@font\footnotesize\@setminipage}\@dblfloat{table}}
----
-> \@namedef{table*}{\def\@floatboxreset{\reset@font\scriptsize\@setminipage}\@dblfloat{table}}
-3747c3748
-< \def\endIEEEkeywords{\relax\ifCLASSOPTIONtechnote\vspace{1.34ex}\else\vspace{1.67ex}\fi
----
-> \def\endIEEEkeywords{\relax\ifCLASSOPTIONtechnote\vspace{1.34ex}\else\vspace{0.5ex}\fi
-3826,3827c3827,3829
-< 
-< \def\@seccntformat#1{\csname the#1dis\endcsname\hskip 1em\relax}
----
-> \def\@seccntformat#1{\hb@xt@ 1.4em{\csname the#1dis\endcsname\hss\relax}}
-> \def\@seccntformatinl#1{\hb@xt@ 1.1em{\csname the#1dis\endcsname\hss\relax}}
-> \def\@seccntformatch#1{\csname the#1dis\endcsname\hskip 1em\relax}
-3843c3845,3853
-<      \protected@edef\@svsec{\@seccntformat{#1}\relax}%
----
->      \ifnum #2=1
->         \protected@edef\@svsec{\@seccntformatch{#1}\relax}%
->      \else
->         \ifnum #2>2
->            \protected@edef\@svsec{\@seccntformatinl{#1}\relax}%
->         \else
->            \protected@edef\@svsec{\@seccntformat{#1}\relax}%
->         \fi
->      \fi
-
-
-
-
-
-
-*****************************************
-
-2007/03/05
+ 2014/09/17
  by Michael Shell (MDS)
  http://www.michaelshell.org/
+
+
+ 9/2014 V1.8a (MDS) changes:
+
+ 1) Extensive rework of the compsoc mode to comply with the latest standards
+    of the IEEE Computer Society.
+
+ 2) Internal code improvements for page setup and command argument
+    processing.
+
+ 3) Fixed abstract, index terms and diamond line for compsoc technotes.
+    Thanks to Dimitris Schinianakis for reporting this problem.
+
+ 4) New cspaper option to support the special trim paper size
+    (7.875in x 10.75in) used in actual Computer Society journals. For
+    compsoc journal mode, typesetting will not be altered by the use of this
+    option.
+
+ 5) New \IEEEraisesectionheading{} command to provide for the special raised
+    first section heading of Computer Society journal papers.
+
+ 6) Increased \clubpenalty, \widowpenalty, \displaywidowpenalty to
+    discourage paragraph breaks at the first and last lines.
+    Thanks to Dirk Beyer for suggesting this change.
+
+ 7) Added lines per column console message.
+
+
+*******
+ 12/2012 V1.8 (MDS) changes:: 
+
+ 1) New transmag class option to support the IEEE Transactions on Magnetics
+    format. Thanks to Wei Yingkang, Sangmin Suh and Benjamin Gaussens
+    for suggestions and beta testing.
+
+ 2) The \IEEEcompsoctitleabstractindextext and 
+    \IEEEdisplaynotcompsoctitleabstractindextext
+    commands have been deprecated in favor of their
+    \IEEEtitleabstractindextext and \IEEEdisplaynontitleabstractindextext
+    (observe that the "not" has changed to "non") equivalents. This change
+    generalizes and decouples them from compsoc mode because the new
+    transmag mode also uses them now.
+
+ 3) Added new *-forms of \IEEEyesnumber*, \IEEEnonumber*, \IEEEyessubnumber*,
+    and \IEEEnosubnumber* (the non-star form of the latter is also new) which
+    persist across IEEEeqnarray lines until countermanded. To provide for
+    continued subequations across instances of IEEEeqnarrays as well as for
+    subequations that follow a main equation (e.g., 14, 14a, 14b ...)
+    \IEEEyessubnumber no longer automatically increments the equation number
+    on it's first invocation of a subequation group. Invoke both
+    \IEEEyesnumber\IEEEyessubnumber together to start a new
+    equation/subequation group.
+ 
+ 4) Hyperref links now work with IEEEeqnarray equations.
+    Thanks to Stefan M. Moser for reporting this problem.
+
+ 5) Fixed \markboth so that it does not cause an error with babel.sty.
+    Thanks to Frank Meier for suggesting this change.
+
+ 6) Change all instances of ~ to \nobreakspace to avoid
+    
+    ! Argument of \language@active@arg~ has an extra }
+    
+    figure caption error with bable.sty under spanish. Thanks to
+    Manuel Olivares and Javier Bezos for suggesting this change.
+
+ 7) Allow line breaks within long theorem names.
+    Thanks to Miquel Payaro for suggesting this change.
+
+ 8) Revised \IEEEeqnarraymulticol{} to allow inner alignments without
+    requiring extra containing braces to prevent an incomplete \ifx error.
+    Thanks to Stefan M. Moser and Auke van der Valk for reporting this
+    problem.
+
+ 9) Revised spacing at top of top figures and tables to better
+    align with the top main text lines as IEEE does in its journals. 
+    Thanks to Dirk Beyer for reporting this issue and beta testing.
+
+10) Removed support for legacy IED list commands, legacy QED and proof
+    commands and the legacy biography and biographynophoto environments.
+    IEEEtran no longer defines or references \labelindent so as to
+    avoid namespace problems with list packages that define it.
+    Thanks to Sven Köhler for reporting the problem with enumitem.sty.
+
 
 *******
  3/2007 V1.7a (MDS) changes:
@@ -102,6 +97,8 @@
 
  2) "depreciated" -> "deprecated". Thanks to Virgilio Rodriguez for
     suggesting this change.
+
+
 
 *******
  1/2007 V1.7 (MDS) changes:
@@ -706,9 +703,8 @@
 11) \thebibliography and \biography now put entries into
     the table of contents for you.
 
+
 *******
-
-
 
 
 

@@ -102,7 +102,7 @@
 
 % *** CITATION PACKAGES ***
 %
-%\usepackage{cite}
+\usepackage{cite}
 % cite.sty was written by Donald Arseneau
 % V1.6 and later of IEEEtran pre-defines the format of the cite.sty package
 % \cite{} output to follow that of IEEE. Loading the cite package will
@@ -508,7 +508,7 @@ The abstract goes here.
 
 \section{Structure}
 The overall structure can be seen in the UML diagram, found in appendix A though C.
-In this section the structure of the program will be explained and the different classes and their uses analysed. Detailed description of the most important methods will be given, but for reference to all methods and theirs uses please refer to the JavaDoc in appendix \textbf{ADD JAVADOC AS APPENDIX}.\\
+In this section the structure of the program will be explained and the different classes and their uses. Detailed description methods will not be given please refer to the JavaDoc in appendix \textbf{ADD JAVADOC AS APPENDIX}.\\
 The structure of this section is as follows: for every package used in the program the use of the package as well as the classes inside it is given followed by a section about the justification of the design choices. 
 
 \subsection{The csm6120 Package}\label{sec:csm6120Package}
@@ -612,11 +612,109 @@ The other important thing to node is that empty/zero tile of the puzzle is ignor
 \subsubsection{Justification}
 It can be argued that the methods in the ManhattanDistance class are bad practice, as it would have been better to refactor all previously written algorithm to use 2D arrays rather than converting a State arrayList to a 2D array for every treeNode object. \\
 However this decision was made as the use of a arrayList makes the use of the algorithms though out the program easier, thanks to Java's inbuilt arrayList methods. \\
-Also since all arrayList have a limited size of 8, the computational cost for the conversion is constant and not large. 
+Also since all arrayList have a limited size of 8, the computational cost for the conversion is constant and not large. \\
+
+The list of expanded nodes which each class holds and all algorithms loop over at every iteration to check if the current nodes children already where created ones add a lot of computational overhead to each iteration. \\
+While it gets apparent in breadth-first,however not as much in greedy best-first and A star search, this is not to much a problem because of the typical behaviour of these algorithms the overhead. But in depth-first search it causes massive computational overhead and causes long run times in order to find a solution. \\
+The reason for that is the behaviour of the algorithm, unless in a few seldom instances the state space for depth-first search is much more massive than for the other algorithms. \\
+So iterating over 10's of thousands of nodes in the list of expanded nodes takes a lot of time and computational power. \\
+Still the list needs to be maintained in order to avoid infinite loop problems.
 
 
+\section{Analysis}
+In this section the design choices will be analysed further. \\
+This includes the heuristic used as well as any problems encountered during the development cycle. \\
+
+\subsection{Manhattan Distance}
+For this program 2 heuristics where considered.\\
+The first being simply the number of misplaced tiles, this heuristic is admissible as all misplaced tiles must be moved atleast once. \\
+However it was decided to implement something more "advanced" in form of the Manhattan Distance heuristic, which is another common heuristic for these kind of problems\cite{russell2009artificial}. \\
+The Manhattan Distance is admissible for this kind of problem as it either estimates the exact number of moves needed or underestimates the total path costs needed to find a solution. \\
+The Manhattan Distance is calculated by the sum of the vertical and horizontal distances of between to tiles, because tiles can not move along diagonals. \\
+
+\subsection{Performance}
+In this section the performance of each algorithm with the 3 provided test cases is analysed. \\
+This will be done algorithm for algorithm, with a large table showing all the results which can be found in appendix \textbf{ADD APPENDIX WITH RESULT TABLE}\\
+It is interesting to node that the processing time varies between runs. While on the first run it is often a lot higher, the processing time reduces in the following couple of runs. until it either gets stable or varies between 2 values. All running times shown in this section are taken after 5 runs as it then appears to be stable. \\
+
+\subsubsection{Breadth-First search}
+Table \ref{tab:bfs} shows the performance of Breadth-First search.\\
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Performance of Breadth-First Search}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\bfseries Test case &\bfseries Path Cost & \bfseries Expanded Nodes & \bfseries Running Time \\
+ & & &  in nanosecond\\\hline
+1 & 3 & 7 & 5 \\
+2 & 29 & 53 & 7\\
+3 & 67 & 114 & 11 \\\hline
+\end{tabular}
+\label{tab:bfs}
+\end{table}
+As the test result show the number of explored nodes increases significantly when more tiles are out of place. The processing time also increases.
+
+\subsubsection{Depth-First search}
+Table \ref{tab:dfs} shows the performance of Depth-First search.\\
+As can be seen the path cost is massive, a lot more than the in any other search algorithm implemented in the system. As well is the processing time. The reason for the immense path cost and processing time is the way children are added to nodes in the program, in combination with the working of Depth-First search. \\
+It is likely that if nodes where added in a different way the path cost and processing time decrease. It could also be improved with implementing an abbreviation of Depth-First search, such as Depth-Limited search. \\
+It is worth noting that the arguably more complex systems of Test Case 2 and 3 actually have a lower path cost and lower computational time than the first one, where only 3 tiles are out of place. 
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Performance of Depth-First Search}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\bfseries Test case &\bfseries Path Cost & \bfseries Expanded Nodes & \bfseries Running Time \\\
+ & &\bfseries in nanosecond\\\hline
+1 & 169022 & & 1303747 \\
+2 & 139063 & & 1115838 \\
+3 & 111950 & & 895815 \\\hline
+\end{tabular}
+\label{tab:dfs}
+\end{table}
+
+\subsubsection{Greedy Best-First search}
+Table \ref{tab:gbfs} shows the performance of the Greedy Best-First search algorithm. \\
+As the table shows, in the first and easiest test case the algorithm performs with perfect accuracy, choosing the direct path to the goal state. \\
+Test case 2 and 3 as well show a large improvement in path cost over Breadth-First and Depth-First search. However it can be seen that the extra computational overhead of sorting the priority queue causes the algorithm to perform marginal slower than Breadth-First search. This small computational overhead is however made up by the far smaller number of explored search tree nodes. 
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Performance of Greedy Best-First search}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\bfseries Test case &\bfseries Path Cost & \bfseries Expanded Nodes & \bfseries Running Time \\
+ & &\bfseries in nanosecond\\\hline
+1 & 2 & & 6 \\
+2 & 8 &  &7 \\
+3 & 72 &  &19 \\\hline
+\end{tabular}
+\label{tab:gbfs}
+\end{table}
+
+\subsubsection{A star search}
+Table \ref{tab:astar} shows the performance of the $A^*$ Algorithm.\\
+Different in this table compared to the previous once is that an extra column has been added in to show the Manhattan Distance value which was calculated at the beginning of the algorithm. \\
+As the table shows for test cases 1 and 2 the estimated Manhattan Distance was reached precisely. On test case 3 the algorithm had to explore 21 nodes in order to find the goal state, while the estimated Manhattan Distance was 6 notes. This shows that the heuristic is admissible as it does not overestimate the path cost. \\
+The processing time is similar to Greedy Best-First and Breadth-First search. Even for the most advanced puzzle(test case 3). 
 
 
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Performance of A star search}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\bfseries Test case & \bfseries Manhattan Distance& \bfseries Patch cost & \bfseries Expanded nodes & \bfseries Running Time \\
+ & & &\bfseries in nanosecond\\\hline
+1 & 2 & 2 & & 6 \\
+2 & 4 & 4 & & 7 \\
+3 & 6 & 21 & & 11\\\hline 
+\end{tabular}
+\label{tab:astar}
+\end{table}
 
 
 
@@ -643,7 +741,7 @@ Also since all arrayList have a limited size of 8, the computational cost for th
 \onecolumn
 
 \section{csm1620 Package UML}\label{csm6120PackageUML}
-%\includepdfmerge{classDiagram1.pdf}
+
 \begin{figure}[h]
 \centering
 \includegraphics[width=1.4\textwidth,natwidth=610,natheight=642]{../Model/CSM6120_Assignment2-Model/ClassDiagram1.png} 
@@ -668,7 +766,7 @@ Also since all arrayList have a limited size of 8, the computational cost for th
 
 \end{figure}
 
-
+\twocolumn
 
 % references section
 
@@ -677,61 +775,12 @@ Also since all arrayList have a limited size of 8, the computational cost for th
 % http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
 % The IEEEtran BibTeX style support page is at:
 % http://www.michaelshell.org/tex/ieeetran/bibtex/
-%\bibliographystyle{IEEEtran}
+\bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
 %\bibliography{IEEEabrv,../bib/paper}
-%
-% <OR> manually copy in the resultant .bbl file
-% set second argument of \begin to the number of references
-% (used to reserve space for the reference number labels box)
-\begin{thebibliography}{1}
+\newpage
 
-\bibitem{IEEEhowto:kopka}
-H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
-  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
-
-\end{thebibliography}
-
-% biography section
-% 
-% If you have an EPS/PDF photo (graphicx package needed) extra braces are
-% needed around the contents of the optional argument to biography to prevent
-% the LaTeX parser from getting confused when it sees the complicated
-% \includegraphics command within an optional argument. (You could create
-% your own custom macro containing the \includegraphics command to make things
-% simpler here.)
-%\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Michael Shell}
-% or if you just want to reserve a space for a photo:
-
-\begin{IEEEbiography}{Michael Shell}
-Biography text here.
-\end{IEEEbiography}
-
-% if you will not have a photo at all:
-\begin{IEEEbiographynophoto}{John Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
-
-% insert where needed to balance the two columns on the last page with
-% biographies
-%\newpage
-
-\begin{IEEEbiographynophoto}{Jane Doe}
-Biography text here.
-\end{IEEEbiographynophoto}
-
-% You can push biographies down or up by placing
-% a \vfill before or after them. The appropriate
-% use of \vfill depends on what kind of text is
-% on the last page and whether or not the columns
-% are being equalized.
-
-%\vfill
-
-% Can be used to pull up biographies so that the bottom of the last one
-% is flush with the other column.
-%\enlargethispage{-5in}
-
+\bibliography{IEEEabrv,citations}
 
 
 % that's all folks

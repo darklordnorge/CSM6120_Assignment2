@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  4 DEC 2014 00:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  6 DEC 2014 13:04
 entering extended mode
 **Report.tex
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.tex
@@ -14,92 +14,117 @@ ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\IEEEtran.cls
-Document Class: IEEEtran 2012/11/21 V1.8c by Harald Hanche-Olsen and Anders Chr
-istensen
--- Based on V1.7a by Michael Shell
+Document Class: IEEEtran 2014/09/17 V1.8a by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
 \@IEEEtrantmpcountA=\count79
 \@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
 \@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 373.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 458.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
-\@IEEEnormalsizeunitybaselineskip=\dimen104
+\@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
-\CLASSINFOnormalsizebaselineskip=\dimen105
-\CLASSINFOnormalsizeunitybaselineskip=\dimen106
-\IEEEnormaljot=\dimen107
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 731.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1039.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 731.
-\IEEEilabelindentA=\dimen108
-\IEEEilabelindentB=\dimen109
-\IEEEilabelindent=\dimen110
-\IEEEelabelindent=\dimen111
-\IEEEdlabelindent=\dimen112
-\IEEElabelindent=\dimen113
-\IEEEiednormlabelsep=\dimen114
-\IEEEiedmathlabelsep=\dimen115
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1039.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@IEEEsubequation=\count85
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count86
-\c@table=\count87
-\@IEEEeqnnumcols=\count88
-\@IEEEeqncolcnt=\count89
-\@IEEEtmpitemindent=\dimen116
-\c@IEEEbiography=\count90
-\@IEEEtranrubishbin=\box26
-) ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+) (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+)
+("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
@@ -126,10 +151,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count91
+\Gread@gobject=\count94
 ))
-\Gin@req@height=\dimen117
-\Gin@req@width=\dimen118
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
 )
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
 Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
@@ -139,15 +164,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count92
-\calc@Bcount=\count93
-\calc@Adimen=\dimen119
-\calc@Bdimen=\dimen120
+\calc@Acount=\count95
+\calc@Bcount=\count96
+\calc@Adimen=\dimen127
+\calc@Bdimen=\dimen128
 \calc@Askip=\skip44
 \calc@Bskip=\skip45
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count94
+\calc@Ccount=\count97
 \calc@Cskip=\skip46
 )
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
@@ -180,30 +205,30 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box27
+\AM@pagebox=\box28
 \AM@toc@title=\toks16
-\c@AM@survey=\count95
-\AM@templatesizebox=\box28
+\c@AM@survey=\count98
+\AM@templatesizebox=\box29
 )
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
-\lst@mode=\count96
-\lst@gtempboxa=\box29
+\lst@mode=\count99
+\lst@gtempboxa=\box30
 \lst@token=\toks17
-\lst@length=\count97
-\lst@currlwidth=\dimen121
-\lst@column=\count98
-\lst@pos=\count99
-\lst@lostspace=\dimen122
-\lst@width=\dimen123
-\lst@newlines=\count100
-\lst@lineno=\count101
-\lst@maxwidth=\dimen124
+\lst@length=\count100
+\lst@currlwidth=\dimen129
+\lst@column=\count101
+\lst@pos=\count102
+\lst@lostspace=\dimen130
+\lst@width=\dimen131
+\lst@newlines=\count103
+\lst@lineno=\count104
+\lst@maxwidth=\dimen132
 
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count102
-\lst@skipnumbers=\count103
-\lst@framebox=\box30
+\c@lstnumber=\count105
+\lst@skipnumbers=\count106
+\lst@framebox=\box31
 )
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
 File: listings.cfg 2014/09/06 1.5e listings configuration
@@ -230,22 +255,23 @@ LaTeX Font Info:    ... okay on input line 417.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 417.
 LaTeX Font Info:    ... okay on input line 417.
 
+-- Lines per column: 58 (exact).
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen125
-\scratchbox=\box31
-\nofMPsegments=\count105
-\nofMParguments=\count106
+\scratchcounter=\count107
+\scratchdimen=\dimen133
+\scratchbox=\box32
+\nofMPsegments=\count108
+\nofMParguments=\count109
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen126
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen134
+\MPnumerator=\count111
+\makeMPintoPDFobject=\count112
 \everyMPtoPDFconversion=\toks19
 )
-\AtBeginShipoutBox=\box32
-\c@lstlisting=\count110
+\AtBeginShipoutBox=\box33
+\c@lstlisting=\count113
 
 Underfull \hbox (badness 10000) in paragraph at lines 515--518
 
@@ -286,11 +312,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 555--557
 
  []
 
-[1{C:/Users/Stefan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-
-]
-Underfull \hbox (badness 5548) in paragraph at lines 558--562
+Underfull \hbox (badness 5119) in paragraph at lines 558--562
 \OT1/ptm/m/n/10 The al-go-rithms use the classes from the SearchTree
  []
 
@@ -299,7 +322,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--562
 
  []
 
+[1{C:/Users/Stefan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 564--566
 
  []
@@ -310,7 +336,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 568--570
  []
 
 
-Underfull \hbox (badness 1688) in paragraph at lines 572--576
+Underfull \hbox (badness 1521) in paragraph at lines 572--576
 \OT1/ptm/m/n/10 queue the el-e-ments are sorted ac-cord-ing to its \OT1/ptm/m/i
 t/10 nat-u-ral
  []
@@ -321,7 +347,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 572--576
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 578--583
+Underfull \hbox (badness 1400) in paragraph at lines 578--583
 \OT1/ptm/m/n/10 in it-self, the other is a method used to de-cide which
  []
 
@@ -359,81 +385,132 @@ Underfull \hbox (badness 10000) in paragraph at lines 610--611
 
  []
 
-[2] [3
 
-]
-<../Model/CSM6120_Assignment2-Model/ClassDiagram1.png, id=16, 912.40875pt x 559
-.08875pt>
-File: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png Graphic file (type p
-ng)
- <use ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png>
-Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png u
-sed on input line 649.
-(pdftex.def)             Requested size: 733.73643pt x 449.61761pt.
+Underfull \hbox (badness 1442) in paragraph at lines 613--616
+\OT1/ptm/m/n/10 Also since all ar-rayList have a lim-ited size of 8, the
+ []
 
-Overfull \hbox (209.63669pt too wide) in paragraph at lines 649--650
+
+Underfull \hbox (badness 10000) in paragraph at lines 613--616
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
+
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 629--634
+\OT1/ptm/m/n/10 However it was de-cided to im-ple-ment some-thing more
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 629--634
+\OT1/ptm/m/n/10 The Man-hat-tan Dis-tance is ad-mis-si-ble for this kind of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--634
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--639
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 646.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 646.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 646.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 698.
+[3]
+Overfull \hbox (53.15784pt too wide) in paragraph at lines 708--717
  [][] 
  []
 
 [4
 
+]
+<../Model/CSM6120_Assignment2-Model/ClassDiagram1.png, id=21, 912.40875pt x 559
+.08875pt>
+File: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png Graphic file (type p
+ng)
+ <use ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png>
+Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png u
+sed on input line 747.
+(pdftex.def)             Requested size: 722.39685pt x 442.66486pt.
+
+Overfull \hbox (206.39685pt too wide) in paragraph at lines 747--748
+ [][] 
+ []
+
+[5
+
  <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignment
 2-Model/ClassDiagram1.png (PNG copy)>]
-<../Model/CSM6120_Assignment2-Model/ClassDiagram3.png, id=20, 912.40875pt x 559
+<../Model/CSM6120_Assignment2-Model/ClassDiagram3.png, id=25, 912.40875pt x 559
 .08875pt>
 File: ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png Graphic file (type p
 ng)
  <use ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png>
 Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png u
-sed on input line 657.
-(pdftex.def)             Requested size: 733.73643pt x 449.61761pt.
+sed on input line 755.
+(pdftex.def)             Requested size: 722.39685pt x 442.66486pt.
 
-Overfull \hbox (209.63669pt too wide) in paragraph at lines 657--658
+Overfull \hbox (206.39685pt too wide) in paragraph at lines 755--756
  [][] 
  []
 
-[5 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
+[6 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
 nt2-Model/ClassDiagram3.png (PNG copy)>]
-<../Model/CSM6120_Assignment2-Model/ClassDiagram2.png, id=24, 1824.8175pt x 111
+<../Model/CSM6120_Assignment2-Model/ClassDiagram2.png, id=29, 1824.8175pt x 111
 8.1775pt>
 File: ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png Graphic file (type p
 ng)
  <use ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png>
 Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png u
-sed on input line 667.
-(pdftex.def)             Requested size: 838.56279pt x 513.82191pt.
+sed on input line 765.
+(pdftex.def)             Requested size: 825.60315pt x 505.88809pt.
 
-Overfull \hbox (314.46304pt too wide) in paragraph at lines 667--668
+Overfull \hbox (309.60315pt too wide) in paragraph at lines 765--766
  [][] 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 690.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 690.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 690.
-[6 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
-nt2-Model/ClassDiagram2.png (PNG copy)>] [7]
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
+[7 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
+nt2-Model/ClassDiagram2.png (PNG copy)>]
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.bbl)
+[8
+
+
+] (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4454 strings out of 493921
- 67657 string characters out of 3144873
- 172961 words of memory out of 3000000
- 7717 multiletter control sequences out of 15000+200000
- 43602 words of font info for 79 fonts, out of 3000000 for 9000
+ 4676 strings out of 493921
+ 72003 string characters out of 3144873
+ 178319 words of memory out of 3000000
+ 7933 multiletter control sequences out of 15000+200000
+ 43642 words of font info for 79 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,9n,49p,560b,990s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/urw/times/utmbi8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
-urw/times/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
-tmri8a.pfb>
-Output written on Report.pdf (7 pages, 232016 bytes).
+{D:
+/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/urw/times/utmbi8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on Report.pdf (8 pages, 255464 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
