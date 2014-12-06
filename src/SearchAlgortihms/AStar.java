@@ -60,6 +60,7 @@ public class AStar {
         if (root.getState().compare(goal)) {
             System.out.println("Solution has been found.\n Path cost: "
                     + pathcost);
+            System.out.println("Nodes expanded: " + expanded.size());
             System.out.println("Current node: ");
             root.getState().printArray();
             System.out.println("Goal state: ");
@@ -83,6 +84,7 @@ public class AStar {
             if (node.getState().compare(goal)) {
                 System.out.println("Solution has been found.\n Path cost: "
                         + pathcost);
+                System.out.println("Nodes expanded: " + expanded.size());
                 System.out.println("Current node: ");
                 node.getState().printArray();
                 System.out.println("Goal state: ");
