@@ -129,6 +129,7 @@
 \usepackage{pdfpages}
 \usepackage{listings}
 \usepackage{caption}
+\usepackage{url}
 % defines how code will be shown
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -507,7 +508,7 @@ The abstract goes here.
 % and "HIS" in caps to complete the first word.
 \IEEEPARstart{I}{n} this report the  created solution to the 8 puzzle solver will be discussed.
 
-\section{Structure}
+\section{Structure}\label{sec:structure}
 The overall structure can be seen in the UML diagram, found in appendix A though C.
 In this section the structure of the program will be explained and the different classes and their uses. Detailed description methods will not be given please refer to the JavaDoc in appendix \textbf{ADD JAVADOC AS APPENDIX}.\\
 The structure of this section is as follows: for every package used in the program the use of the package as well as the classes inside it is given followed by a section about the justification of the design choices. 
@@ -760,6 +761,7 @@ In this subsection the problems encountered in the development cycle are discuss
 \subsubsection{Infinite loop}
 Early during the development process, after implementing Breadth-First and Depth-First search, a problem with the graph generation was encountered. The problem was that states which were already encountered got generated again. \\
 The reason for was that no method was implemented to check if nodes were already generated. This led to infinite long search trees.\\ 
+
 \begin{lstlisting}[caption= Solution to the Infinite Search Tree Problem , ,label=listing:expandedCheck]
 while (node.childrenIsEmpty() != true) {
 	/*
@@ -783,17 +785,46 @@ while (node.childrenIsEmpty() != true) {
 
 The solution to that is shown in listing \ref{listing:expandedCheck}. \\
 With these few lines of code all expanded nodes are saved to a arrayList of expanded nodes, which than gets iterated through every iteration to check if a newly generated state already exists. If it does not the state will be added to the search queue/stack as well as to the list of expanded nodes. \\
-This piece of code, although modified in case of the $A^*$ algorithm, is included in all algorithms. 
+This piece of code, although modified in case of the $A^*$ algorithm, is included in all algorithms. \\
+
+This also led to improvement in the Breadth-First search algorithm. While the algorithm is complete, i.e. it is bound to find a solution in a finite search environment, but as already said the way states are generated in the algorithm leads to reoccurring states.\\
+The implementation of this routine in the Breadth-First algorithm lead to improvements of path cost and expanded nodes. The path cost for test case 2 was reduces from 97 to 29 nodes and for test case 3 from 381 nodes to 67 nodes.\\
+
+\subsubsection{Implementation of the Manhattan Distance heuristics}
+The way the states of the puzzle was represented in this program caused problems when trying to calculated the Manhattan Distance used in the $A^*$ algorithm. \\
+The states were hold in a standard Java ArrayList, this caused however problems when calculating the distance.\\ 
+This was, already mentioned in section \ref{sec:structure}, by implementing a new class which converts the arrayList to a 2 dimensional array and then use the X and Y coordinates to calculate how much each tile had to move.\\
+This was a problem because it took a while until it was realised that an arrayList makes it more difficult to calculate the Manhattan distance and after that how to get the algorithm for the Manhattan distance set up. A thread on stack overflow helped with finding a solution for that. The thread can be found using the URL in the footnote. \footnote{\url{http://tinyurl.com/nullh9d}}
 
 \section{Discussion}
-Section \ref{sec:analysis} shows the analysis of each algorithm and its performance on each of the 4 test cases. \\
+Section \ref{sec:analysis} shows the analysis of each algorithm and its performance on each of the test cases. \\
 Inherently one could see it as a comparison of uninformed search VS informed search, with 2 examples for each type of search. It shows that for simple puzzles uninformed search methods perform equally well or better than some informed search algorithms, both in time and space complexity. It is however on the more advanced puzzles that the informedness of an heuristic shows an drastic improvement over uninformed strategies. \\
 It also shows that an advanced heuristic can both perform better or worse than a simple heuristic. An example of that would be a direct comparison of Greedy Best-First vs $A^*$ search. $A^*$ uses a more advanced heuristic which leads to better results in the most test cases but it fails to find a solution for the last test case. \\ 
  
 The attributes of the algorithm play a big role as well. Depth-First search has very large time and space complexity, but is still guaranteed to find a solution as the search space is finite. Breadth-First search performs much better in every test case, however in the worst case scenario it would have the same time and space complexity as Depth-First search.\\ 
-Greedy Best-First performs better for some test cases however has for the simplest puzzles worse time complexity. $A^*$ has the best time and space complexity of all algorithms implemented in this program however, as already mentioned, fails to find a solution for the most advanced test case. Whereas the other algorithms, even depth-first search, find a solution. 
+Greedy Best-First performs better for some test cases however has for the simplest puzzles worse time complexity. $A^*$ has the best time and space complexity of all algorithms implemented in this program however, as already mentioned, fails to find a solution for the most advanced test case. Whereas the other algorithms, even depth-first search, find a solution. \\
+
+While it gets quite apparent that the uninformed search methods can find solutions, the informed search algorithms perform better and are generally a better choice for these kind of problems. The performance of uninformed search strategies could be tested further with implementation of algorithms such as iterative deepening, which would greatly improve on Depth-First search, which is currently not much more than a brute force approach.
+
+\section{Conclusion}
+The test results delivered by the program show informed search strategies perform generally better than uninformed search strategies, even though uninformed search can find solutions faster for simple problems. \\
+It would be interesting to implement further search search algorithms such as Iterative Deepening and Bidirectional search in the future and compare their results to that of the other algorithms. \\
+Given more time it would also have been interesting to implement more advanced heuristics for $A^*$ and see how different heuristics can lead to different solutions.
 
 
+% references section
+
+% can use a bibliography generated by BibTeX as a .bbl file
+% BibTeX documentation can be easily obtained at:
+% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
+% The IEEEtran BibTeX style support page is at:
+% http://www.michaelshell.org/tex/ieeetran/bibtex/
+\bibliographystyle{IEEEtran}
+% argument is your BibTeX string definitions and bibliography database(s)
+%\bibliography{IEEEabrv,../bib/paper}
+\newpage
+
+\bibliography{IEEEabrv,citations}
 
 
 
@@ -845,19 +876,7 @@ Greedy Best-First performs better for some test cases however has for the simple
 
 \twocolumn
 
-% references section
 
-% can use a bibliography generated by BibTeX as a .bbl file
-% BibTeX documentation can be easily obtained at:
-% http://www.ctan.org/tex-archive/biblio/bibtex/contrib/doc/
-% The IEEEtran BibTeX style support page is at:
-% http://www.michaelshell.org/tex/ieeetran/bibtex/
-\bibliographystyle{IEEEtran}
-% argument is your BibTeX string definitions and bibliography database(s)
-%\bibliography{IEEEabrv,../bib/paper}
-\newpage
-
-\bibliography{IEEEabrv,citations}
 
 
 % that's all folks

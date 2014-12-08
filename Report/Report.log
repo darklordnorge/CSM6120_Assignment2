@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  8 DEC 2014 00:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  8 DEC 2014 13:41
 entering extended mode
 **Report.tex
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.tex
@@ -269,25 +269,29 @@ ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \fi .
 \c@ContinuedFloat=\count107
 Package caption Info: listings package is loaded.
-) (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+) (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 )
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 418.
-LaTeX Font Info:    ... okay on input line 418.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 418.
-LaTeX Font Info:    ... okay on input line 418.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 418.
-LaTeX Font Info:    ... okay on input line 418.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 418.
-LaTeX Font Info:    ... okay on input line 418.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 418.
-LaTeX Font Info:    ... okay on input line 418.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 418.
-LaTeX Font Info:    ... okay on input line 418.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 419.
+LaTeX Font Info:    ... okay on input line 419.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 419.
+LaTeX Font Info:    ... okay on input line 419.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 419.
+LaTeX Font Info:    ... okay on input line 419.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 419.
+LaTeX Font Info:    ... okay on input line 419.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 419.
+LaTeX Font Info:    ... okay on input line 419.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 419.
+LaTeX Font Info:    ... okay on input line 419.
 
 -- Lines per column: 58 (exact).
 (C:\Users\Stefan\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
@@ -309,52 +313,52 @@ LaTeX Font Info:    ... okay on input line 418.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--519
+Underfull \hbox (badness 10000) in paragraph at lines 517--520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--524
+Underfull \hbox (badness 10000) in paragraph at lines 522--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--530
+Underfull \hbox (badness 10000) in paragraph at lines 527--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--534
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--538
+Underfull \hbox (badness 10000) in paragraph at lines 537--539
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--542
+Underfull \hbox (badness 10000) in paragraph at lines 541--543
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--547
+Underfull \hbox (badness 10000) in paragraph at lines 545--548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 556--558
+Underfull \hbox (badness 10000) in paragraph at lines 557--559
 
  []
 
 
-Underfull \hbox (badness 5119) in paragraph at lines 559--563
+Underfull \hbox (badness 5119) in paragraph at lines 560--564
 \OT1/ptm/m/n/10 The al-go-rithms use the classes from the SearchTree
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 559--563
+Underfull \hbox (badness 10000) in paragraph at lines 560--564
 
  []
 
@@ -362,220 +366,237 @@ Underfull \hbox (badness 10000) in paragraph at lines 559--563
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 565--567
+Underfull \hbox (badness 10000) in paragraph at lines 566--568
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 569--571
+Underfull \hbox (badness 10000) in paragraph at lines 570--572
 
  []
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 573--577
+Underfull \hbox (badness 1521) in paragraph at lines 574--578
 \OT1/ptm/m/n/10 queue the el-e-ments are sorted ac-cord-ing to its \OT1/ptm/m/i
 t/10 nat-u-ral
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--577
+Underfull \hbox (badness 10000) in paragraph at lines 574--578
 
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 579--584
+Underfull \hbox (badness 1400) in paragraph at lines 580--585
 \OT1/ptm/m/n/10 in it-self, the other is a method used to de-cide which
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 579--584
+Underfull \hbox (badness 10000) in paragraph at lines 580--585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--588
+Underfull \hbox (badness 10000) in paragraph at lines 587--589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--593
+Underfull \hbox (badness 10000) in paragraph at lines 591--594
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 594--596
+Underfull \hbox (badness 10000) in paragraph at lines 595--597
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--599
+Underfull \hbox (badness 10000) in paragraph at lines 598--600
 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 599.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 600.
 
 ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 611--612
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 614--617
+Underfull \hbox (badness 1442) in paragraph at lines 615--618
 \OT1/ptm/m/n/10 Also since all ar-rayList have a lim-ited size of 8, the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--617
+Underfull \hbox (badness 10000) in paragraph at lines 615--618
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 626--628
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
 
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 630--635
+Underfull \hbox (badness 1622) in paragraph at lines 631--636
 \OT1/ptm/m/n/10 However it was de-cided to im-ple-ment some-thing more
  []
 
 
-Underfull \hbox (badness 1412) in paragraph at lines 630--635
+Underfull \hbox (badness 1412) in paragraph at lines 631--636
 \OT1/ptm/m/n/10 The Man-hat-tan Dis-tance is ad-mis-si-ble for this kind of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--635
+Underfull \hbox (badness 10000) in paragraph at lines 631--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 637--639
+Underfull \hbox (badness 10000) in paragraph at lines 638--640
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 647.
+(Font)              <8> on input line 648.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 647.
+(Font)              <6> on input line 648.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 647.
+(Font)              <5> on input line 648.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [3]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 731.
+(Font)              <7> on input line 732.
 
-Underfull \hbox (badness 10000) in paragraph at lines 731--735
+Underfull \hbox (badness 10000) in paragraph at lines 732--736
 
  []
 
 
-Overfull \hbox (20.83018pt too wide) in paragraph at lines 745--755
+Overfull \hbox (20.83018pt too wide) in paragraph at lines 746--756
  [][] 
  []
 
 
-Underfull \hbox (badness 3449) in paragraph at lines 758--759
+Underfull \hbox (badness 3449) in paragraph at lines 759--760
 []\OT1/ptm/m/n/10 In this sub-sec-tion the prob-lems en-coun-tered in the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 761--763
+Underfull \hbox (badness 10000) in paragraph at lines 762--764
 
  []
 
 
-Overfull \hbox (17.99933pt too wide) in paragraph at lines 777--778
+Overfull \hbox (17.99933pt too wide) in paragraph at lines 779--780
 [][][][][][][][][][][][][]  
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--792
+Underfull \hbox (badness 10000) in paragraph at lines 786--789
 
  []
 
-[4] [5
+
+Underfull \hbox (badness 10000) in paragraph at lines 790--792
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 800--803
+
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 804--806
+\OT1/ptm/m/n/10 Greedy Best-First per-forms bet-ter for some test cases
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 804--806
+
+ []
+
+[5] (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.bbl)
+[6
 
 ]
-<../Model/CSM6120_Assignment2-Model/ClassDiagram1.png, id=24, 912.40875pt x 559
+<../Model/CSM6120_Assignment2-Model/ClassDiagram1.png, id=27, 912.40875pt x 559
 .08875pt>
 File: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png Graphic file (type p
 ng)
  <use ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png>
 Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram1.png u
-sed on input line 824.
+sed on input line 855.
 (pdftex.def)             Requested size: 722.39685pt x 442.66486pt.
 
-Overfull \hbox (206.39685pt too wide) in paragraph at lines 824--825
+Overfull \hbox (206.39685pt too wide) in paragraph at lines 855--856
  [][] 
  []
 
-[6
+[7
 
  <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignment
 2-Model/ClassDiagram1.png (PNG copy)>]
-<../Model/CSM6120_Assignment2-Model/ClassDiagram3.png, id=28, 912.40875pt x 559
+<../Model/CSM6120_Assignment2-Model/ClassDiagram3.png, id=32, 912.40875pt x 559
 .08875pt>
 File: ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png Graphic file (type p
 ng)
  <use ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png>
 Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram3.png u
-sed on input line 832.
+sed on input line 863.
 (pdftex.def)             Requested size: 722.39685pt x 442.66486pt.
 
-Overfull \hbox (206.39685pt too wide) in paragraph at lines 832--833
+Overfull \hbox (206.39685pt too wide) in paragraph at lines 863--864
  [][] 
  []
 
-[7 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
+[8 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
 nt2-Model/ClassDiagram3.png (PNG copy)>]
-<../Model/CSM6120_Assignment2-Model/ClassDiagram2.png, id=33, 1824.8175pt x 111
+<../Model/CSM6120_Assignment2-Model/ClassDiagram2.png, id=36, 1824.8175pt x 111
 8.1775pt>
 File: ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png Graphic file (type p
 ng)
  <use ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png>
 Package pdftex.def Info: ../Model/CSM6120_Assignment2-Model/ClassDiagram2.png u
-sed on input line 842.
+sed on input line 873.
 (pdftex.def)             Requested size: 825.60315pt x 505.88809pt.
 
-Overfull \hbox (309.60315pt too wide) in paragraph at lines 842--843
+Overfull \hbox (309.60315pt too wide) in paragraph at lines 873--874
  [][] 
  []
 
-[8 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
+[9 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
 nt2-Model/ClassDiagram2.png (PNG copy)>]
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.bbl)
-[9
-
-
-] (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5746 strings out of 493921
- 91358 string characters out of 3144873
- 203755 words of memory out of 3000000
- 8998 multiletter control sequences out of 15000+200000
- 41918 words of font info for 77 fonts, out of 3000000 for 9000
+ 5820 strings out of 493921
+ 92297 string characters out of 3144873
+ 204891 words of memory out of 3000000
+ 9067 multiletter control sequences out of 15000+200000
+ 43503 words of font info for 79 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  37i,9n,49p,560b,1007s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:
-/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/MiKTe
-X 2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/urw/times/utmbi8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on Report.pdf (9 pages, 261865 bytes).
+{D:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/urw/times/utmbi8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on Report.pdf (9 pages, 263745 bytes).
 PDF statistics:
  64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
