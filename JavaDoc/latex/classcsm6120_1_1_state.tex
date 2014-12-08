@@ -1,0 +1,241 @@
+\section{csm6120.\+State Class Reference}
+\label{classcsm6120_1_1_state}\index{csm6120.\+State@{csm6120.\+State}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf State} ()
+\item 
+{\bf State} ({\bf State} s)
+\item 
+void {\bf add\+State} (int to\+Add)
+\item 
+void {\bf print\+Array} ()
+\item 
+int {\bf return\+Index} (int i)
+\item 
+void {\bf change\+Tiles} (int i, int j)
+\item 
+Array\+List {\bf clone} ()
+\item 
+boolean {\bf compare} ({\bf State} s)
+\item 
+String {\bf get\+Stringto\+String} ()
+\item 
+int {\bf compare\+Matching} ({\bf State} s)
+\item 
+int {\bf get\+Array\+Size} ()
+\item 
+Array\+List {\bf get\+State\+Array} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class has methods and variables to hold an input state. This will be used to hold the start and goal state object.
+
+\begin{DoxyAuthor}{Author}
+stefan 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{csm6120\+::\+State@{csm6120\+::\+State}!State@{State}}
+\index{State@{State}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}csm6120.\+State.\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_ad34a148a174530c045b981ca95913c10}
+Constructor for the \doxyref{State}{p.}{classcsm6120_1_1_state} object creates an empty array\+List in which the state data will be saved \index{csm6120\+::\+State@{csm6120\+::\+State}!State@{State}}
+\index{State@{State}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}csm6120.\+State.\+State (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{s}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_ab2bee3e13cc1b322f41447a58f02a7c3}
+Constructor for the \doxyref{State}{p.}{classcsm6120_1_1_state} object creates a deep clone of the state object which is specified in the parameter field
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The state to clone \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{csm6120\+::\+State@{csm6120\+::\+State}!add\+State@{add\+State}}
+\index{add\+State@{add\+State}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{add\+State}]{\setlength{\rightskip}{0pt plus 5cm}void csm6120.\+State.\+add\+State (
+\begin{DoxyParamCaption}
+\item[{int}]{to\+Add}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_a058a8187e1aae3e3026da30a2c15e1be}
+Method to add an integer to the array\+List
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & The integer to add \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\index{csm6120\+::\+State@{csm6120\+::\+State}!change\+Tiles@{change\+Tiles}}
+\index{change\+Tiles@{change\+Tiles}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{change\+Tiles}]{\setlength{\rightskip}{0pt plus 5cm}void csm6120.\+State.\+change\+Tiles (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_af30aa25f99dc9443754be03d6b6c6a1c}
+Method to exchange to tiles
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of the tile to change \\
+\hline
+{\em j} & Index of the Empty tile to change \\
+\hline
+\end{DoxyParams}
+
+
+Here is the caller graph for this function\+:
+
+
+\index{csm6120\+::\+State@{csm6120\+::\+State}!clone@{clone}}
+\index{clone@{clone}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List csm6120.\+State.\+clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_aab74cff3b30e5b7ec4ee13622f869cd8}
+This method clones the array\+List and returns it
+
+\begin{DoxyReturn}{Returns}
+The cloned array\+List 
+\end{DoxyReturn}
+\index{csm6120\+::\+State@{csm6120\+::\+State}!compare@{compare}}
+\index{compare@{compare}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{compare}]{\setlength{\rightskip}{0pt plus 5cm}boolean csm6120.\+State.\+compare (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{s}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_aaa57bce29575210f8bf90493431ca60f}
+Method to compare this object to another state object
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The state to compare too \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the states are the same, false if not 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\index{csm6120\+::\+State@{csm6120\+::\+State}!compare\+Matching@{compare\+Matching}}
+\index{compare\+Matching@{compare\+Matching}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{compare\+Matching}]{\setlength{\rightskip}{0pt plus 5cm}int csm6120.\+State.\+compare\+Matching (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{s}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_affac4fa892ad1233ddb421202ad717fd}
+Method to return how many integers in this object compared to another object match
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The state to compare too \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of matching ints 
+\end{DoxyReturn}
+\index{csm6120\+::\+State@{csm6120\+::\+State}!get\+Array\+Size@{get\+Array\+Size}}
+\index{get\+Array\+Size@{get\+Array\+Size}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{get\+Array\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int csm6120.\+State.\+get\+Array\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_a5430ca2c485762efd65e0688bf997706}
+Method to return the size of the state array
+
+\begin{DoxyReturn}{Returns}
+int value of the state array size 
+\end{DoxyReturn}
+\index{csm6120\+::\+State@{csm6120\+::\+State}!get\+State\+Array@{get\+State\+Array}}
+\index{get\+State\+Array@{get\+State\+Array}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{get\+State\+Array}]{\setlength{\rightskip}{0pt plus 5cm}Array\+List csm6120.\+State.\+get\+State\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_a82e3a3984a1f6ab214335c0f149941f2}
+Method to return the state Array\+List
+
+\begin{DoxyReturn}{Returns}
+The state Array\+List 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\index{csm6120\+::\+State@{csm6120\+::\+State}!get\+Stringto\+String@{get\+Stringto\+String}}
+\index{get\+Stringto\+String@{get\+Stringto\+String}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{get\+Stringto\+String}]{\setlength{\rightskip}{0pt plus 5cm}String csm6120.\+State.\+get\+Stringto\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_ad505b40ba2e105aca3ada7c460cd61d4}
+Method to return the string representation of the \char`\"{}state\char`\"{} Array\+List
+
+\begin{DoxyReturn}{Returns}
+The to\+String representation of the \char`\"{}state\char`\"{} Array\+List 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+\index{csm6120\+::\+State@{csm6120\+::\+State}!print\+Array@{print\+Array}}
+\index{print\+Array@{print\+Array}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{print\+Array}]{\setlength{\rightskip}{0pt plus 5cm}void csm6120.\+State.\+print\+Array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_ad0e76faefd7cf9d8fb1df6bc0acb53f2}
+Print the Array\+List 
+
+Here is the caller graph for this function\+:
+
+
+\index{csm6120\+::\+State@{csm6120\+::\+State}!return\+Index@{return\+Index}}
+\index{return\+Index@{return\+Index}!csm6120\+::\+State@{csm6120\+::\+State}}
+\subsubsection[{return\+Index}]{\setlength{\rightskip}{0pt plus 5cm}int csm6120.\+State.\+return\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{classcsm6120_1_1_state_a229975970266b325a9829493e7e58a80}
+Method to return the index of a specific item in the Array\+List
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The item to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The position of the item in the Array\+List 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Stefan/\+Documents/\+Git\+Hub/\+C\+S\+M6120\+\_\+\+Assignment2/src/csm6120/State.\+java\end{DoxyCompactItemize}

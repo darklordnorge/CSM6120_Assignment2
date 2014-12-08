@@ -1,0 +1,22 @@
+digraph "SearchTree.TreeNode.removeFirstChild"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SearchTree.TreeNode.remove\lFirstChild",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="SearchAlgortihms.AStar.addNode",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_algortihms_1_1_a_star.html#a29f92a129e80d604482bc0650a8a3bb0"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="SearchAlgortihms.AStar.astar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_algortihms_1_1_a_star.html#a95cd91ef8cb13d69296a56dbab2989a2"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="csm6120.Main.main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcsm6120_1_1_main.html#adf9387261bc1d579e1bc95f836d164f5"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="SearchAlgortihms.BFS.bfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_algortihms_1_1_b_f_s.html#ab7f2a687215a97dc1862ed8000b0b4b3"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="SearchAlgortihms.DFS.dfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_algortihms_1_1_d_f_s.html#a4963da0c8eb1430d79f8bdf58f63eaef"];
+  Node6 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="SearchAlgortihms.GBFS.gbfs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_algortihms_1_1_g_b_f_s.html#a9222a29ccd2c4f7cdc3cb23ba0a8d50b"];
+  Node7 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+}

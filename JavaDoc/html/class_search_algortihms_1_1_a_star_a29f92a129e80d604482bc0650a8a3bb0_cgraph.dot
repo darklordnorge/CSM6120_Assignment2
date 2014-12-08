@@ -1,0 +1,19 @@
+digraph "SearchAlgortihms.AStar.addNode"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SearchAlgortihms.AStar.addNode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SearchTree.TreeNode.children\lIsEmpty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_tree_1_1_tree_node.html#a6bb5952ae4681cd9dfd9394941c33ca5"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SearchTree.TreeNode.getState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_tree_1_1_tree_node.html#a7d27acf186463a6f37ba79ef6113ac2b"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="csm6120.State.getStringto\lString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcsm6120_1_1_state.html#ad505b40ba2e105aca3ada7c460cd61d4"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SearchTree.TreeNode.peek\lChild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_tree_1_1_tree_node.html#a2caf73bb2c6b407fb761621a59c377e2"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SearchTree.TreeNode.getFirst\lChild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_tree_1_1_tree_node.html#a0dbf791b9a6414df552c9d755b8b32e1"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SearchTree.TreeNode.remove\lFirstChild",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_search_tree_1_1_tree_node.html#a45ea86f7ce71e5e7dcea4426a60ef50c"];
+}

@@ -9,16 +9,14 @@ var indexSectionsWithContent =
 {
   0: "abcdfgmnprst",
   1: "abdfgmst",
-  2: "abcdfgmnprst",
-  3: "c"
+  2: "abcdfgmnprst"
 };
 
 var indexSectionNames =
 {
   0: "all",
   1: "classes",
-  2: "functions",
-  3: "pages"
+  2: "functions"
 };
 
 function convertToId(search)

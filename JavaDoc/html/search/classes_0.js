@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['astar',['AStar',['../df/da1/classsearch___algortihms_1_1_a_star.html',1,'search_Algortihms']]]
+  ['astar',['AStar',['../class_search_algortihms_1_1_a_star.html',1,'SearchAlgortihms']]]
 ];

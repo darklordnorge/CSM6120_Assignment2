@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['filemanager',['FileManager',['../dc/d75/classcsm6120__assignment2_1_1_file_manager.html',1,'csm6120_assignment2']]],
-  ['filemanager',['FileManager',['../dc/d75/classcsm6120__assignment2_1_1_file_manager.html#a55086247aded75d42a626a74f513c41d',1,'csm6120_assignment2::FileManager']]],
-  ['filemanagertest',['FileManagerTest',['../d4/d45/classcsm6120__assignment2_1_1_file_manager_test.html',1,'csm6120_assignment2']]],
-  ['findcell',['findCell',['../d8/dae/classsearch___algortihms_1_1_manhattan_distance.html#af0d928279519afdf7019f7a5a001e3fb',1,'search_Algortihms::ManhattanDistance']]],
-  ['findinteger',['findInteger',['../dc/d75/classcsm6120__assignment2_1_1_file_manager.html#aa22e4352b784032098561ad8f5bc6303',1,'csm6120_assignment2::FileManager']]],
-  ['findxcoordinate',['findXCoordinate',['../d8/dae/classsearch___algortihms_1_1_manhattan_distance.html#a7dcf33a2ce3bc818dc1ce2ba2e038264',1,'search_Algortihms::ManhattanDistance']]],
-  ['findycoordinate',['findYCoordinate',['../d8/dae/classsearch___algortihms_1_1_manhattan_distance.html#ac7f0b3bfd527b26c51316e6d88bc5d7b',1,'search_Algortihms::ManhattanDistance']]]
+  ['filemanager',['FileManager',['../classcsm6120_1_1_file_manager.html',1,'csm6120']]],
+  ['filemanager',['FileManager',['../classcsm6120_1_1_file_manager.html#a680a5cce7c2757f486dd101a80e519ad',1,'csm6120::FileManager']]],
+  ['findcell',['findCell',['../class_search_algortihms_1_1_manhattan_distance.html#aacc69408d3896e297888294a43eb99f5',1,'SearchAlgortihms::ManhattanDistance']]],
+  ['findinteger',['findInteger',['../classcsm6120_1_1_file_manager.html#abf5cbb7dad82e05832f53b7480c5b0a0',1,'csm6120::FileManager']]],
+  ['findxcoordinate',['findXCoordinate',['../class_search_algortihms_1_1_manhattan_distance.html#a96f23fef39dd60da31657aea54d27517',1,'SearchAlgortihms::ManhattanDistance']]],
+  ['findycoordinate',['findYCoordinate',['../class_search_algortihms_1_1_manhattan_distance.html#a5a162a81cea4992607eb07789bd9233b',1,'SearchAlgortihms::ManhattanDistance']]]
 ];

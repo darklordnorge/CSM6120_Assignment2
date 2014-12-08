@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  8 DEC 2014 13:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  8 DEC 2014 14:04
 entering extended mode
 **Report.tex
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.tex
@@ -578,27 +578,601 @@ Overfull \hbox (309.60315pt too wide) in paragraph at lines 873--874
 
 [9 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/Model/CSM6120_Assignme
 nt2-Model/ClassDiagram2.png (PNG copy)>]
+<../JavaDoc/latex/refman.pdf, id=40, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf used on input line 878.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+ <use ../JavaDoc/latex/refman.pdf>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf used on input line 878.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+
+<../JavaDoc/latex/refman.pdf, id=43, page=1, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 1>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page1 used on input line 
+878.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 1>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page1 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 1>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page1 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 1>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page1 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 1>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page1 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [10 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=53, page=2, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 2>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page2 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 2>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page2 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 2>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page2 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [11 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=57, page=3, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 3>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page3 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 3>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page3 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 3>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page3 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [12 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=71, page=4, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 4>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page4 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 4>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page4 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 4>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page4 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [13 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=76, page=5, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 5>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page5 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 5>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page5 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 5>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page5 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [14 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=80, page=6, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 6>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page6 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 6>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page6 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 6>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page6 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [15 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=84, page=7, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 7>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page7 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 7>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page7 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 7>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page7 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [16 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=88, page=8, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 8>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page8 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 8>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page8 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 8>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page8 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [17 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=92, page=9, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 9>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page9 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 9>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page9 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 9>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page9 used on input line 
+878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [18 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=96, page=10, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 10>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page10 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 10>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page10 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 10>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page10 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [19 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=101, page=11, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 11>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page11 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 11>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page11 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 11>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page11 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [20 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=120, page=12, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 12>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page12 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 12>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page12 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 12>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page12 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [21 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=124, page=13, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 13>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page13 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 13>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page13 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 13>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page13 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [22 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=128, page=14, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 14>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page14 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 14>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page14 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 14>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page14 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [23 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=132, page=15, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 15>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page15 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 15>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page15 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 15>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page15 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [24 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=136, page=16, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 16>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page16 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 16>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page16 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 16>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page16 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [25 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=141, page=17, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 17>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page17 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 17>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page17 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 17>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page17 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [26 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=155, page=18, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 18>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page18 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 18>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page18 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 18>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page18 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [27 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=159, page=19, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 19>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page19 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 19>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page19 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 19>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page19 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [28 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=163, page=20, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 20>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page20 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 20>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page20 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 20>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page20 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [29 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=167, page=21, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 21>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page21 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 21>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page21 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 21>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page21 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [30 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=171, page=22, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 22>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page22 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 22>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page22 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 22>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page22 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [31 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=176, page=23, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 23>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page23 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 23>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page23 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 23>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page23 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [32 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=180, page=24, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 24>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page24 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 24>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page24 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 24>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page24 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [33 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=184, page=25, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 25>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page25 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 25>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page25 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 25>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page25 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [34 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
+<../JavaDoc/latex/refman.pdf, id=188, page=26, 597.50829pt x 845.0471pt>
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 26>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page26 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 26>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page26 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+File: ../JavaDoc/latex/refman.pdf Graphic file (type pdf)
+
+<use ../JavaDoc/latex/refman.pdf, page 26>
+Package pdftex.def Info: ../JavaDoc/latex/refman.pdf, page26 used on input line
+ 878.
+(pdftex.def)             Requested size: 562.12285pt x 795.00201pt.
+ [35 <C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/JavaDoc/latex/refman
+.pdf>]
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\Report\Report.aux) ) 
 Here is how much of TeX's memory you used:
- 5820 strings out of 493921
- 92297 string characters out of 3144873
+ 5905 strings out of 493921
+ 95346 string characters out of 3144873
  204891 words of memory out of 3000000
- 9067 multiletter control sequences out of 15000+200000
+ 9149 multiletter control sequences out of 15000+200000
  43503 words of font info for 79 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 37i,9n,49p,560b,1007s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,18n,49p,560b,1007s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/urw/times/utmb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmbi8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on Report.pdf (9 pages, 263745 bytes).
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/
+type1/urw/helvetic/uhvb8ac.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
+rw/helvetic/uhvbo8ac.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/hel
+vetic/uhvr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uh
+vro8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><
+D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><D:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><D:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Report.pdf (35 pages, 381166 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
