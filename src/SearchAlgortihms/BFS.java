@@ -18,19 +18,21 @@ public class BFS {
     private Graph tree;
     private TreeNode node, root;
     private Queue<TreeNode> searchQueue;
-    private Stack<TreeNode> exploredStack;
+    private Queue<TreeNode> exploredQueue;
     private ArrayList<String> expanded;
     private int pathcost;
+    private boolean solutionFound;
 
     /**
      * Constructor of the BFS object
      */
     public BFS() {
-        tree = new Graph();
-        searchQueue = new LinkedList();
-        exploredStack = new Stack();
-        pathcost = 0;
-        expanded = new ArrayList();
+        this.tree = new Graph();
+        this.searchQueue = new LinkedList();
+        this.exploredQueue = new LinkedList();
+        this.pathcost = 0;
+        this.expanded = new ArrayList();
+        this.solutionFound = false;
     }
 
     /**
@@ -72,6 +74,8 @@ public class BFS {
                 System.out.println("Current node: ");
                 node.getState().printArray();
                 System.out.println("Goal state: ");
+                exploredQueue.add(node);
+                solutionFound = true;
                 goal.printArray();
                 break;
             }
@@ -101,8 +105,23 @@ public class BFS {
              add the current node to the explored node and 
              update path cost
              */
-            exploredStack.add(node);
-            pathcost = exploredStack.size();
+            exploredQueue.add(node);
+            pathcost = exploredQueue.size();
+        }
+        if (solutionFound == false) {
+            System.out.println("No solution could be found");
+        } else {
+            this.printPath();
+        }
+    }
+
+    /**
+     * Prints the path from the start to the goal state of the puzzle
+     */
+    public void printPath() {
+        System.out.println("The path to the goal is as follows: ");
+        while (exploredQueue.isEmpty() == false) {
+            exploredQueue.poll().getState().printArray();
         }
     }
 }

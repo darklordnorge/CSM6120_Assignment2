@@ -69,6 +69,5 @@ public class Main {
         long totalTime = endTime - startTime;
         long timeInSec = Math.abs(totalTime/1000000000);
         System.out.println("Total Time: " + totalTime + " nanoseconds");
-        System.out.println("Or: " + timeInSec + "seconds");
     }
 }

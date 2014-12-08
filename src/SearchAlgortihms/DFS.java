@@ -4,6 +4,8 @@ import SearchTree.TreeNode;
 import SearchTree.Graph;
 import csm6120.State;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -13,21 +15,24 @@ import java.util.Stack;
  */
 public class DFS {
 
-    Graph tree;
-    TreeNode node, root;
-    Stack<TreeNode> searchStack, exploredStack;
-    int pathcost;
-    ArrayList expanded;
+    private Graph tree;
+    private TreeNode node, root;
+    private Stack<TreeNode> searchStack;
+    private Queue<TreeNode> exploredQueue;
+    private int pathcost;
+    private ArrayList expanded;
+    private boolean solutionFound;
 
     /**
      * Constructor of the DFS object
      */
     public DFS() {
-        tree = new Graph();
-        searchStack = new Stack();
-        exploredStack = new Stack();
-        pathcost = 0;
-        expanded = new ArrayList<String>();
+        this.tree = new Graph();
+        this.searchStack = new Stack();
+        this.exploredQueue = new LinkedList();
+        this.pathcost = 0;
+        this.expanded = new ArrayList<String>();
+        this.solutionFound = false;
     }
 
     /**
@@ -67,6 +72,8 @@ public class DFS {
                 System.out.println("Current node: ");
                 node.getState().printArray();
                 System.out.println("Goal state: ");
+                exploredQueue.add(node);
+                solutionFound = true;
                 goal.printArray();
                 break;
             }
@@ -92,11 +99,27 @@ public class DFS {
                 }
             }
             /*
-             Add the current node to the exploredStack
+             Add the current node to the exploredQueue
              and update the path cost
              */
-            exploredStack.add(node);
-            pathcost = exploredStack.size();
+            exploredQueue.add(node);
+            pathcost = exploredQueue.size();
+        }
+        if (solutionFound == false) {
+            System.out.println("No solution could be found");
+        } else {
+            this.printPath();
+        }
+    }
+
+    /**
+     * Prints the path from the start to the goal state of the puzzle
+     */
+    public void printPath() {
+        System.out.println("The path to the goal is as follows: ");
+        while (exploredQueue.isEmpty() == false) {
+
+            exploredQueue.poll().getState().printArray();
         }
     }
 }

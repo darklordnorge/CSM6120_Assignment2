@@ -1,4 +1,3 @@
-
 package SearchAlgortihms;
 
 import SearchTree.Graph;
@@ -34,10 +33,10 @@ public class AStar {
         this.pathcost = 0;
         this.tree = new Graph();
         this.exploredQueue = new LinkedList();
-        comparator = new StateComparator();
+        this.comparator = new StateComparator();
         this.searchQueue = new PriorityQueue(500, comparator);
-        expanded = new ArrayList<String>();
-        manhattanDistanceSum = 0;
+        this.expanded = new ArrayList<String>();
+        this.manhattanDistanceSum = 0;
         this.solutionFound = false;
 
     }
@@ -45,8 +44,8 @@ public class AStar {
     /**
      * A* algorithm
      *
-     * @param start  The start State
-     * @param goal   The goal State
+     * @param start The start State
+     * @param goal The goal State
      */
     public void astar(State start, State goal) {
         System.out.println("Using A* Search");
@@ -92,6 +91,7 @@ public class AStar {
                 node.getState().printArray();
                 System.out.println("Goal state: ");
                 goal.printArray();
+                exploredQueue.add(node);
                 solutionFound = true;
                 break;
             }
@@ -106,20 +106,21 @@ public class AStar {
             exploredQueue.add(node);
             pathcost = exploredQueue.size();
         }
-        if(solutionFound == false){
+        if (solutionFound == false) {
             System.out.println("No solution could be found");
+        } else {
+            this.printPath();
         }
     }
-    
+
     /**
-     * Method to add a new node the the search queue.
-     * This method calculates the Manhattan Distance for every child in the 
-     * current node and only add them to the search queue if the 
-     * Manhattan Distance is less than the original calculated one.
-     * 
-     * @param current       The current node
-     * @param goal          The goal node, use for the Manhattan Distance
-     *                      calculation
+     * Method to add a new node the the search queue. This method calculates the
+     * Manhattan Distance for every child in the current node and only add them
+     * to the search queue if the Manhattan Distance is less than the original
+     * calculated one.
+     *
+     * @param current The current node
+     * @param goal The goal node, use for the Manhattan Distance calculation
      */
     public void addNode(TreeNode current, State goal) {
         int currentManhattanDistance;
@@ -148,6 +149,16 @@ public class AStar {
             } else {
                 current.removeFirstChild();
             }
+        }
+    }
+
+    /**
+     * Prints the path from the start to the goal state of the puzzle
+     */
+    public void printPath() {
+        System.out.println("The path to the goal is as follows: ");
+        while (exploredQueue.isEmpty() == false) {
+            exploredQueue.poll().getState().printArray();
         }
     }
 }
