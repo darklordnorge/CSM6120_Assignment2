@@ -128,6 +128,7 @@
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{listings}
+\usepackage{caption}
 % defines how code will be shown
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -621,7 +622,7 @@ So iterating over 10's of thousands of nodes in the list of expanded nodes takes
 Still the list needs to be maintained in order to avoid infinite loop problems.
 
 
-\section{Analysis}
+\section{Analysis}\label{sec:analysis}
 In this section the design choices will be analysed further. \\
 This includes the heuristic used as well as any problems encountered during the development cycle. \\
 
@@ -634,11 +635,38 @@ The Manhattan Distance is calculated by the sum of the vertical and horizontal d
 
 \subsection{Performance}
 In this section the performance of each algorithm with the 3 provided test cases is analysed. \\
-This will be done algorithm for algorithm, with a large table showing all the results which can be found in appendix \textbf{ADD APPENDIX WITH RESULT TABLE}\\
 It is interesting to node that the processing time varies between runs. While on the first run it is often a lot higher, the processing time reduces in the following couple of runs. until it either gets stable or varies between 2 values. All running times shown in this section are taken after 5 runs as it then appears to be stable. \\
+
+The test cases used in this section are shown in table \ref{tab:testCases}. 
+Test cases 1 through 3 are the ones supplied with the assignment description, test case 4 has been randomly generated.
+
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Test cases used to test the program}
+\begin{tabular}{|c|c|}
+\hline
+\bfseries Test case number & \bfseries Test case representation \\\hline
+   & 1 2 0 \\
+ 1 & 3 4 5 \\
+   & 6 7 8 \\\hline
+   & 1 2 5 \\
+ 2 & 3 0 4 \\
+   & 6 7 8 \\\hline
+   & 3 2 0 \\
+ 3 & 6 1 5 \\
+   & 7 4 8 \\\hline
+   & 1 7 6 \\
+ 4 & 3 6 2 \\
+   & 4 0 8 \\\hline   
+\end{tabular}
+\label{tab:testCases}
+\end{table}
 
 \subsubsection{Breadth-First search}
 Table \ref{tab:bfs} shows the performance of Breadth-First search.\\
+As the test result show the number of explored nodes increases significantly when more tiles are out of place. The processing time also increases.\\
+While during test cases 1 - 3 the number of expanded nodes and the actual path cost to the goal, as well as the processing time, increases marginally from the easiest test case(1) to the more advanced one(3), the path cost, number of expanded nodes as well as the running time increases drastically when solving the randomly generated puzzle, represented as test case 4. \\ 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \centering
@@ -646,20 +674,21 @@ Table \ref{tab:bfs} shows the performance of Breadth-First search.\\
 \begin{tabular}{|c|c|c|c|}
 \hline
 \bfseries Test case &\bfseries Path Cost & \bfseries Expanded Nodes & \bfseries Running Time \\
- & & &  in nanosecond\\\hline
+ & & &  \bfseries in nanosecond\\\hline
 1 & 3 & 7 & 5 \\
 2 & 29 & 53 & 7\\
-3 & 67 & 114 & 11 \\\hline
+3 & 67 & 114 & 11 \\
+4 & 58375 & 80176 & 90107\\\hline
 \end{tabular}
 \label{tab:bfs}
 \end{table}
-As the test result show the number of explored nodes increases significantly when more tiles are out of place. The processing time also increases.
+
 
 \subsubsection{Depth-First search}
 Table \ref{tab:dfs} shows the performance of Depth-First search.\\
 As can be seen the path cost is massive, a lot more than the in any other search algorithm implemented in the system. As well is the processing time. The reason for the immense path cost and processing time is the way children are added to nodes in the program, in combination with the working of Depth-First search. \\
 It is likely that if nodes where added in a different way the path cost and processing time decrease. It could also be improved with implementing an abbreviation of Depth-First search, such as Depth-Limited search. \\
-It is worth noting that the arguably more complex systems of Test Case 2 and 3 actually have a lower path cost and lower computational time than the first one, where only 3 tiles are out of place. 
+It is worth noting that the arguably more complex systems of Test Case 2, 3 and 4 actually have a lower path cost and lower computational time than the first one, where only 3 tiles are out of place. 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \centering
@@ -667,10 +696,11 @@ It is worth noting that the arguably more complex systems of Test Case 2 and 3 a
 \begin{tabular}{|c|c|c|c|}
 \hline
 \bfseries Test case &\bfseries Path Cost & \bfseries Expanded Nodes & \bfseries Running Time \\\
- & &\bfseries in nanosecond\\\hline
-1 & 169022 & & 1303747 \\
-2 & 139063 & & 1115838 \\
-3 & 111950 & & 895815 \\\hline
+ & & &\bfseries in nanosecond\\\hline
+1 & 169022 & 180688 & 1303747 \\
+2 & 139063 & 175713 & 1115838 \\
+3 & 111950 & 166823 & 895815 \\
+4 & 112545 & 167212 & 854431 \\\hline
 \end{tabular}
 \label{tab:dfs}
 \end{table}
@@ -678,7 +708,9 @@ It is worth noting that the arguably more complex systems of Test Case 2 and 3 a
 \subsubsection{Greedy Best-First search}
 Table \ref{tab:gbfs} shows the performance of the Greedy Best-First search algorithm. \\
 As the table shows, in the first and easiest test case the algorithm performs with perfect accuracy, choosing the direct path to the goal state. \\
-Test case 2 and 3 as well show a large improvement in path cost over Breadth-First and Depth-First search. However it can be seen that the extra computational overhead of sorting the priority queue causes the algorithm to perform marginal slower than Breadth-First search. This small computational overhead is however made up by the far smaller number of explored search tree nodes. 
+Test case 2 and 3 as well show a large improvement in path cost over Depth-First search, however shows shows, in some cases, worse performance than Breadth-First search. It can be seen that the extra computational overhead of sorting the priority queue causes the algorithm to perform marginal slower than Breadth-First search.\\
+Also does the simple heuristic used in this algorithm not guarantee a better solution to the, as for test cases 2 and 3 the path cost and the number of expanded nodes is,though only minimal, larger than Breadth-First search. \\
+It shows however that using a heuristic for more advanced search problems, represented here as test case 4, leads to far better performance than using an uninformed search. \\
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \centering
@@ -686,10 +718,11 @@ Test case 2 and 3 as well show a large improvement in path cost over Breadth-Fir
 \begin{tabular}{|c|c|c|c|}
 \hline
 \bfseries Test case &\bfseries Path Cost & \bfseries Expanded Nodes & \bfseries Running Time \\
- & &\bfseries in nanosecond\\\hline
-1 & 2 & & 6 \\
-2 & 8 &  &7 \\
-3 & 72 &  &19 \\\hline
+ & & &\bfseries in nanosecond\\\hline
+1 & 2 & 5 & 6 \\
+2 & 8 & 16 &7 \\
+3 & 72 & 117 &19 \\
+4 & 946 & 1379 & 100 \\\hline
 \end{tabular}
 \label{tab:gbfs}
 \end{table}
@@ -698,7 +731,11 @@ Test case 2 and 3 as well show a large improvement in path cost over Breadth-Fir
 Table \ref{tab:astar} shows the performance of the $A^*$ Algorithm.\\
 Different in this table compared to the previous once is that an extra column has been added in to show the Manhattan Distance value which was calculated at the beginning of the algorithm. \\
 As the table shows for test cases 1 and 2 the estimated Manhattan Distance was reached precisely. On test case 3 the algorithm had to explore 21 nodes in order to find the goal state, while the estimated Manhattan Distance was 6 notes. This shows that the heuristic is admissible as it does not overestimate the path cost. \\
-The processing time is similar to Greedy Best-First and Breadth-First search. Even for the most advanced puzzle(test case 3). 
+The processing time is similar to Greedy Best-First and Breadth-First search. Even for the more advanced puzzle(test case 3). \\
+
+However test case 4 shows that a good heuristic does not always leads to a goal state. \\
+No solution could be found for this test case, however the Manhattan Distance is estimated to be 11. \\
+As the other test case work fine there is no reason to believe that the algorithm itself it faulty, but rather that $A^*$ simply is not able to find a solution to every puzzle. 
 
 
 \begin{table}[h]
@@ -707,14 +744,54 @@ The processing time is similar to Greedy Best-First and Breadth-First search. Ev
 \caption{Performance of A star search}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
-\bfseries Test case & \bfseries Manhattan Distance& \bfseries Patch cost & \bfseries Expanded nodes & \bfseries Running Time \\
- & & &\bfseries in nanosecond\\\hline
-1 & 2 & 2 & & 6 \\
-2 & 4 & 4 & & 7 \\
-3 & 6 & 21 & & 11\\\hline 
+\bfseries Test case & \bfseries Manhattan & \bfseries Patch cost & \bfseries Expanded nodes & \bfseries Running Time \\
+ &\bfseries Distance & & &\bfseries in nanosecond\\\hline
+1 & 2 & 2 & 4 & 6 \\
+2 & 4 & 4 & 7 & 7 \\
+3 & 6 & 21 & 28 & 11\\ 
+4 & 11 & / & / &  5 \\\hline 
 \end{tabular}
 \label{tab:astar}
 \end{table}
+
+\subsection{Problems}
+In this subsection the problems encountered in the development cycle are discussed, as well as how they were solved.\\
+
+\subsubsection{Infinite loop}
+Early during the development process, after implementing Breadth-First and Depth-First search, a problem with the graph generation was encountered. The problem was that states which were already encountered got generated again. \\
+The reason for was that no method was implemented to check if nodes were already generated. This led to infinite long search trees.\\ 
+\begin{lstlisting}[caption= Solution to the Infinite Search Tree Problem , ,label=listing:expandedCheck]
+while (node.childrenIsEmpty() != true) {
+	/*
+	 Add the current node to a an ArrayList of expanded nodes
+	 */
+	if (expanded.contains(node.getState().
+			getStringtoString()) == false) {
+		expanded.add(node.getState().
+			getStringtoString());
+	}
+	String s = node.peekChild().getState().
+		getStringtoString();
+	if (expanded.contains(s) == false) {
+		expanded.add(s);
+		searchQueue.add(node.getFirstChild());
+	} else {
+		node.removeFirstChild();
+	}
+}
+\end{lstlisting}
+
+The solution to that is shown in listing \ref{listing:expandedCheck}. \\
+With these few lines of code all expanded nodes are saved to a arrayList of expanded nodes, which than gets iterated through every iteration to check if a newly generated state already exists. If it does not the state will be added to the search queue/stack as well as to the list of expanded nodes. \\
+This piece of code, although modified in case of the $A^*$ algorithm, is included in all algorithms. 
+
+\section{Discussion}
+Section \ref{sec:analysis} shows the analysis of each algorithm and its performance on each of the 4 test cases. \\
+Inherently one could see it as a comparison of uninformed search VS informed search, with 2 examples for each type of search. It shows that for simple puzzles uninformed search methods perform equally well or better than some informed search algorithms, both in time and space complexity. It is however on the more advanced puzzles that the informedness of an heuristic shows an drastic improvement over uninformed strategies. \\
+It also shows that an advanced heuristic can both perform better or worse than a simple heuristic. An example of that would be a direct comparison of Greedy Best-First vs $A^*$ search. $A^*$ uses a more advanced heuristic which leads to better results in the most test cases but it fails to find a solution for the last test case. \\ 
+ 
+The attributes of the algorithm play a big role as well. Depth-First search has very large time and space complexity, but is still guaranteed to find a solution as the search space is finite. Breadth-First search performs much better in every test case, however in the worst case scenario it would have the same time and space complexity as Depth-First search.\\ 
+Greedy Best-First performs better for some test cases however has for the simplest puzzles worse time complexity. $A^*$ has the best time and space complexity of all algorithms implemented in this program however, as already mentioned, fails to find a solution for the most advanced test case. Whereas the other algorithms, even depth-first search, find a solution. 
 
 
 

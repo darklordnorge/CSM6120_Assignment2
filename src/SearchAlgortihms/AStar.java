@@ -25,6 +25,7 @@ public class AStar {
     private ArrayList<String> expanded;
     private ManhattanDistance md;
     private int manhattanDistanceSum;
+    private boolean solutionFound;
 
     /**
      * A* class constructor
@@ -37,6 +38,7 @@ public class AStar {
         this.searchQueue = new PriorityQueue(500, comparator);
         expanded = new ArrayList<String>();
         manhattanDistanceSum = 0;
+        this.solutionFound = false;
 
     }
 
@@ -65,6 +67,7 @@ public class AStar {
             root.getState().printArray();
             System.out.println("Goal state: ");
             goal.printArray();
+            solutionFound = true;
         }
         searchQueue.add(root);
 
@@ -89,6 +92,7 @@ public class AStar {
                 node.getState().printArray();
                 System.out.println("Goal state: ");
                 goal.printArray();
+                solutionFound = true;
                 break;
             }
             //generate the next level based on that node and add
@@ -101,6 +105,9 @@ public class AStar {
              */
             exploredQueue.add(node);
             pathcost = exploredQueue.size();
+        }
+        if(solutionFound == false){
+            System.out.println("No solution could be found");
         }
     }
     
