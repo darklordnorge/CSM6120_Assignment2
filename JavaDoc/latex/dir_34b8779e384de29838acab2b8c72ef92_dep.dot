@@ -1,0 +1,13 @@
+digraph "C:/Users/Stefan/Documents" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_0c899e54c7ce580a91daaf8c9a785bbf {
+    graph [ bgcolor="#ddddee", pencolor="black", label="Stefan" fontname="Helvetica", fontsize="10", URL="dir_0c899e54c7ce580a91daaf8c9a785bbf.html"]
+  subgraph clusterdir_34b8779e384de29838acab2b8c72ef92 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_34b8779e384de29838acab2b8c72ef92.html"];
+    dir_34b8779e384de29838acab2b8c72ef92 [shape=plaintext label="Documents"];
+    dir_137b073837595efb536a7354aa7b9f36 [shape=box label="GitHub" color="red" fillcolor="white" style="filled" URL="dir_137b073837595efb536a7354aa7b9f36.html"];
+  }
+  }
+}

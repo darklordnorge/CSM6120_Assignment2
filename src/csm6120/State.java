@@ -44,9 +44,16 @@ public class State {
      * Print the ArrayList
      */
     public void printArray() {
-        for (int i = 0; i < state.size(); i++) {
-            System.out.println(state.get(i));
+        int counter = 0;
+        for (int i = 0; i < 3; i++) {
+            System.out.print("\n");
+            for (int j = 0; j < 3; j++) {
+                System.out.print(this.state.get(counter));
+                counter++;
+            }
         }
+        System.out.print("\n");
+
     }
 
     /**
@@ -57,7 +64,7 @@ public class State {
      */
     public int returnIndex(int i) {
         return this.state.indexOf(i);
-        
+
     }
 
     /**
@@ -89,12 +96,12 @@ public class State {
         }
         return clone;
     }
-    
+
     /**
      * Method to compare this object to another state object
-     * 
+     *
      * @param s The state to compare too
-     * @return  True if the states are the same, false if not
+     * @return True if the states are the same, false if not
      */
     public boolean compare(State s) {
         int match = 0;
@@ -111,22 +118,22 @@ public class State {
 
     /**
      * Method to return the string representation of the "state" ArrayList
-     * 
+     *
      * @return The toString representation of the "state" ArrayList
      */
     public String getStringtoString() {
         String s = this.state.toString();
         return s;
     }
-    
+
     /**
-     * Method to return how many integers in this object compared
-     * to another object match
-     * 
+     * Method to return how many integers in this object compared to another
+     * object match
+     *
      * @param s The state to compare too
-     * @return  The number of matching ints 
+     * @return The number of matching ints
      */
-    public int compareMatching(State s){
+    public int compareMatching(State s) {
         int match = 0;
         for (int i = 0; i < s.state.size(); i++) {
             if (this.state.get(i).equals(s.state.get(i))) {
@@ -135,22 +142,22 @@ public class State {
         }
         return match;
     }
-    
+
     /**
      * Method to return the size of the state array
-     * 
-     * @return      int value of the state array size
+     *
+     * @return int value of the state array size
      */
-    public int getArraySize(){
+    public int getArraySize() {
         return this.state.size();
     }
-    
+
     /**
      * Method to return the state ArrayList
-     * 
-     * @return      The state ArrayList
+     *
+     * @return The state ArrayList
      */
-    public ArrayList getStateArray(){
+    public ArrayList getStateArray() {
         return this.state;
     }
 }

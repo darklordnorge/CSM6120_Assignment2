@@ -1,7 +1,9 @@
 var NAVTREE =
 [
-  [ "CSM6120 Assignment", "index.html", [
-    [ "CSM6120 Assignment 2: Solving 8-puzzles with uninformed and informed search", "d8/de6/md__c_1__users__stefan__documents__git_hub__c_s_m6120__assignment2__r_e_a_d_m_e.html", null ],
+  [ "8 Puzzle Solver", "index.html", [
+    [ "Packages", null, [
+      [ "Packages", "namespaces.html", "namespaces" ]
+    ] ],
     [ "Classes", null, [
       [ "Class List", "annotated.html", "annotated" ],
       [ "Class Index", "classes.html", null ],
@@ -10,13 +12,16 @@ var NAVTREE =
         [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ]
       ] ]
+    ] ],
+    [ "Files", null, [
+      [ "File List", "files.html", "files" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-".html"
+"_a_star_8java.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

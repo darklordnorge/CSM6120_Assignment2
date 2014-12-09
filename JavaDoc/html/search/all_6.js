@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['main',['Main',['../d3/d32/classcsm6120__assignment2_1_1_main.html',1,'csm6120_assignment2']]],
-  ['main',['main',['../d3/d32/classcsm6120__assignment2_1_1_main.html#a0c1cb70c190d879a8a110ec3349797d1',1,'csm6120_assignment2::Main']]],
-  ['manhattandistance',['ManhattanDistance',['../d8/dae/classsearch___algortihms_1_1_manhattan_distance.html#a0e9b3cff185dbdbcdfbe5131cfd87aee',1,'search_Algortihms::ManhattanDistance']]],
-  ['manhattandistance',['ManhattanDistance',['../d8/dae/classsearch___algortihms_1_1_manhattan_distance.html',1,'search_Algortihms']]],
-  ['midsection',['midSection',['../d5/d2c/class_search_tree_1_1_graph.html#a438e21a85d03906d9b7584ee82e796f6',1,'SearchTree::Graph']]]
+  ['main',['Main',['../classcsm6120_1_1_main.html',1,'csm6120']]],
+  ['main',['main',['../classcsm6120_1_1_main.html#adf9387261bc1d579e1bc95f836d164f5',1,'csm6120::Main']]],
+  ['main_2ejava',['Main.java',['../_main_8java.html',1,'']]],
+  ['manhattandistance',['ManhattanDistance',['../class_search_algortihms_1_1_manhattan_distance.html',1,'SearchAlgortihms']]],
+  ['manhattandistance',['ManhattanDistance',['../class_search_algortihms_1_1_manhattan_distance.html#a5a2cea6d1aa080eb73809366edae212c',1,'SearchAlgortihms::ManhattanDistance']]],
+  ['manhattandistance_2ejava',['ManhattanDistance.java',['../_manhattan_distance_8java.html',1,'']]],
+  ['midsection',['midSection',['../class_search_tree_1_1_graph.html#a438e21a85d03906d9b7584ee82e796f6',1,'SearchTree::Graph']]]
 ];

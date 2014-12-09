@@ -1,0 +1,201 @@
+\section{Search\+Algortihms.\+Manhattan\+Distance Class Reference}
+\label{class_search_algortihms_1_1_manhattan_distance}\index{Search\+Algortihms.\+Manhattan\+Distance@{Search\+Algortihms.\+Manhattan\+Distance}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Manhattan\+Distance} ({\bf State} start, {\bf State} goal)
+\item 
+int[$\,$] {\bf convert\+To\+Array} (Array\+List$<$ Integer $>$ i)
+\item 
+int[$\,$][$\,$] {\bf convert\+To2\+D\+Array} (int[$\,$] int\+Array)
+\item 
+void {\bf set\+Start\+Array} (int[$\,$][$\,$] to\+Set)
+\item 
+void {\bf set\+Goal\+Array} (int[$\,$][$\,$] to\+Set)
+\item 
+int[$\,$][$\,$] {\bf find\+Cell} (int[$\,$][$\,$] array, int index)
+\item 
+int {\bf find\+X\+Coordinate} (int[$\,$][$\,$] array, int index)
+\item 
+int {\bf find\+Y\+Coordinate} (int[$\,$][$\,$] array, int index)
+\item 
+int {\bf calc\+Manhattan\+Distance} ({\bf State} start, {\bf State} goal)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is used to calculate the Manhattan distance for the A$\ast$ algorithm
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!Manhattan\+Distance@{Manhattan\+Distance}}
+\index{Manhattan\+Distance@{Manhattan\+Distance}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{Manhattan\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Algortihms.\+Manhattan\+Distance.\+Manhattan\+Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{start, }
+\item[{{\bf State}}]{goal}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_a5a2cea6d1aa080eb73809366edae212c}
+Constructor of the \doxyref{Manhattan\+Distance}{p.}{class_search_algortihms_1_1_manhattan_distance} class
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The State to compare to the goal \\
+\hline
+{\em goal} & The goal State to compare too \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!calc\+Manhattan\+Distance@{calc\+Manhattan\+Distance}}
+\index{calc\+Manhattan\+Distance@{calc\+Manhattan\+Distance}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{calc\+Manhattan\+Distance}]{\setlength{\rightskip}{0pt plus 5cm}int Search\+Algortihms.\+Manhattan\+Distance.\+calc\+Manhattan\+Distance (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{start, }
+\item[{{\bf State}}]{goal}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_a3634a6092ccbc000d3ef2feb6fbdd1ca}
+Calculate the Manhattan distance for 2 input states
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start State for the calculation \\
+\hline
+{\em goal} & The goal State to calculate the distance to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer representing the Manhattan Distance; 
+\end{DoxyReturn}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!convert\+To2\+D\+Array@{convert\+To2\+D\+Array}}
+\index{convert\+To2\+D\+Array@{convert\+To2\+D\+Array}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{convert\+To2\+D\+Array}]{\setlength{\rightskip}{0pt plus 5cm}int [$\,$][$\,$] Search\+Algortihms.\+Manhattan\+Distance.\+convert\+To2\+D\+Array (
+\begin{DoxyParamCaption}
+\item[{int[$\,$]}]{int\+Array}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_a433af74b952ebb6fded7e294265b1e88}
+Method to convert an 1\+D integer array to a 2\+D integer array
+
+
+\begin{DoxyParams}{Parameters}
+{\em int\+Array} & The integer array to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An 2\+D integer array 
+\end{DoxyReturn}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!convert\+To\+Array@{convert\+To\+Array}}
+\index{convert\+To\+Array@{convert\+To\+Array}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{convert\+To\+Array}]{\setlength{\rightskip}{0pt plus 5cm}int [$\,$] Search\+Algortihms.\+Manhattan\+Distance.\+convert\+To\+Array (
+\begin{DoxyParamCaption}
+\item[{Array\+List$<$ Integer $>$}]{i}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_aec46890fa97c895ebf9b9be5baf9f4c5}
+Method to convert an Array\+List to an array
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & The array\+List to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer array 
+\end{DoxyReturn}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!find\+Cell@{find\+Cell}}
+\index{find\+Cell@{find\+Cell}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{find\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}int [$\,$][$\,$] Search\+Algortihms.\+Manhattan\+Distance.\+find\+Cell (
+\begin{DoxyParamCaption}
+\item[{int}]{array[$\,$][$\,$], }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_aacc69408d3896e297888294a43eb99f5}
+Method to find the X and Y coordinates of a given tile in a 2\+D array
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The 2\+D array to search in \\
+\hline
+{\em index} & The number/tile to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A 2\+D array holding the X and Y coordinates 
+\end{DoxyReturn}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!find\+X\+Coordinate@{find\+X\+Coordinate}}
+\index{find\+X\+Coordinate@{find\+X\+Coordinate}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{find\+X\+Coordinate}]{\setlength{\rightskip}{0pt plus 5cm}int Search\+Algortihms.\+Manhattan\+Distance.\+find\+X\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{int}]{array[$\,$][$\,$], }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_a96f23fef39dd60da31657aea54d27517}
+Method to find the X coordinates of a given tile in a 2\+D array
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The 2\+D array to search through \\
+\hline
+{\em index} & The number/tile to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer value representing the X coordinate in a 2d Array 
+\end{DoxyReturn}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!find\+Y\+Coordinate@{find\+Y\+Coordinate}}
+\index{find\+Y\+Coordinate@{find\+Y\+Coordinate}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{find\+Y\+Coordinate}]{\setlength{\rightskip}{0pt plus 5cm}int Search\+Algortihms.\+Manhattan\+Distance.\+find\+Y\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{int}]{array[$\,$][$\,$], }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_a5a162a81cea4992607eb07789bd9233b}
+Method to find the Y coordinates of a given tile in a 2\+D array
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The 2\+D array to search through \\
+\hline
+{\em index} & The number/tile to search for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer value representing the Y coordinate in a 2d Array 
+\end{DoxyReturn}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!set\+Goal\+Array@{set\+Goal\+Array}}
+\index{set\+Goal\+Array@{set\+Goal\+Array}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{set\+Goal\+Array}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Algortihms.\+Manhattan\+Distance.\+set\+Goal\+Array (
+\begin{DoxyParamCaption}
+\item[{int}]{to\+Set[$\,$][$\,$]}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_a0d376cf7668966a4c9405ef37ccfce4c}
+Method to set the goal\+Array
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Set} & 2\+D array to set too \\
+\hline
+\end{DoxyParams}
+\index{Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}!set\+Start\+Array@{set\+Start\+Array}}
+\index{set\+Start\+Array@{set\+Start\+Array}!Search\+Algortihms\+::\+Manhattan\+Distance@{Search\+Algortihms\+::\+Manhattan\+Distance}}
+\subsubsection[{set\+Start\+Array}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Algortihms.\+Manhattan\+Distance.\+set\+Start\+Array (
+\begin{DoxyParamCaption}
+\item[{int}]{to\+Set[$\,$][$\,$]}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_manhattan_distance_ad937950cbb34d9374b4b5d035a0f9ff0}
+Method to set the start\+Array
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Set} & 2\+D array to set too \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Stefan/\+Documents/\+Git\+Hub/\+C\+S\+M6120\+\_\+\+Assignment2/src/\+Search\+Algortihms/{\bf Manhattan\+Distance.\+java}\end{DoxyCompactItemize}

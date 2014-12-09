@@ -1,0 +1,225 @@
+\section{Search\+Tree.\+Tree\+Node Class Reference}
+\label{class_search_tree_1_1_tree_node}\index{Search\+Tree.\+Tree\+Node@{Search\+Tree.\+Tree\+Node}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf Tree\+Node} ({\bf State} s)
+\item 
+{\bf Tree\+Node} ({\bf Tree\+Node} t)
+\item 
+void {\bf add\+Child} ({\bf Tree\+Node} child)
+\item 
+void {\bf add\+Sibling} ({\bf Tree\+Node} sibling)
+\item 
+{\bf State} {\bf get\+State} ()
+\item 
+{\bf Tree\+Node} {\bf get\+First\+Child} ()
+\item 
+{\bf Tree\+Node} {\bf get\+First\+Sibling} ()
+\item 
+boolean {\bf sibling\+Is\+Empty} ()
+\item 
+boolean {\bf children\+Is\+Empty} ()
+\item 
+{\bf Tree\+Node} {\bf peek\+Child} ()
+\item 
+void {\bf remove\+First\+Child} ()
+\item 
+void {\bf set\+Explored} (boolean b)
+\item 
+boolean {\bf get\+Explored} ()
+\item 
+int {\bf get\+Num\+Of\+Children} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents a node in the search tree/graph
+
+\begin{DoxyAuthor}{Author}
+stefan 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!Tree\+Node@{Tree\+Node}}
+\index{Tree\+Node@{Tree\+Node}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{Tree\+Node}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Tree.\+Tree\+Node.\+Tree\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{s}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a5d261d0c6f6d93bf157d9899f1c9ecf7}
+Constructor of the \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} class. Creates a deep copy of the state which is passed as parameter Initialises the linked\+Lists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & The State the node referes too \\
+\hline
+\end{DoxyParams}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!Tree\+Node@{Tree\+Node}}
+\index{Tree\+Node@{Tree\+Node}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{Tree\+Node}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Tree.\+Tree\+Node.\+Tree\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\+Node}}]{t}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a41f1a0d897ff34181dce33e513a2d804}
+Constructor of the \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} class. Creates a deep copy of another \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} object this instance is a copy off \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!add\+Child@{add\+Child}}
+\index{add\+Child@{add\+Child}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{add\+Child}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Tree\+Node.\+add\+Child (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\+Node}}]{child}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_ad93c9da8ec6858c0c85050ad9bcf5108}
+Method to add a child to the linked\+List
+
+
+\begin{DoxyParams}{Parameters}
+{\em child} & The \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} object to add to the children list \\
+\hline
+\end{DoxyParams}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!add\+Sibling@{add\+Sibling}}
+\index{add\+Sibling@{add\+Sibling}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{add\+Sibling}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Tree\+Node.\+add\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\+Node}}]{sibling}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a389273ba4be929c11a59d15a002c40d8}
+Method to add a sibling to the linked\+List of siblings
+
+
+\begin{DoxyParams}{Parameters}
+{\em sibling} & The \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} object to add to the siblings list \\
+\hline
+\end{DoxyParams}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!children\+Is\+Empty@{children\+Is\+Empty}}
+\index{children\+Is\+Empty@{children\+Is\+Empty}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{children\+Is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}boolean Search\+Tree.\+Tree\+Node.\+children\+Is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a6bb5952ae4681cd9dfd9394941c33ca5}
+Method to check if the \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} object has children. Returns true if the linked\+List is empty
+
+\begin{DoxyReturn}{Returns}
+Boolean \char`\"{}\+True\char`\"{} if the list is empty 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!get\+Explored@{get\+Explored}}
+\index{get\+Explored@{get\+Explored}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{get\+Explored}]{\setlength{\rightskip}{0pt plus 5cm}boolean Search\+Tree.\+Tree\+Node.\+get\+Explored (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_ac1a618b9ff9fdfe1a12ca29f2a570d07}
+Method to get the \char`\"{}explored\char`\"{} variable of the object
+
+\begin{DoxyReturn}{Returns}
+The boolean value of \char`\"{}explored\char`\"{} 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!get\+First\+Child@{get\+First\+Child}}
+\index{get\+First\+Child@{get\+First\+Child}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{get\+First\+Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tree\+Node} Search\+Tree.\+Tree\+Node.\+get\+First\+Child (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a0dbf791b9a6414df552c9d755b8b32e1}
+Method to return(poll) and remove the first element of the \char`\"{}\+Children\char`\"{} linked\+List
+
+\begin{DoxyReturn}{Returns}
+The head of the \char`\"{}children\char`\"{} linked\+List 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!get\+First\+Sibling@{get\+First\+Sibling}}
+\index{get\+First\+Sibling@{get\+First\+Sibling}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{get\+First\+Sibling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tree\+Node} Search\+Tree.\+Tree\+Node.\+get\+First\+Sibling (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_aa56b889e12a04010229dbf3b54f64819}
+Method to return(poll) and remove the first element of the \char`\"{}siblings\char`\"{} linked\+List
+
+\begin{DoxyReturn}{Returns}
+The head of the \char`\"{}siblings\char`\"{} linked\+List 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!get\+Num\+Of\+Children@{get\+Num\+Of\+Children}}
+\index{get\+Num\+Of\+Children@{get\+Num\+Of\+Children}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{get\+Num\+Of\+Children}]{\setlength{\rightskip}{0pt plus 5cm}int Search\+Tree.\+Tree\+Node.\+get\+Num\+Of\+Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a52bda51536e0c892cb8d726fb4069037}
+Method to return the size of the \char`\"{}children\char`\"{} linked\+List
+
+\begin{DoxyReturn}{Returns}
+The size of the List 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!get\+State@{get\+State}}
+\index{get\+State@{get\+State}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{get\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} Search\+Tree.\+Tree\+Node.\+get\+State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a7d27acf186463a6f37ba79ef6113ac2b}
+Method to return the state of the node object
+
+\begin{DoxyReturn}{Returns}
+the State object of the node 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!peek\+Child@{peek\+Child}}
+\index{peek\+Child@{peek\+Child}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{peek\+Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tree\+Node} Search\+Tree.\+Tree\+Node.\+peek\+Child (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a2caf73bb2c6b407fb761621a59c377e2}
+Method to peek(return but not remove) the head of the \char`\"{}children\char`\"{} linked\+List
+
+\begin{DoxyReturn}{Returns}
+The head of the \char`\"{}children\char`\"{} Linked\+List 
+\end{DoxyReturn}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!remove\+First\+Child@{remove\+First\+Child}}
+\index{remove\+First\+Child@{remove\+First\+Child}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{remove\+First\+Child}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Tree\+Node.\+remove\+First\+Child (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a45ea86f7ce71e5e7dcea4426a60ef50c}
+Method to remove the head of the children linked\+List \index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!set\+Explored@{set\+Explored}}
+\index{set\+Explored@{set\+Explored}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{set\+Explored}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Tree.\+Tree\+Node.\+set\+Explored (
+\begin{DoxyParamCaption}
+\item[{boolean}]{b}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_a67ed4d08a604bf2eef93f06b9547d074}
+Method to set the \char`\"{}explored\char`\"{} variable of the object
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & The boolean value to set \\
+\hline
+\end{DoxyParams}
+\index{Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}!sibling\+Is\+Empty@{sibling\+Is\+Empty}}
+\index{sibling\+Is\+Empty@{sibling\+Is\+Empty}!Search\+Tree\+::\+Tree\+Node@{Search\+Tree\+::\+Tree\+Node}}
+\subsubsection[{sibling\+Is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}boolean Search\+Tree.\+Tree\+Node.\+sibling\+Is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_tree_1_1_tree_node_ad5ff235899e70e21360b83724f8eb7bb}
+Method to check if the \doxyref{Tree\+Node}{p.}{class_search_tree_1_1_tree_node} object has siblings. Returns true if the linked\+List is empty
+
+\begin{DoxyReturn}{Returns}
+Boolean \char`\"{}\+True\char`\"{} if the list is empty 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Stefan/\+Documents/\+Git\+Hub/\+C\+S\+M6120\+\_\+\+Assignment2/src/\+Search\+Tree/{\bf Tree\+Node.\+java}\end{DoxyCompactItemize}

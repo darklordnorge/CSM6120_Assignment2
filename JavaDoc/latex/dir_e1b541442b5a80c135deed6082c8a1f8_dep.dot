@@ -1,0 +1,9 @@
+digraph "C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/src/SearchTree" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_346b9472caafb6cb6cf9ad47448919a9 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="src" fontname="Helvetica", fontsize="10", URL="dir_346b9472caafb6cb6cf9ad47448919a9.html"]
+  dir_e1b541442b5a80c135deed6082c8a1f8 [shape=box, label="SearchTree", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_e1b541442b5a80c135deed6082c8a1f8.html"];
+  }
+}

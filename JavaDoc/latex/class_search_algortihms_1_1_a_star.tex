@@ -1,0 +1,83 @@
+\section{Search\+Algortihms.\+A\+Star Class Reference}
+\label{class_search_algortihms_1_1_a_star}\index{Search\+Algortihms.\+A\+Star@{Search\+Algortihms.\+A\+Star}}
+
+
+Collaboration diagram for Search\+Algortihms.\+A\+Star\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf A\+Star} ()
+\item 
+void {\bf astar} ({\bf State} start, {\bf State} goal)
+\item 
+void {\bf add\+Node} ({\bf Tree\+Node} current, {\bf State} goal)
+\item 
+void {\bf print\+Path} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A$\ast$ algorithm class
+
+\begin{DoxyAuthor}{Author}
+Stefan 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}!A\+Star@{A\+Star}}
+\index{A\+Star@{A\+Star}!Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}}
+\subsubsection[{A\+Star}]{\setlength{\rightskip}{0pt plus 5cm}Search\+Algortihms.\+A\+Star.\+A\+Star (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_a_star_a5776c7b8b43e4d4f2f0dd401487b3b11}
+A$\ast$ class constructor 
+
+\subsection{Member Function Documentation}
+\index{Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}!add\+Node@{add\+Node}}
+\index{add\+Node@{add\+Node}!Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}}
+\subsubsection[{add\+Node}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Algortihms.\+A\+Star.\+add\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Tree\+Node}}]{current, }
+\item[{{\bf State}}]{goal}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_a_star_a29f92a129e80d604482bc0650a8a3bb0}
+Method to add a new node the the search queue. This method calculates the Manhattan Distance for every child in the current node and only add them to the search queue if the Manhattan Distance is less than the original calculated one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current} & The current node \\
+\hline
+{\em goal} & The goal node, use for the Manhattan Distance calculation \\
+\hline
+\end{DoxyParams}
+\index{Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}!astar@{astar}}
+\index{astar@{astar}!Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}}
+\subsubsection[{astar}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Algortihms.\+A\+Star.\+astar (
+\begin{DoxyParamCaption}
+\item[{{\bf State}}]{start, }
+\item[{{\bf State}}]{goal}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_a_star_a95cd91ef8cb13d69296a56dbab2989a2}
+A$\ast$ algorithm
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & The start State \\
+\hline
+{\em goal} & The goal State \\
+\hline
+\end{DoxyParams}
+\index{Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}!print\+Path@{print\+Path}}
+\index{print\+Path@{print\+Path}!Search\+Algortihms\+::\+A\+Star@{Search\+Algortihms\+::\+A\+Star}}
+\subsubsection[{print\+Path}]{\setlength{\rightskip}{0pt plus 5cm}void Search\+Algortihms.\+A\+Star.\+print\+Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_search_algortihms_1_1_a_star_a4fa7e38957054445c406823ec44d40ca}
+Prints the path from the start to the goal state of the puzzle 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Stefan/\+Documents/\+Git\+Hub/\+C\+S\+M6120\+\_\+\+Assignment2/src/\+Search\+Algortihms/{\bf A\+Star.\+java}\end{DoxyCompactItemize}
