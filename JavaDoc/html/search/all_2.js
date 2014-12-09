@@ -9,5 +9,6 @@ var searchData=
   ['comparematching',['compareMatching',['../classcsm6120_1_1_state.html#affac4fa892ad1233ddb421202ad717fd',1,'csm6120::State']]],
   ['convertto2darray',['convertTo2DArray',['../class_search_algortihms_1_1_manhattan_distance.html#a433af74b952ebb6fded7e294265b1e88',1,'SearchAlgortihms::ManhattanDistance']]],
   ['converttoarray',['convertToArray',['../class_search_algortihms_1_1_manhattan_distance.html#aec46890fa97c895ebf9b9be5baf9f4c5',1,'SearchAlgortihms::ManhattanDistance']]],
-  ['corner',['corner',['../class_search_tree_1_1_graph.html#a71a61c7ed6038292be2253d41e012063',1,'SearchTree::Graph']]]
+  ['corner',['corner',['../class_search_tree_1_1_graph.html#a71a61c7ed6038292be2253d41e012063',1,'SearchTree::Graph']]],
+  ['csm6120',['csm6120',['../namespacecsm6120.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  8 DEC 2014 13:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.12.3)  8 DEC 2014 20:38
 entering extended mode
 **refman.tex
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\refman.tex
@@ -897,24 +897,64 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 6.
+(Font)              scaled to size 6.29996pt on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 11.
  [3
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 72.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 70.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 72.
- [4])
+(Font)              scaled to size 6.29996pt on input line 70.
+ [4]
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/csm6120/[]File[]Manager.java File 
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 118--118
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/[]Search[]Algortihms/[]A[]Star.java File 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--119
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/[]Search[]Algortihms/[]B[]F[]S.java File 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--120
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/[]Search[]Algortihms/[]D[]F[]S.java File 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--122
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/[]Search[]Algortihms/[]Manhattan[] 
+ []
+
+
+Overfull \hbox (24.47641pt too wide) in paragraph at lines 123--123
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/[]Search[]Algortihms/[]State[]Comparator.java 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--125
+ [][] []\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M61
+20[]_[][]Assignment2/src/[]Search[]Tree/[]Tree[]Node.java File 
+ []
+
+)
 \tf@toc=\write4
-
-[5] [6
-
-]
+ [6]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 18.66588pt on input line 121.
@@ -925,8 +965,8 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 18.66588pt on input line 121.
 
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\hierarchy.t
-ex
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\namespaces.
+tex
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
@@ -935,85 +975,115 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
 
+
 ] [2
 
 ]
 Chapter 2.
 
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\annotated.t
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\hierarchy.t
 ex) [3] [4
 
 ]
 Chapter 3.
 
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
-h_algortihms_1_1_a_star.tex
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 6.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 6.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 6.
-LaTeX Font Info:    Try loading font information for TS1+phv on input line 9.
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\annotated.t
+ex) [5] [6
 
-("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1phv.fd"
+]
+Chapter 4.
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\files.tex
+Underfull \hbox (badness 10000) in paragraph at lines 11--11
+ [][] \T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120
+[]_[][]Assignment2/src/[]Search[]Algortihms/\T1/phv/b/n/10 State[]Comparator.[]
+ 
+ []
+
+) [7] [8
+
+]
+Chapter 5.
+
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\namespacecs
+m6120.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 3.
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 6.
+ ("D:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1phv.fd"
 File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 9.
+(Font)              scaled to size 8.99994pt on input line 6.
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\namespace_s
+earch_algortihms.tex
 LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 20.
+(Font)              scaled to size 6.29996pt on input line 1.
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\namespace_s
+earch_tree.tex) [9] [10
 
-Underfull \hbox (badness 10000) detected at line 20
+]
+Chapter 6.
+
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
+h_algortihms_1_1_a_star.tex
+LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 22.
+
+Underfull \hbox (badness 10000) detected at line 22
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <10> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 43.
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 45.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 43.
+(Font)              scaled to size 8.99994pt on input line 45.
+[11]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 48.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 50.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 48.
-[5])
+(Font)              scaled to size 8.99994pt on input line 50.
+)
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
 h_algortihms_1_1_b_f_s.tex
-Underfull \hbox (badness 10000) detected at line 18
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
-[6])
+[12])
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
 h_algortihms_1_1_d_f_s.tex
-Underfull \hbox (badness 10000) detected at line 18
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
-)
+[13])
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\classcsm612
-0_1_1_file_manager.tex [7]
+0_1_1_file_manager.tex
 Underfull \hbox (badness 10000) detected at line 17
 [][][]
  []
 
 )
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
-h_algortihms_1_1_g_b_f_s.tex [8]
-Underfull \hbox (badness 10000) detected at line 18
+h_algortihms_1_1_g_b_f_s.tex [14]
+Underfull \hbox (badness 10000) detected at line 20
 [][][]
  []
 
 )
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
-h_tree_1_1_graph.tex
+h_tree_1_1_graph.tex [15]
 Underfull \hbox (badness 10000) detected at line 21
 [][][]
  []
 
-[9] [10])
+[16])
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\classcsm612
 0_1_1_main.tex
 Underfull \hbox (badness 10000) detected at line 13
@@ -1030,68 +1100,41 @@ LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
 
 )
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
-h_algortihms_1_1_manhattan_distance.tex [11]
+h_algortihms_1_1_manhattan_distance.tex [17]
 Underfull \hbox (badness 10000) detected at line 29
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 77
+Underfull \hbox (badness 10000) detected at line 72
 [][][]
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bc/it' in size <7> not available
-(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 96.
+(Font)              Font shape `T1/phv/bc/sl' tried instead on input line 81.
 LaTeX Font Info:    Font shape `T1/phv/bc/sl' will be
-(Font)              scaled to size 6.29996pt on input line 96.
+(Font)              scaled to size 6.29996pt on input line 81.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 86.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 101.
+(Font)              scaled to size 6.29996pt on input line 86.
 
-Underfull \hbox (badness 10000) detected at line 104
+Underfull \hbox (badness 10000) detected at line 89
 [][][]
  []
 
-[12]
+
+Underfull \hbox (badness 10000) detected at line 106
+[][][]
+ []
+
+[18] [19]
 Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 151
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 171
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 196
-[][][]
- []
-
-[13])
-(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\classcsm612
-0_1_1_state.tex
-Underfull \hbox (badness 10000) detected at line 35
-[][][]
- []
-
-[14]
-Underfull \hbox (badness 10000) detected at line 115
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 132
-[][][]
- []
-
-[15]
-Underfull \hbox (badness 10000) detected at line 154
+Underfull \hbox (badness 10000) detected at line 146
 [][][]
  []
 
@@ -1101,80 +1144,212 @@ Underfull \hbox (badness 10000) detected at line 166
  []
 
 
-Underfull \hbox (badness 10000) detected at line 178
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
+[]\T1/phv/m/n/10 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[]_[
+][]Assignment2/src/[]Search[]Algortihms/\T1/phv/b/n/10 Manhattan[]Distance.[]
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\classcsm612
+0_1_1_state.tex [20]
+Underfull \hbox (badness 10000) detected at line 35
+[][][]
+ []
+
+[21]
+Underfull \hbox (badness 10000) detected at line 105
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 195
+Underfull \hbox (badness 10000) detected at line 122
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 229
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 151
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 163
+[][][]
+ []
+
+[22]
+Underfull \hbox (badness 10000) detected at line 175
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 199
 [][][]
  []
 
 )
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
-h_algortihms_1_1_state_comparator.tex [16]
+h_algortihms_1_1_state_comparator.tex
 Underfull \hbox (badness 10000) detected at line 19
 [][][]
  []
 
-
+[23]
 Underfull \hbox (badness 10000) detected at line 42
 [][][]
  []
 
 )
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\class_searc
-h_tree_1_1_tree_node.tex [17]
+h_tree_1_1_tree_node.tex
 Underfull \hbox (badness 10000) detected at line 39
 [][][]
  []
 
-[18]
-Underfull \hbox (badness 10000) detected at line 123
+[24]
+Underfull \hbox (badness 10000) detected at line 113
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 140
+Underfull \hbox (badness 10000) detected at line 125
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 152
+Underfull \hbox (badness 10000) detected at line 137
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 169
+Underfull \hbox (badness 10000) detected at line 149
+[][][]
+ []
+
+[25]
+Underfull \hbox (badness 10000) detected at line 161
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 181
+Underfull \hbox (badness 10000) detected at line 173
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 193
+Underfull \hbox (badness 10000) detected at line 185
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 210
+Underfull \hbox (badness 10000) detected at line 218
 [][][]
  []
 
-[19]
-Underfull \hbox (badness 10000) detected at line 253
-[][][]
+) [26]
+Chapter 7.
+
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_file_manag
+er_8java.tex
+Overfull \hbox (27.74982pt too wide) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/csm6120/[]File[]Manager.java
  []
 
-) [20]
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_main_8java
+.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/csm6120/[]Main.java
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_state_8jav
+a.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/csm6120/[]State.java
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_a_star_8ja
+va.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Algortihms/[]
+ []
+
+[27
+
+])
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_b_f_s_8jav
+a.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Algortihms/[]
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_d_f_s_8jav
+a.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Algortihms/[]
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_g_b_f_s_8j
+ava.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Algortihms/[]
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_manhattan_
+distance_8java.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Algortihms/[]
+ []
+
+[28])
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_state_comp
+arator_8java.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Algortihms/[]
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_graph_8jav
+a.tex
+Overfull \hbox (15.41246pt too wide) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Tree/[]Graph.java
+ []
+
+)
+(C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\_tree_node_
+8java.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/bc/n/14.4 C[]:/[]Users/[]Stefan/[]Documents/[]Git[]Hub/[]C[]S[]M6120[
+]_[][]Assignment2/src/[]Search[]Tree/[]Tree[]
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 34.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29]
 No file refman.ind.
 (C:\Users\Stefan\Documents\GitHub\CSM6120_Assignment2\JavaDoc\latex\refman.aux)
 
@@ -1182,13 +1357,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5448 strings out of 493921
- 76603 string characters out of 3144873
- 141562 words of memory out of 3000000
- 8553 multiletter control sequences out of 15000+200000
- 78279 words of font info for 103 fonts, out of 3000000 for 9000
+ 5521 strings out of 493921
+ 80199 string characters out of 3144873
+ 143793 words of memory out of 3000000
+ 8571 multiletter control sequences out of 15000+200000
+ 81973 words of font info for 110 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 48i,17n,43p,700b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,17n,43p,2232b,347s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<D:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Fi
@@ -1198,9 +1373,9 @@ les (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files (x86)
 ts/type1/urw/helvetic/uhvbo8ac.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/typ
 e1/urw/helvetic/uhvr8a.pfb><D:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/h
 elvetic/uhvro8a.pfb>
-Output written on refman.pdf (26 pages, 114225 bytes).
+Output written on refman.pdf (35 pages, 123824 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

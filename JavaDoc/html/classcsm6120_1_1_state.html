@@ -8,6 +8,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
@@ -37,7 +44,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -64,12 +73,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classcsm6120_1_1_state.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -78,11 +102,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><b>csm6120</b></li><li class="navelem"><a class="el" href="classcsm6120_1_1_state.html">State</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -184,15 +203,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_a058a8187e1aae3e3026da30a2c15e1be_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_a058a8187e1aae3e3026da30a2c15e1be_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_a058a8187e1aae3e3026da30a2c15e1be_icgraph" id="classcsm6120_1_1_state_a058a8187e1aae3e3026da30a2c15e1be_icgraph">
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="af30aa25f99dc9443754be03d6b6c6a1c"></a>
@@ -226,15 +236,6 @@ Here is the caller graph for this function:</div>
   </table>
   </dd>
 </dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_af30aa25f99dc9443754be03d6b6c6a1c_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_af30aa25f99dc9443754be03d6b6c6a1c_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_af30aa25f99dc9443754be03d6b6c6a1c_icgraph" id="classcsm6120_1_1_state_af30aa25f99dc9443754be03d6b6c6a1c_icgraph">
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -276,15 +277,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True if the states are the same, false if not </dd></dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_aaa57bce29575210f8bf90493431ca60f_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_aaa57bce29575210f8bf90493431ca60f_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_aaa57bce29575210f8bf90493431ca60f_icgraph" id="classcsm6120_1_1_state_aaa57bce29575210f8bf90493431ca60f_icgraph">
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -344,15 +336,6 @@ Here is the caller graph for this function:</div>
 <p>Method to return the state ArrayList</p>
 <dl class="section return"><dt>Returns</dt><dd>The state ArrayList </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_a82e3a3984a1f6ab214335c0f149941f2_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_a82e3a3984a1f6ab214335c0f149941f2_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_a82e3a3984a1f6ab214335c0f149941f2_icgraph" id="classcsm6120_1_1_state_a82e3a3984a1f6ab214335c0f149941f2_icgraph">
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ad505b40ba2e105aca3ada7c460cd61d4"></a>
@@ -370,15 +353,6 @@ Here is the caller graph for this function:</div>
 <p>Method to return the string representation of the "state" ArrayList</p>
 <dl class="section return"><dt>Returns</dt><dd>The toString representation of the "state" ArrayList </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_ad505b40ba2e105aca3ada7c460cd61d4_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_ad505b40ba2e105aca3ada7c460cd61d4_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_ad505b40ba2e105aca3ada7c460cd61d4_icgraph" id="classcsm6120_1_1_state_ad505b40ba2e105aca3ada7c460cd61d4_icgraph">
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ad0e76faefd7cf9d8fb1df6bc0acb53f2"></a>
@@ -394,15 +368,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Print the ArrayList </p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_ad0e76faefd7cf9d8fb1df6bc0acb53f2_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_ad0e76faefd7cf9d8fb1df6bc0acb53f2_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_ad0e76faefd7cf9d8fb1df6bc0acb53f2_icgraph" id="classcsm6120_1_1_state_ad0e76faefd7cf9d8fb1df6bc0acb53f2_icgraph">
-</map>
-</div>
-</p>
 
 </div>
 </div>
@@ -428,26 +393,21 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The position of the item in the ArrayList </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classcsm6120_1_1_state_a229975970266b325a9829493e7e58a80_icgraph.png" border="0" usemap="#classcsm6120_1_1_state_a229975970266b325a9829493e7e58a80_icgraph" alt=""/></div>
-<map name="classcsm6120_1_1_state_a229975970266b325a9829493e7e58a80_icgraph" id="classcsm6120_1_1_state_a229975970266b325a9829493e7e58a80_icgraph">
-</map>
-</div>
-</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/src/csm6120/State.java</li>
+<li>C:/Users/Stefan/Documents/GitHub/CSM6120_Assignment2/src/csm6120/<a class="el" href="_state_8java.html">State.java</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 8 2014 13:50:40 for 8 Puzzle Solver by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespacecsm6120.html">csm6120</a></li><li class="navelem"><a class="el" href="classcsm6120_1_1_state.html">State</a></li>
+    <li class="footer">Generated on Mon Dec 8 2014 20:38:06 for 8 Puzzle Solver by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
 </body>
 </html>

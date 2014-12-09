@@ -475,38 +475,6 @@
 \maketitle
 
 
-\begin{abstract}
-%\boldmath
-The abstract goes here.
-\end{abstract}
-% IEEEtran.cls defaults to using nonbold math in the Abstract.
-% This preserves the distinction between vectors and scalars. However,
-% if the journal you are submitting to favors bold math in the abstract,
-% then you can use LaTeX's standard command \boldmath at the very start
-% of the abstract to achieve this. Many IEEE journals frown on math
-% in the abstract anyway.
-
-
-
-
-
-\section{Introduction}
-% The very first letter is a 2 line initial drop letter followed
-% by the rest of the first word in caps.
-% 
-% form to use if the first word consists of a single letter:
-% \IEEEPARstart{A}{demo} file is ....
-% 
-% form to use if you need the single drop letter followed by
-% normal text (unknown if ever used by IEEE):
-% \IEEEPARstart{A}{}demo file is ....
-% 
-% Some journals put the first two words in caps:
-% \IEEEPARstart{T}{his demo} file is ....
-% 
-% Here we have the typical use of a "T" for an initial drop letter
-% and "HIS" in caps to complete the first word.
-\IEEEPARstart{I}{n} this report the  created solution to the 8 puzzle solver will be discussed.
 
 \section{Structure}\label{sec:structure}
 The overall structure can be seen in the UML diagram, found in appendix A though C.
@@ -636,11 +604,11 @@ The Manhattan Distance is admissible for this kind of problem as it either estim
 The Manhattan Distance is calculated by the sum of the vertical and horizontal distances of between to tiles, because tiles can not move along diagonals. \\
 
 \subsection{Performance}
-In this section the performance of each algorithm with the 3 provided test cases is analysed. \\
-It is interesting to node that the processing time varies between runs. While on the first run it is often a lot higher, the processing time reduces in the following couple of runs. until it either gets stable or varies between 2 values. All running times shown in this section are taken after 5 runs as it then appears to be stable. \\
-
+In this section the performance of each algorithm with the test cases is analysed. \\
 The test cases used in this section are shown in table \ref{tab:testCases}. 
-Test cases 1 through 3 are the ones supplied with the assignment description, test case 4 has been randomly generated.
+Test cases 1 through 3 are the ones supplied with the assignment description, test case 4 through 6 have been randomly generated.\\
+
+It is interesting to node that the processing time varies between runs. While on the first run it is often a lot higher, the processing time reduces in the following couple of runs. until it either gets stable or varies between 2 values. All running times shown in this section are taken after 5 runs as it then appears to be stable. \\
 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
@@ -661,6 +629,12 @@ Test cases 1 through 3 are the ones supplied with the assignment description, te
    & 1 7 6 \\
  4 & 3 6 2 \\
    & 4 0 8 \\\hline   
+   & 2 0 7 \\
+ 5 & 4 5 3 \\
+   & 6 1 8 \\\hline
+   & 7 4 1 \\
+ 6 & 2 8 0 \\
+   & 5 6 3 \\\hline 
 \end{tabular}
 \label{tab:testCases}
 \end{table}
@@ -668,7 +642,7 @@ Test cases 1 through 3 are the ones supplied with the assignment description, te
 \subsubsection{Breadth-First search}
 Table \ref{tab:bfs} shows the performance of Breadth-First search.\\
 As the test result show the number of explored nodes increases significantly when more tiles are out of place. The processing time also increases.\\
-While during test cases 1 - 3 the number of expanded nodes and the actual path cost to the goal, as well as the processing time, increases marginally from the easiest test case(1) to the more advanced one(3), the path cost, number of expanded nodes as well as the running time increases drastically when solving the randomly generated puzzle, represented as test case 4. \\ 
+While during test cases 1 - 3 the number of expanded nodes and the actual path cost to the goal, as well as the processing time, increases marginally from the easiest test case(1) to the more advanced one(3), the path cost, number of expanded nodes as well as the running time increases drastically when solving the randomly generated puzzle, represented as test case 4 - 6. \\ 
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \centering
@@ -680,7 +654,9 @@ While during test cases 1 - 3 the number of expanded nodes and the actual path c
 1 & 3 & 7 & 5 \\
 2 & 29 & 53 & 7\\
 3 & 67 & 114 & 11 \\
-4 & 58375 & 80176 & 90107\\\hline
+4 & 58375 & 80176 & 90107\\
+5 & 74135 & 94765 & 154391 \\
+6 & 156672 & 169194 & 964196 \\\hline
 \end{tabular}
 \label{tab:bfs}
 \end{table}
@@ -690,7 +666,10 @@ While during test cases 1 - 3 the number of expanded nodes and the actual path c
 Table \ref{tab:dfs} shows the performance of Depth-First search.\\
 As can be seen the path cost is massive, a lot more than the in any other search algorithm implemented in the system. As well is the processing time. The reason for the immense path cost and processing time is the way children are added to nodes in the program, in combination with the working of Depth-First search. \\
 It is likely that if nodes where added in a different way the path cost and processing time decrease. It could also be improved with implementing an abbreviation of Depth-First search, such as Depth-Limited search. \\
-It is worth noting that the arguably more complex systems of Test Case 2, 3 and 4 actually have a lower path cost and lower computational time than the first one, where only 3 tiles are out of place. 
+It is worth noting that the arguably more complex systems of Test Case 2, 3 and 4 actually have a lower path cost and lower computational time than the first one, where only 3 tiles are out of place. In fact test case 6 which is by far the most advanced puzzle is the fastest to be solved, while test case 5 which is the next most advanced has the longest processing time and highest path cost of all puzzles. \\
+
+Even though Depth-First search has by far the most worst time and space complexity of all the implemented algorithms, however it is bound to find a solution to the problem since the search space is finite, however in the absolute worst case the performance of Depth-First search would be equal to a simple brute force approach.  \\
+
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \centering
@@ -702,7 +681,9 @@ It is worth noting that the arguably more complex systems of Test Case 2, 3 and 
 1 & 169022 & 180688 & 1303747 \\
 2 & 139063 & 175713 & 1115838 \\
 3 & 111950 & 166823 & 895815 \\
-4 & 112545 & 167212 & 854431 \\\hline
+4 & 112545 & 167212 & 854431 \\
+5 & 176779 & 181273 & 1307069 \\
+6 & 77218 & 132209 & 441747 \\\hline
 \end{tabular}
 \label{tab:dfs}
 \end{table}
@@ -712,7 +693,7 @@ Table \ref{tab:gbfs} shows the performance of the Greedy Best-First search algor
 As the table shows, in the first and easiest test case the algorithm performs with perfect accuracy, choosing the direct path to the goal state. \\
 Test case 2 and 3 as well show a large improvement in path cost over Depth-First search, however shows shows, in some cases, worse performance than Breadth-First search. It can be seen that the extra computational overhead of sorting the priority queue causes the algorithm to perform marginal slower than Breadth-First search.\\
 Also does the simple heuristic used in this algorithm not guarantee a better solution to the, as for test cases 2 and 3 the path cost and the number of expanded nodes is,though only minimal, larger than Breadth-First search. \\
-It shows however that using a heuristic for more advanced search problems, represented here as test case 4, leads to far better performance than using an uninformed search. \\
+It shows however that using a heuristic for more advanced search problems, represented here as test cases 4 - 6, leads to far better performance than using an uninformed search. \\
 \begin{table}[h]
 \renewcommand{\arraystretch}{1.3}
 \centering
@@ -724,7 +705,9 @@ It shows however that using a heuristic for more advanced search problems, repre
 1 & 2 & 5 & 6 \\
 2 & 8 & 16 &7 \\
 3 & 72 & 117 &19 \\
-4 & 946 & 1379 & 100 \\\hline
+4 & 946 & 1379 & 100 \\
+5 & 950 & 1385 & 167 \\
+6 & 5259 & 7345 & 1378 \\\hline
 \end{tabular}
 \label{tab:gbfs}
 \end{table}
@@ -735,9 +718,10 @@ Different in this table compared to the previous once is that an extra column ha
 As the table shows for test cases 1 and 2 the estimated Manhattan Distance was reached precisely. On test case 3 the algorithm had to explore 21 nodes in order to find the goal state, while the estimated Manhattan Distance was 6 notes. This shows that the heuristic is admissible as it does not overestimate the path cost. \\
 The processing time is similar to Greedy Best-First and Breadth-First search. Even for the more advanced puzzle(test case 3). \\
 
-However test case 4 shows that a good heuristic does not always leads to a goal state. \\
-No solution could be found for this test case, however the Manhattan Distance is estimated to be 11. \\
-As the other test case work fine there is no reason to believe that the algorithm itself it faulty, but rather that $A^*$ simply is not able to find a solution to every puzzle. 
+However test case 4 \& 5 show that a good heuristic does not always leads to a goal state. \\
+No solution could be found for these test cases, however the Manhattan Distance is estimated to be 11 in both. \\
+As the other test case work fine there is no reason to believe that the algorithm itself it faulty, but rather that $A^*$ simply is not able to find a solution to every puzzle. \\
+Test case 6 is by far the most difficult puzzle to solve and here even $A^*$ needs multiple thousand steps to find a solution.\\
 
 
 \begin{table}[h]
@@ -751,7 +735,9 @@ As the other test case work fine there is no reason to believe that the algorith
 1 & 2 & 2 & 4 & 6 \\
 2 & 4 & 4 & 7 & 7 \\
 3 & 6 & 21 & 28 & 11\\ 
-4 & 11 & / & / &  5 \\\hline 
+4 & 11 & / & / &  5 \\
+5 & 11 & / & /& 6 \\
+6 & 17 & 4879 & 6789 & 1206 \\\hline
 \end{tabular}
 \label{tab:astar}
 \end{table}
@@ -800,10 +786,10 @@ This was a problem because it took a while until it was realised that an arrayLi
 \section{Discussion}
 Section \ref{sec:analysis} shows the analysis of each algorithm and its performance on each of the test cases. \\
 Inherently one could see it as a comparison of uninformed search VS informed search, with 2 examples for each type of search. It shows that for simple puzzles uninformed search methods perform equally well or better than some informed search algorithms, both in time and space complexity. It is however on the more advanced puzzles that the informedness of an heuristic shows an drastic improvement over uninformed strategies. \\
-It also shows that an advanced heuristic can both perform better or worse than a simple heuristic. An example of that would be a direct comparison of Greedy Best-First vs $A^*$ search. $A^*$ uses a more advanced heuristic which leads to better results in the most test cases but it fails to find a solution for the last test case. \\ 
+It also shows that an advanced heuristic can both perform better or worse than a simple heuristic. An example of that would be a direct comparison of Greedy Best-First vs $A^*$ search. $A^*$ uses a more advanced heuristic which leads to better results in the most test cases but it fails to find a solution for some cases. \\ 
  
 The attributes of the algorithm play a big role as well. Depth-First search has very large time and space complexity, but is still guaranteed to find a solution as the search space is finite. Breadth-First search performs much better in every test case, however in the worst case scenario it would have the same time and space complexity as Depth-First search.\\ 
-Greedy Best-First performs better for some test cases however has for the simplest puzzles worse time complexity. $A^*$ has the best time and space complexity of all algorithms implemented in this program however, as already mentioned, fails to find a solution for the most advanced test case. Whereas the other algorithms, even depth-first search, find a solution. \\
+Greedy Best-First performs better for some test cases however has for the simplest puzzles worse time complexity. $A^*$ has the best time and space complexity of all algorithms implemented in this program however, as already mentioned, fails to find a solution for some of the more advanced test cases. Whereas the other algorithms, even depth-first search, find a solution. \\
 
 While it gets quite apparent that the uninformed search methods can find solutions, the informed search algorithms perform better and are generally a better choice for these kind of problems. The performance of uninformed search strategies could be tested further with implementation of algorithms such as iterative deepening, which would greatly improve on Depth-First search, which is currently not much more than a brute force approach.
 
@@ -823,7 +809,7 @@ Given more time it would also have been interesting to implement more advanced h
 \bibliographystyle{IEEEtran}
 % argument is your BibTeX string definitions and bibliography database(s)
 %\bibliography{IEEEabrv,../bib/paper}
-\newpage
+
 
 \bibliography{IEEEabrv,citations}
 
